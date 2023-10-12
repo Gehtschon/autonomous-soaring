@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/autonomous_soaring.dir/main.cpp.o -o autonomous_soaring 
