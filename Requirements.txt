@@ -1,0 +1,13 @@
+Determing the radius and the strenght of a thermal
+
+Check for energie increase or decrease
+Hold track of lifting and position
+Determing with the lift strenght where the termal is
+Estimate a round or elipse shape
+Determing bank angle of the plane and the ideal speed
+
+Communication with the pixhawk:
+Coordinates of the thermal centre
+Radius of the thermal
+Ideal bank angle and speed
+Some starts that need to be detrmined

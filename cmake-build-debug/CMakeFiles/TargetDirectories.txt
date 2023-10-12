@@ -1,0 +1,3 @@
+C:/Users/fabia/OneDrive/Desktop/Autonomus_Soaring/autonomous-soaring/cmake-build-debug/CMakeFiles/autonomous_soaring.dir
+C:/Users/fabia/OneDrive/Desktop/Autonomus_Soaring/autonomous-soaring/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/fabia/OneDrive/Desktop/Autonomus_Soaring/autonomous-soaring/cmake-build-debug/CMakeFiles/rebuild_cache.dir

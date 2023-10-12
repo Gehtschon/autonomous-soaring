@@ -1,0 +1,2 @@
+1.  Get Mavlink in cpp working.
+2. Write detecting algorithm
