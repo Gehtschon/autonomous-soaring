@@ -1,3 +1,6 @@
 # ninja log v5
 0	800	7188065643898990	CMakeFiles/autonomous_soaring.dir/main.cpp.obj	836077d360806180
 801	1196	7188065647700913	autonomous_soaring.exe	ac72c8ec27918043
+12	237	7188151543674411	build.ninja	9d5f4d6ece343045
+1	1846	7188151563034090	CMakeFiles/autonomous_soaring.dir/main.cpp.obj	836077d360806180
+1850	2182	7188151565867910	autonomous_soaring.exe	ac72c8ec27918043
