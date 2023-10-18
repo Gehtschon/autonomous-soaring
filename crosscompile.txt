@@ -1,0 +1,3 @@
+armv8-rpi3-linux-gnueabihf-g++ main.cpp -o mainraspy
+scp mainraspy soaring@192.168.43.63:~ mainraspy
+
