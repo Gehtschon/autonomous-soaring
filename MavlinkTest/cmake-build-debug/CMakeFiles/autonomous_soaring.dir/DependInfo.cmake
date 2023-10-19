@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/fabian/Soaring/Soaringcpp/autonomous-soaring/main.cpp" "CMakeFiles/autonomous_soaring.dir/main.cpp.o" "gcc" "CMakeFiles/autonomous_soaring.dir/main.cpp.o.d"
+  "/home/fabian/Soaring/Soaringcpp/autonomous-soaring/MavlinkTest/main.cpp" "CMakeFiles/autonomous_soaring.dir/main.cpp.o" "gcc" "CMakeFiles/autonomous_soaring.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

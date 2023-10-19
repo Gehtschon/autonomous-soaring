@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/fabian/Soaring/Soaringcpp/autonomous-soaring/cmake-build-debug",
-		"source" : "/home/fabian/Soaring/Soaringcpp/autonomous-soaring"
+		"build" : "/home/fabian/Soaring/Soaringcpp/autonomous-soaring/MavlinkTest/cmake-build-debug",
+		"source" : "/home/fabian/Soaring/Soaringcpp/autonomous-soaring/MavlinkTest"
 	},
 	"version" : 
 	{

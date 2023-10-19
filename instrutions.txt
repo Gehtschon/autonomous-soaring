@@ -1,0 +1,10 @@
+Raspy communication with Extern:
+In mIssionplanner setup-->advanced-->Mavlink Mirror--> udp and maux baudrate, enter ip
+
+
+sending message should work with this:
+static inline uint16_t mavlink_msg_data_stream_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
+                               uint8_t stream_id, uint16_t message_rate, uint8_t on_off)
+
+the component should be listed here: https://mavlink.io/en/messages/common.html#MAV_COMPONENT
+the message_id is the number next to the subtitles it goes to DEBUG(#254)

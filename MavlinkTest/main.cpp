@@ -145,6 +145,7 @@ void send_some(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_
 
 void send_heartbeat(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_addr_len)
 {
+    
     mavlink_message_t message;
 
     const uint8_t system_id = 42;

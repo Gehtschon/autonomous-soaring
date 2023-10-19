@@ -1,0 +1,1 @@
+CMakeLists.txt not found in /home/fabian/Soaring/Soaringcpp/autonomous-soaring Select CMakeLists.txt
