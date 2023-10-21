@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/fabian/Soaring/Soaringcpp/autonomous-soaring/MavlinkTest/cmake-build-debug"
+			"value" : "/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -627,7 +627,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/fabian/Soaring/Soaringcpp/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -687,7 +687,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/fabian/Soaring/Soaringcpp/autonomous-soaring/MavlinkTest"
+			"value" : "/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1267,7 +1267,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/fabian/Soaring/Soaringcpp/autonomous-soaring/MavlinkTest/cmake-build-debug"
+			"value" : "/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug"
 		},
 		{
 			"name" : "autonomous_soaring_IS_TOP_LEVEL",
@@ -1291,7 +1291,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/fabian/Soaring/Soaringcpp/autonomous-soaring/MavlinkTest"
+			"value" : "/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest"
 		}
 	],
 	"kind" : "cache",
