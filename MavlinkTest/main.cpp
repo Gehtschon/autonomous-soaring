@@ -22,7 +22,9 @@ void handle_heartbeat(const mavlink_message_t* message);
 
 void send_some(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_addr_len);
 void send_heartbeat(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_addr_len);
+void testSend(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_addr_len);
 
+void Mav_Request_Data(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_addr_len);
 
 int main(int argc, char* argv[])
 {
@@ -60,6 +62,8 @@ int main(int argc, char* argv[])
     socklen_t src_addr_len = sizeof(src_addr);
     bool src_addr_set = false;
 
+    Mav_Request_Data(socket_fd, &src_addr, src_addr_len);
+
     while (true) {
         // For illustration purposes we don't bother with threads or async here
         // and just interleave receiving and sending.
@@ -83,7 +87,7 @@ void receive_some(int socket_fd, struct sockaddr_in* src_addr, socklen_t* src_ad
             socket_fd, buffer, sizeof(buffer), 0, (struct sockaddr*)(src_addr), src_addr_len);
 
     if (ret < 0) {
-        printf("recvfrom error: %s\n", strerror(errno));
+       // printf("recvfrom error: %s\n", strerror(errno));
     } else if (ret == 0) {
         // peer has done an orderly shutdown
         return;
@@ -97,13 +101,31 @@ void receive_some(int socket_fd, struct sockaddr_in* src_addr, socklen_t* src_ad
         if (mavlink_parse_char(MAVLINK_COMM_0, buffer[i], &message, &status) == 1) {
 
             // printf(
-            //     "Received message %d from %d/%d\n",
-            //     message.msgid, message.sysid, message.compid);
+             //    "Received message %d from %d/%d\n",
+               //  message.msgid, message.sysid, message.compid);
 
             switch (message.msgid) {
                 case MAVLINK_MSG_ID_HEARTBEAT:
                     handle_heartbeat(&message);
                     break;
+
+                case MAVLINK_MSG_ID_VFR_HUD: {
+                    mavlink_altitude_t alt_struct;
+                    mavlink_msg_altitude_decode(&message, &alt_struct);
+                    //printf("Altitude over Home is: %f \n",alt_struct.altitude_amsl);
+                    break;
+                }
+
+                case MAVLINK_MSG_ID_ATTITUDE: {  // #30
+
+                    /* Message decoding: PRIMITIVE
+                     *    mavlink_msg_attitude_decode(const mavlink_message_t* msg, mavlink_attitude_t* attitude)
+                     */
+                    mavlink_attitude_t attitude;
+                    mavlink_msg_attitude_decode(&message, &attitude);
+                    printf("Roll is: %f \n", (attitude.roll*(180.0/3.141592653589793238463)));
+                    break;
+                }
             }
         }
     }
@@ -129,18 +151,26 @@ void handle_heartbeat(const mavlink_message_t* message)
             printf("other");
             break;
     }
-    printf(" autopilot\n");
+    printf(" \n");
 }
 
 void send_some(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_addr_len)
 {
     // Whenever a second has passed, we send a heartbeat.
     static time_t last_time = 0;
+    static int time_custom = 4;
     time_t current_time = time(NULL);
     if (current_time - last_time >= 1) {
         send_heartbeat(socket_fd, src_addr, src_addr_len);
         last_time = current_time;
+        time_custom = time_custom+1;
     }
+
+    if(time_custom == 5){
+        time_custom = 0;
+        testSend(socket_fd, src_addr, src_addr_len);
+    }
+
 }
 
 void send_heartbeat(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_addr_len)
@@ -167,8 +197,122 @@ void send_heartbeat(int socket_fd, const struct sockaddr_in* src_addr, socklen_t
 
     int ret = sendto(socket_fd, buffer, len, 0, (const struct sockaddr*)src_addr, src_addr_len);
     if (ret != len) {
-        printf("sendto error: %s\n", strerror(errno));
+       // printf("sendto error: %s\n", strerror(errno));
     } else {
-        printf("Sent heartbeat\n");
+        //printf("Sent heartbeat\n");
+    }
+}
+
+void testSend(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_addr_len){
+    mavlink_message_t message;
+
+    const uint8_t system_id = 42;
+    const uint8_t base_mode = 0;
+    const uint8_t custom_mode = 0;
+
+    //mavlink_msg_command_long_pack(system_id,MAV_COMP_ID_PERIPHERAL,&message,1,0,30,0,2,0,0,0,0,0,10);
+    //mavlink_msg_command_int_pack(system_id,MAV_COMP_ID_PERIPHERAL,&message,1,0,0,30,0,0,0,0,0,0,0,0,10);
+//    mavlink_msg_command_int_pack(system_id
+//                                 ,0,
+//                                 &message,
+//                                 1, // target system
+//                                 0, // target component
+//                                 0, // frames
+//                                 MAV_CMD_NAV_LOITER_UNLIM , // command
+//                                 0, // nothing
+//                                 0, // nothing
+//                                 0, // par 1
+//                                 0, // par 2
+//                                 100, // par 3
+//                                 10, // par 4
+//                                 -35, // par x
+//                                 149,  // par y
+//                                 2000);// par z
+
+    mavlink_msg_command_long_pack(system_id
+    ,0,
+            &message,
+            1, // target system
+            0, // target component
+            MAV_CMD_NAV_LOITER_UNLIM , // command
+            0, // nothing
+            0, // par 1
+            0, // par 2
+            100, // par 3
+            10, // par 4
+            -35.3625667, // par x
+            149.1647868,  // par y
+            500.0);// par z
+
+
+    uint8_t buffer[MAVLINK_MAX_PACKET_LEN];
+
+    const int len = mavlink_msg_to_send_buffer(buffer, &message);
+
+    int ret = sendto(socket_fd, buffer, len, 0, (const struct sockaddr*)src_addr, src_addr_len);
+    //printf("+++++++++++++++++++++++++++++++++++++++++++++++++\n");
+    if (ret != len) {
+        //printf(" CUSTOM sendto error: %s\n", strerror(errno));
+    } else {
+        //printf("CUSTOM Sent\n");
+    }
+    //printf("+++++++++++++++++++++++++++++++++++++++++++++++++\n");
+    //mavlink_msg_data_stream_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
+        //                                                uint8_t stream_id, uint16_t message_rate, uint8_t on_off)
+
+}
+
+void Mav_Request_Data(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_addr_len)
+{
+    mavlink_message_t msg;
+    uint8_t buf[MAVLINK_MAX_PACKET_LEN];
+
+    // STREAMS that can be requested
+    /*
+     * Definitions are in common.h: enum MAV_DATA_STREAM
+     *
+     * MAV_DATA_STREAM_ALL=0, // Enable all data streams
+     * MAV_DATA_STREAM_RAW_SENSORS=1, /* Enable IMU_RAW, GPS_RAW, GPS_STATUS packets.
+     * MAV_DATA_STREAM_EXTENDED_STATUS=2, /* Enable GPS_STATUS, CONTROL_STATUS, AUX_STATUS
+     * MAV_DATA_STREAM_RC_CHANNELS=3, /* Enable RC_CHANNELS_SCALED, RC_CHANNELS_RAW, SERVO_OUTPUT_RAW
+     * MAV_DATA_STREAM_RAW_CONTROLLER=4, /* Enable ATTITUDE_CONTROLLER_OUTPUT, POSITION_CONTROLLER_OUTPUT, NAV_CONTROLLER_OUTPUT.
+     * MAV_DATA_STREAM_POSITION=6, /* Enable LOCAL_POSITION, GLOBAL_POSITION/GLOBAL_POSITION_INT messages.
+     * MAV_DATA_STREAM_EXTRA1=10, /* Dependent on the autopilot
+     * MAV_DATA_STREAM_EXTRA2=11, /* Dependent on the autopilot
+     * MAV_DATA_STREAM_EXTRA3=12, /* Dependent on the autopilot
+     * MAV_DATA_STREAM_ENUM_END=13,
+     *
+     * Data in PixHawk available in:
+     *  - Battery, amperage and voltage (SYS_STATUS) in MAV_DATA_STREAM_EXTENDED_STATUS
+     *  - Gyro info (IMU_SCALED) in MAV_DATA_STREAM_EXTRA1
+     */
+
+    // To be setup according to the needed information to be requested from the Pixhawk
+    const int  maxStreams = 2;
+    const uint8_t MAVStreams[maxStreams] = {MAV_DATA_STREAM_EXTENDED_STATUS, MAV_DATA_STREAM_EXTRA1};
+    const uint16_t MAVRates[maxStreams] = {0x02,0x05};
+
+    for (int i=0; i < maxStreams; i++) {
+        /*
+         * mavlink_msg_request_data_stream_pack(system_id, component_id,
+         *    &msg,
+         *    target_system, target_component,
+         *    MAV_DATA_STREAM_POSITION, 10000000, 1);
+         *
+         * mavlink_msg_request_data_stream_pack(uint8_t system_id, uint8_t component_id,
+         *    mavlink_message_t* msg,
+         *    uint8_t target_system, uint8_t target_component, uint8_t req_stream_id,
+         *    uint16_t req_message_rate, uint8_t start_stop)
+         *
+         */
+        mavlink_msg_request_data_stream_pack(2, 200, &msg, 1, 0, MAVStreams[i], MAVRates[i], 1);
+        uint16_t len = mavlink_msg_to_send_buffer(buf, &msg);
+        int ret = sendto(socket_fd, buf, len, 0, (const struct sockaddr*)src_addr, src_addr_len);
+        //printf("+++++++++++++++++++++++++++++++++++++++++++++++++\n");
+        if (ret != len) {
+            //printf(" CUSTOM sendto error: %s\n", strerror(errno));
+        } else {
+            //printf("CUSTOM Sent\n");
+        }
     }
 }
