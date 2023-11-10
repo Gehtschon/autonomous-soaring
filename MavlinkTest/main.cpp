@@ -11,7 +11,7 @@
 #include <netinet/in.h>
 #include <sys/socket.h>
 #include <time.h>
-
+#include <iostream>
 
 //#include "c_library_v2-master/common/mavlink.h"
 #include "c_library_v2-master/ardupilotmega/mavlink.h"
@@ -28,6 +28,7 @@ void Mav_Request_Data(int socket_fd, const struct sockaddr_in* src_addr, socklen
 
 int main(int argc, char* argv[])
 {
+    std::cout << "Startup\n";
     // Open UDP socket
     const int socket_fd = socket(PF_INET, SOCK_DGRAM, 0);
 
@@ -64,11 +65,15 @@ int main(int argc, char* argv[])
 
     Mav_Request_Data(socket_fd, &src_addr, src_addr_len);
 
+
+    std::cout << "Startup done\n";
     while (true) {
         // For illustration purposes we don't bother with threads or async here
         // and just interleave receiving and sending.
         // This only works  if receive_some returns every now and then.
         receive_some(socket_fd, &src_addr, &src_addr_len, &src_addr_set);
+
+
 
         if (src_addr_set) {
             send_some(socket_fd, &src_addr, src_addr_len);
