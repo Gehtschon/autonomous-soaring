@@ -24,6 +24,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions"/>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master"/>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/backward"/>
@@ -46,6 +49,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions"/>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master"/>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/backward"/>
@@ -82,6 +88,21 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkHeader.h">
+			<Option target="autonomous_soaring"/>
+		</Unit>
+		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkHeartbeat.cpp">
+			<Option target="autonomous_soaring"/>
+		</Unit>
+		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkHeartbeat.h">
+			<Option target="autonomous_soaring"/>
+		</Unit>
+		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkSend.cpp">
+			<Option target="autonomous_soaring"/>
+		</Unit>
+		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkSend.h">
+			<Option target="autonomous_soaring"/>
+		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/main.cpp">
 			<Option target="autonomous_soaring"/>
 		</Unit>

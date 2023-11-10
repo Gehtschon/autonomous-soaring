@@ -129,6 +129,54 @@ autonomous_soaring/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/build
 .PHONY : autonomous_soaring/fast
 
+SupportFunctions/MavlinkHeartbeat.o: SupportFunctions/MavlinkHeartbeat.cpp.o
+.PHONY : SupportFunctions/MavlinkHeartbeat.o
+
+# target to build an object file
+SupportFunctions/MavlinkHeartbeat.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkHeartbeat.cpp.o
+.PHONY : SupportFunctions/MavlinkHeartbeat.cpp.o
+
+SupportFunctions/MavlinkHeartbeat.i: SupportFunctions/MavlinkHeartbeat.cpp.i
+.PHONY : SupportFunctions/MavlinkHeartbeat.i
+
+# target to preprocess a source file
+SupportFunctions/MavlinkHeartbeat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkHeartbeat.cpp.i
+.PHONY : SupportFunctions/MavlinkHeartbeat.cpp.i
+
+SupportFunctions/MavlinkHeartbeat.s: SupportFunctions/MavlinkHeartbeat.cpp.s
+.PHONY : SupportFunctions/MavlinkHeartbeat.s
+
+# target to generate assembly for a file
+SupportFunctions/MavlinkHeartbeat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkHeartbeat.cpp.s
+.PHONY : SupportFunctions/MavlinkHeartbeat.cpp.s
+
+SupportFunctions/MavlinkSend.o: SupportFunctions/MavlinkSend.cpp.o
+.PHONY : SupportFunctions/MavlinkSend.o
+
+# target to build an object file
+SupportFunctions/MavlinkSend.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.o
+.PHONY : SupportFunctions/MavlinkSend.cpp.o
+
+SupportFunctions/MavlinkSend.i: SupportFunctions/MavlinkSend.cpp.i
+.PHONY : SupportFunctions/MavlinkSend.i
+
+# target to preprocess a source file
+SupportFunctions/MavlinkSend.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.i
+.PHONY : SupportFunctions/MavlinkSend.cpp.i
+
+SupportFunctions/MavlinkSend.s: SupportFunctions/MavlinkSend.cpp.s
+.PHONY : SupportFunctions/MavlinkSend.s
+
+# target to generate assembly for a file
+SupportFunctions/MavlinkSend.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.s
+.PHONY : SupportFunctions/MavlinkSend.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... autonomous_soaring"
+	@echo "... SupportFunctions/MavlinkHeartbeat.o"
+	@echo "... SupportFunctions/MavlinkHeartbeat.i"
+	@echo "... SupportFunctions/MavlinkHeartbeat.s"
+	@echo "... SupportFunctions/MavlinkSend.o"
+	@echo "... SupportFunctions/MavlinkSend.i"
+	@echo "... SupportFunctions/MavlinkSend.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
