@@ -8,7 +8,9 @@ add_executable(autonomous_soaring main.cpp
         SupportFunctions/MavlinkHeader.h
         SupportFunctions/MavlinkHeartbeat.h
         SupportFunctions/MavlinkSend.h
-        SupportFunctions/MavlinkSend.cpp)
+        SupportFunctions/MavlinkSend.cpp
+        SupportFunctions/SenderClass.cpp
+        SupportFunctions/SenderClass.h)
 
 include_directories(
         SupportFunctions

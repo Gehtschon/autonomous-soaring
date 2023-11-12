@@ -103,6 +103,12 @@
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkSend.h">
 			<Option target="autonomous_soaring"/>
 		</Unit>
+		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SenderClass.cpp">
+			<Option target="autonomous_soaring"/>
+		</Unit>
+		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SenderClass.h">
+			<Option target="autonomous_soaring"/>
+		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/main.cpp">
 			<Option target="autonomous_soaring"/>
 		</Unit>

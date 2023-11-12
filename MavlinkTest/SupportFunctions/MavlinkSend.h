@@ -10,6 +10,6 @@
 #include "sys/socket.h"
 
 
-void send_some(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_addr_len);
+void send_some(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_addr_len,mavlink_message_t message);
 
 #endif //AUTONOMOUS_SOARING_MAVLINKSEND_H

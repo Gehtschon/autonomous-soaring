@@ -177,6 +177,30 @@ SupportFunctions/MavlinkSend.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.s
 .PHONY : SupportFunctions/MavlinkSend.cpp.s
 
+SupportFunctions/SenderClass.o: SupportFunctions/SenderClass.cpp.o
+.PHONY : SupportFunctions/SenderClass.o
+
+# target to build an object file
+SupportFunctions/SenderClass.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass.cpp.o
+.PHONY : SupportFunctions/SenderClass.cpp.o
+
+SupportFunctions/SenderClass.i: SupportFunctions/SenderClass.cpp.i
+.PHONY : SupportFunctions/SenderClass.i
+
+# target to preprocess a source file
+SupportFunctions/SenderClass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass.cpp.i
+.PHONY : SupportFunctions/SenderClass.cpp.i
+
+SupportFunctions/SenderClass.s: SupportFunctions/SenderClass.cpp.s
+.PHONY : SupportFunctions/SenderClass.s
+
+# target to generate assembly for a file
+SupportFunctions/SenderClass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass.cpp.s
+.PHONY : SupportFunctions/SenderClass.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... SupportFunctions/MavlinkSend.o"
 	@echo "... SupportFunctions/MavlinkSend.i"
 	@echo "... SupportFunctions/MavlinkSend.s"
+	@echo "... SupportFunctions/SenderClass.o"
+	@echo "... SupportFunctions/SenderClass.i"
+	@echo "... SupportFunctions/SenderClass.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/autonomous_soaring.dir/main.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkHeartbeat.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.o -o autonomous_soaring 
+/usr/bin/c++ -g CMakeFiles/autonomous_soaring.dir/main.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkHeartbeat.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass.cpp.o -o autonomous_soaring 
