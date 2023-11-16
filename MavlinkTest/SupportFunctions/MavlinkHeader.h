@@ -7,4 +7,6 @@
 
 #include <mavlink.h>
 
+enum Messagetype {INT, LONG};
+
 #endif //AUTONOMOUS_SOARING_MAVLINKHEADER_H

@@ -44,3 +44,21 @@ uint8_t SenderClass::Mav_Request_Data(uint8_t MAVStreams[],int16_t MAVRates[],in
 
 
 }
+
+
+uint8_t SenderClass::send_some(mavlink_message_t message){
+    uint8_t buffer[MAVLINK_MAX_PACKET_LEN];
+    int len = mavlink_msg_to_send_buffer(buffer, &message);
+    bool fail = false;
+    int ret = sendto(socket_fd, buffer, len, 0, (const struct sockaddr*)&this->src_addr, src_addr_len);
+
+    if (ret != len){
+        fail = true;
+    }
+
+    if (fail == true){
+        return 1;
+    } else{
+        return 0;
+    }
+}

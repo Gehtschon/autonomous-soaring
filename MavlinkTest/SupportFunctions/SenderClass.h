@@ -18,7 +18,18 @@ private:
     socklen_t src_addr_len;
 public:
     explicit SenderClass(int socketFd);
-    void send_some(socklen_t src_addr_len,mavlink_message_t message);
+
+    /**
+    * Sending messages to the flightcontroller
+    *
+    * Use this function to send messages to the flighcontroller. Pack the data befor sending.
+    *
+    * @param message The message to send, allready packed.
+    * @return
+    *   -  1: Failed to send
+    *   -  0: No error
+    */
+    uint8_t send_some(mavlink_message_t message);
 
 
     /**
