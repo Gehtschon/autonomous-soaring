@@ -15,30 +15,51 @@
 
 //#include "c_library_v2-master/common/mavlink.h"
 #include <MavlinkHeartbeat.h>
-#include "SenderClass.h"
+
+void receive_some(int socket_fd, struct sockaddr_in* src_addr, socklen_t* src_addr_len, bool* src_addr_set);
 
 
+void send_some(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_addr_len);
+void testSend(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_addr_len);
 
+void Mav_Request_Data(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_addr_len);
 
 int main(int argc, char* argv[])
 {
-
-
-
     std::cout << "Startup\n";
     // Open UDP socket
     const int socket_fd = socket(PF_INET, SOCK_DGRAM, 0);
 
-
     if (socket_fd < 0) {
         printf("socket error: %s\n", strerror(errno));
         return -1;
-    } else{
+    }
 
-    SenderClass senderObject(socket_fd);
+    // Bind to port
+    struct sockaddr_in addr = {};
+    memset(&addr, 0, sizeof(addr));
+    addr.sin_family = AF_INET;
+    inet_pton(AF_INET, "0.0.0.0", &(addr.sin_addr)); // listen on all network interfaces
+    addr.sin_port = htons(14550); // default port on the ground
 
-    // TODO here declare MAVStreams and give it to the function, see declaration inside .h
-    senderObject.Mav_Request_Data()
+    if (bind(socket_fd, (struct sockaddr*)(&addr), sizeof(addr)) != 0) {
+        printf("bind error: %s\n", strerror(errno));
+        return -2;
+    }
+
+    // We set a timeout at 100ms to prevent being stuck in recvfrom for too
+    // long and missing our chance to send some stuff.
+    struct timeval tv;
+    tv.tv_sec = 0;
+    tv.tv_usec = 100000;
+    if (setsockopt(socket_fd, SOL_SOCKET, SO_RCVTIMEO, &tv, sizeof(tv)) < 0) {
+        printf("setsockopt error: %s\n", strerror(errno));
+        return -3;
+    }
+
+    struct sockaddr_in src_addr = {};
+    socklen_t src_addr_len = sizeof(src_addr);
+    bool src_addr_set = false;
 
     Mav_Request_Data(socket_fd, &src_addr, src_addr_len);
 

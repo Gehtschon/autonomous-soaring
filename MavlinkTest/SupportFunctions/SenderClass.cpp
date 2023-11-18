@@ -5,10 +5,34 @@
 #include "SenderClass.h"
 
 SenderClass::SenderClass(int socketFd) {
-     src_addr_len = sizeof(src_addr);
+
+    src_addr_len = sizeof(src_addr);
     this->socket_fd  = socketFd;
-     // here start to request data
-    //void Mav_Request_Data(uint8_t MAVStreams[],int16_t MAVRates[]);
+    // Bind to port
+    struct sockaddr_in addr = {};
+    memset(&addr, 0, sizeof(addr));
+    addr.sin_family = AF_INET;
+    inet_pton(AF_INET, "0.0.0.0", &(addr.sin_addr)); // listen on all network interfaces
+    addr.sin_port = htons(14550); // default port on the ground
+
+    if (bind(socket_fd, (struct sockaddr*)(&addr), sizeof(addr)) != 0) {
+        printf("bind error: %s\n", strerror(errno));
+        // here the object must de destroyed
+    }
+
+    // We set a timeout at 100ms to prevent being stuck in recvfrom for too
+    // long and missing our chance to send some stuff.
+    struct timeval tv;
+    tv.tv_sec = 0;
+    tv.tv_usec = 100000;
+    if (setsockopt(socket_fd, SOL_SOCKET, SO_RCVTIMEO, &tv, sizeof(tv)) < 0) {
+        printf("setsockopt error: %s\n", strerror(errno));
+        // here the object must de destroyed
+    }
+
+    struct sockaddr_in src_addr = {};
+    socklen_t src_addr_len = sizeof(src_addr);
+
 };
 
 
@@ -52,6 +76,41 @@ uint8_t SenderClass::send_some(mavlink_message_t message){
     bool fail = false;
     int ret = sendto(socket_fd, buffer, len, 0, (const struct sockaddr*)&this->src_addr, src_addr_len);
 
+    if (ret != len){
+        fail = true;
+    }
+
+    if (fail == true){
+        return 1;
+    } else{
+        return 0;
+    }
+}
+
+
+uint8_t SenderClass::send_heartbeat()
+{
+
+    mavlink_message_t message;
+    bool fail = false;
+    const uint8_t system_id = 42;
+    const uint8_t base_mode = 0;
+    const uint8_t custom_mode = 0;
+    mavlink_msg_heartbeat_pack_chan(
+            system_id,
+            MAV_COMP_ID_PERIPHERAL,
+            MAVLINK_COMM_0,
+            &message,
+            MAV_TYPE_GENERIC,
+            MAV_AUTOPILOT_GENERIC,
+            base_mode,
+            custom_mode,
+            MAV_STATE_STANDBY);
+
+    uint8_t buffer[MAVLINK_MAX_PACKET_LEN];
+    const int len = mavlink_msg_to_send_buffer(buffer, &message);
+
+    int ret = sendto(socket_fd, buffer, len, 0, (const struct sockaddr*)&this->src_addr, src_addr_len);
     if (ret != len){
         fail = true;
     }

@@ -48,7 +48,10 @@ public:
  *   -  0: No error
  */
     uint8_t Mav_Request_Data(uint8_t MAVStreams[],int16_t MAVRates[],int MavStreamSize, int MavRateSize); // check in function sizeof(MAVStreams) must equal to sizeof(MAVRates)
-    // this function is implemented in main, rewrite it here
+
+    uint8_t send_heartbeat();
+
+
 };
 
 
