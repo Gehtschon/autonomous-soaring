@@ -38,7 +38,10 @@ int main(int argc, char* argv[])
     SenderClass senderObject(socket_fd);
 
     // TODO here declare MAVStreams and give it to the function, see declaration inside .h
-    senderObject.Mav_Request_Data()
+    const int  maxStreams = 2;
+    const uint8_t MAVStreams[maxStreams] = {MAV_DATA_STREAM_EXTENDED_STATUS, MAV_DATA_STREAM_EXTRA1};
+    const uint16_t MAVRates[maxStreams] = {0x02,0x05};
+    senderObject.Mav_Request_Data(MAVStreams,MAVRates,maxStreams,maxStreams);
 
     Mav_Request_Data(socket_fd, &src_addr, src_addr_len);
 
