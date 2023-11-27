@@ -33,17 +33,16 @@ int main(int argc, char* argv[])
     if (socket_fd < 0) {
         printf("socket error: %s\n", strerror(errno));
         return -1;
-    } else{
+    }
 
     SenderClass senderObject(socket_fd);
 
-    // TODO here declare MAVStreams and give it to the function, see declaration inside .h
     const int  maxStreams = 2;
-    const uint8_t MAVStreams[maxStreams] = {MAV_DATA_STREAM_EXTENDED_STATUS, MAV_DATA_STREAM_EXTRA1};
-    const uint16_t MAVRates[maxStreams] = {0x02,0x05};
+    uint8_t MAVStreams[maxStreams] = {MAV_DATA_STREAM_EXTENDED_STATUS, MAV_DATA_STREAM_EXTRA1};
+    uint16_t MAVRates[maxStreams] = {0x02,0x05};
     senderObject.Mav_Request_Data(MAVStreams,MAVRates,maxStreams,maxStreams);
 
-    Mav_Request_Data(socket_fd, &src_addr, src_addr_len);
+
 
 
     std::cout << "Startup done\n";
@@ -51,6 +50,8 @@ int main(int argc, char* argv[])
         // For illustration purposes we don't bother with threads or async here
         // and just interleave receiving and sending.
         // This only works  if receive_some returns every now and then.
+
+        //Todo print the messages recive shlould be impklemented butr check it again!!
         receive_some(socket_fd, &src_addr, &src_addr_len, &src_addr_set);
 
 
@@ -198,57 +199,3 @@ void testSend(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_a
 
 }
 
-void Mav_Request_Data(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_addr_len)
-{
-    mavlink_message_t msg;
-    uint8_t buf[MAVLINK_MAX_PACKET_LEN];
-
-    // STREAMS that can be requested
-    /*
-     * Definitions are in common.h: enum MAV_DATA_STREAM
-     *
-     * MAV_DATA_STREAM_ALL=0, // Enable all data streams
-     * MAV_DATA_STREAM_RAW_SENSORS=1, /* Enable IMU_RAW, GPS_RAW, GPS_STATUS packets.
-     * MAV_DATA_STREAM_EXTENDED_STATUS=2, /* Enable GPS_STATUS, CONTROL_STATUS, AUX_STATUS
-     * MAV_DATA_STREAM_RC_CHANNELS=3, /* Enable RC_CHANNELS_SCALED, RC_CHANNELS_RAW, SERVO_OUTPUT_RAW
-     * MAV_DATA_STREAM_RAW_CONTROLLER=4, /* Enable ATTITUDE_CONTROLLER_OUTPUT, POSITION_CONTROLLER_OUTPUT, NAV_CONTROLLER_OUTPUT.
-     * MAV_DATA_STREAM_POSITION=6, /* Enable LOCAL_POSITION, GLOBAL_POSITION/GLOBAL_POSITION_INT messages.
-     * MAV_DATA_STREAM_EXTRA1=10, /* Dependent on the autopilot
-     * MAV_DATA_STREAM_EXTRA2=11, /* Dependent on the autopilot
-     * MAV_DATA_STREAM_EXTRA3=12, /* Dependent on the autopilot
-     * MAV_DATA_STREAM_ENUM_END=13,
-     *
-     * Data in PixHawk available in:
-     *  - Battery, amperage and voltage (SYS_STATUS) in MAV_DATA_STREAM_EXTENDED_STATUS
-     *  - Gyro info (IMU_SCALED) in MAV_DATA_STREAM_EXTRA1
-     */
-
-    // To be setup according to the needed information to be requested from the Pixhawk
-    const int  maxStreams = 2;
-    const uint8_t MAVStreams[maxStreams] = {MAV_DATA_STREAM_EXTENDED_STATUS, MAV_DATA_STREAM_EXTRA1};
-    const uint16_t MAVRates[maxStreams] = {0x02,0x05};
-
-    for (int i=0; i < maxStreams; i++) {
-        /*
-         * mavlink_msg_request_data_stream_pack(system_id, component_id,
-         *    &msg,
-         *    target_system, target_component,
-         *    MAV_DATA_STREAM_POSITION, 10000000, 1);
-         *
-         * mavlink_msg_request_data_stream_pack(uint8_t system_id, uint8_t component_id,
-         *    mavlink_message_t* msg,
-         *    uint8_t target_system, uint8_t target_component, uint8_t req_stream_id,
-         *    uint16_t req_message_rate, uint8_t start_stop)
-         *
-         */
-        mavlink_msg_request_data_stream_pack(2, 200, &msg, 1, 0, MAVStreams[i], MAVRates[i], 1);
-        uint16_t len = mavlink_msg_to_send_buffer(buf, &msg);
-        int ret = sendto(socket_fd, buf, len, 0, (const struct sockaddr*)src_addr, src_addr_len);
-        //printf("+++++++++++++++++++++++++++++++++++++++++++++++++\n");
-        if (ret != len) {
-            //printf(" CUSTOM sendto error: %s\n", strerror(errno));
-        } else {
-            //printf("CUSTOM Sent\n");
-        }
-    }
-}

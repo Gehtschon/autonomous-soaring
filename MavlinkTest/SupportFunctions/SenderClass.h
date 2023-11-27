@@ -10,6 +10,7 @@
 #include <iostream>
 #include <arpa/inet.h>
 #include <netinet/in.h>
+#include <vector>
 
 class SenderClass {
 private:
@@ -47,7 +48,9 @@ public:
  *   -  1: Failed to send
  *   -  0: No error
  */
-    uint8_t Mav_Request_Data(uint8_t MAVStreams[],int16_t MAVRates[],int MavStreamSize, int MavRateSize); // check in function sizeof(MAVStreams) must equal to sizeof(MAVRates)
+    uint8_t Mav_Request_Data(uint8_t MAVStreams[],uint16_t MAVRates[],int MavStreamSize, int MavRateSize); // check in function sizeof(MAVStreams) must equal to sizeof(MAVRates)
+
+    uint8_t Mav_Recive(std::vector<mavlink_message_t> *message, std::vector<mavlink_status_t> *status);
 
     uint8_t send_heartbeat();
 

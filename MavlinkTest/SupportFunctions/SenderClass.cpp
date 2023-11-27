@@ -38,7 +38,7 @@ SenderClass::SenderClass(int socketFd) {
 
 
 
-uint8_t SenderClass::Mav_Request_Data(uint8_t MAVStreams[],int16_t MAVRates[],int MavStreamSize, int MavRateSize){
+uint8_t SenderClass::Mav_Request_Data(uint8_t MAVStreams[],uint16_t MAVRates[],int MavStreamSize, int MavRateSize){
 
     uint8_t retVal = 99;
     bool fail = false;
@@ -120,4 +120,38 @@ uint8_t SenderClass::send_heartbeat()
     } else{
         return 0;
     }
+}
+
+uint8_t SenderClass::Mav_Recive(std::vector<mavlink_message_t> *message, std::vector<mavlink_status_t> *status){
+
+    mavlink_message_t message_internaly;
+    mavlink_status_t status_internaly;
+    char buffer[2048]; // enough for MTU 1500 bytes
+    bool messageFound = false;
+
+
+    const int ret = recvfrom(socket_fd, buffer, sizeof(buffer), 0, (struct sockaddr*)&this->src_addr, &src_addr_len);
+
+    if (ret < 0) {
+        // printf("recvfrom error: %s\n", strerror(errno));
+    } else if (ret == 0) {
+        // peer has done an orderly shutdown
+        return 1; // Failed to recive message
+    }
+
+    for (int i = 0; i < ret; ++i) {
+        if (mavlink_parse_char(MAVLINK_COMM_0, buffer[i], &message_internaly, &status_internaly) == 1){
+            messageFound = true;
+            message->push_back(message_internaly);
+            status->push_back(status_internaly);
+        }
+
+    }
+
+    if (messageFound == false){
+        return 2;
+    }
+
+    return 0;
+
 }
