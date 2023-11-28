@@ -1,0 +1,3 @@
+/home/fabian/Soaring/cpp_soaring/autonomous-soaring/Pi_SPI/cmake-build-debug/CMakeFiles/Pi_SPI.dir
+/home/fabian/Soaring/cpp_soaring/autonomous-soaring/Pi_SPI/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/fabian/Soaring/cpp_soaring/autonomous-soaring/Pi_SPI/cmake-build-debug/CMakeFiles/rebuild_cache.dir
