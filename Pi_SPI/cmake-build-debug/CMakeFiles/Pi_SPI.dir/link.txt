@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Pi_SPI.dir/main.cpp.o -o Pi_SPI 
