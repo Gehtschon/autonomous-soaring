@@ -52,13 +52,50 @@ int main(int argc, char* argv[])
         // This only works  if receive_some returns every now and then.
 
         //Todo print the messages recive shlould be impklemented butr check it again!!
-        receive_some(socket_fd, &src_addr, &src_addr_len, &src_addr_set);
 
+        std::vector<mavlink_message_t> message;
+        std::vector<mavlink_status_t> status;
 
+        senderObject.Mav_Recive(message,status);
+        //std::cout << "message length: " << message.size() << std::endl;
 
-        if (src_addr_set) {
-            send_some(socket_fd, &src_addr, src_addr_len);
+        for (const auto& msg : message) {
+            switch (msg.msgid) {
+                case MAVLINK_MSG_ID_HEARTBEAT:
+                    handle_heartbeat(&msg);
+                    break;
+
+                case MAVLINK_MSG_ID_VFR_HUD: {
+                    mavlink_altitude_t alt_struct;
+                    mavlink_msg_altitude_decode(&msg, &alt_struct);
+                    //printf("Altitude over Home is: %f \n",alt_struct.altitude_amsl);
+                    break;
+                }
+
+                case MAVLINK_MSG_ID_ATTITUDE: {  // #30
+
+                    /* Message decoding: PRIMITIVE
+                     *    mavlink_msg_attitude_decode(const mavlink_message_t* msg, mavlink_attitude_t* attitude)
+                     */
+                    mavlink_attitude_t attitude;
+                    mavlink_msg_attitude_decode(&msg, &attitude);
+                    printf("Roll is: %f \n", (attitude.roll*(180.0/3.141592653589793238463)));
+                    break;
+                }
+            }
         }
+
+
+
+
+
+       // receive_some(socket_fd, &src_addr, &src_addr_len, &src_addr_set);
+
+
+
+//        if (src_addr_set) {
+ //           send_some(socket_fd, &src_addr, src_addr_len);
+   //     }
     }
 
     return 0;
@@ -133,7 +170,7 @@ void send_some(int socket_fd, const struct sockaddr_in* src_addr, socklen_t src_
 
     if(time_custom == 5){
         time_custom = 0;
-        testSend(socket_fd, src_addr, src_addr_len);
+       // testSend(socket_fd, src_addr, src_addr_len);
     }
 
 }

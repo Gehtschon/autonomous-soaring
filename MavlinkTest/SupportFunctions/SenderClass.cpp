@@ -122,7 +122,7 @@ uint8_t SenderClass::send_heartbeat()
     }
 }
 
-uint8_t SenderClass::Mav_Recive(std::vector<mavlink_message_t> *message, std::vector<mavlink_status_t> *status){
+uint8_t SenderClass::Mav_Recive(std::vector<mavlink_message_t> &message, std::vector<mavlink_status_t> &status){
 
     mavlink_message_t message_internaly;
     mavlink_status_t status_internaly;
@@ -142,8 +142,8 @@ uint8_t SenderClass::Mav_Recive(std::vector<mavlink_message_t> *message, std::ve
     for (int i = 0; i < ret; ++i) {
         if (mavlink_parse_char(MAVLINK_COMM_0, buffer[i], &message_internaly, &status_internaly) == 1){
             messageFound = true;
-            message->push_back(message_internaly);
-            status->push_back(status_internaly);
+            message.push_back(message_internaly);
+            status.push_back(status_internaly);
         }
 
     }

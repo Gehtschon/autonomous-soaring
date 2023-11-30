@@ -491,4 +491,9 @@ CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass.cpp.o: \
  /usr/include/c++/13.2.1/bits/basic_ios.tcc \
  /usr/include/c++/13.2.1/bits/ostream.tcc /usr/include/c++/13.2.1/istream \
  /usr/include/c++/13.2.1/bits/istream.tcc /usr/include/arpa/inet.h \
- /usr/include/netinet/in.h /usr/include/bits/in.h
+ /usr/include/netinet/in.h /usr/include/bits/in.h \
+ /usr/include/c++/13.2.1/vector \
+ /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
+ /usr/include/c++/13.2.1/bits/stl_vector.h \
+ /usr/include/c++/13.2.1/bits/stl_bvector.h \
+ /usr/include/c++/13.2.1/bits/vector.tcc

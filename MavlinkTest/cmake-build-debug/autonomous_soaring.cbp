@@ -88,6 +88,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/DataDistributor.cpp">
+			<Option target="autonomous_soaring"/>
+		</Unit>
+		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/DataDistributor.h">
+			<Option target="autonomous_soaring"/>
+		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkHeader.h">
 			<Option target="autonomous_soaring"/>
 		</Unit>
@@ -101,6 +107,12 @@
 			<Option target="autonomous_soaring"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkSend.h">
+			<Option target="autonomous_soaring"/>
+		</Unit>
+		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/RollingBuffer.cpp">
+			<Option target="autonomous_soaring"/>
+		</Unit>
+		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/RollingBuffer.h">
 			<Option target="autonomous_soaring"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SenderClass.cpp">

@@ -3,14 +3,20 @@ project(autonomous_soaring)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(autonomous_soaring main.cpp
+add_executable(autonomous_soaring
+        main.cpp
         SupportFunctions/MavlinkHeartbeat.cpp
         SupportFunctions/MavlinkHeader.h
         SupportFunctions/MavlinkHeartbeat.h
         SupportFunctions/MavlinkSend.h
         SupportFunctions/MavlinkSend.cpp
         SupportFunctions/SenderClass.cpp
-        SupportFunctions/SenderClass.h)
+        SupportFunctions/SenderClass.h
+        SupportFunctions/DataDistributor.cpp
+        SupportFunctions/DataDistributor.h
+        SupportFunctions/RollingBuffer.cpp
+        SupportFunctions/RollingBuffer.h
+)
 
 include_directories(
         SupportFunctions

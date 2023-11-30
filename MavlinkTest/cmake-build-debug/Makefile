@@ -129,6 +129,30 @@ autonomous_soaring/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/build
 .PHONY : autonomous_soaring/fast
 
+SupportFunctions/DataDistributor.o: SupportFunctions/DataDistributor.cpp.o
+.PHONY : SupportFunctions/DataDistributor.o
+
+# target to build an object file
+SupportFunctions/DataDistributor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o
+.PHONY : SupportFunctions/DataDistributor.cpp.o
+
+SupportFunctions/DataDistributor.i: SupportFunctions/DataDistributor.cpp.i
+.PHONY : SupportFunctions/DataDistributor.i
+
+# target to preprocess a source file
+SupportFunctions/DataDistributor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.i
+.PHONY : SupportFunctions/DataDistributor.cpp.i
+
+SupportFunctions/DataDistributor.s: SupportFunctions/DataDistributor.cpp.s
+.PHONY : SupportFunctions/DataDistributor.s
+
+# target to generate assembly for a file
+SupportFunctions/DataDistributor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.s
+.PHONY : SupportFunctions/DataDistributor.cpp.s
+
 SupportFunctions/MavlinkHeartbeat.o: SupportFunctions/MavlinkHeartbeat.cpp.o
 .PHONY : SupportFunctions/MavlinkHeartbeat.o
 
@@ -176,6 +200,30 @@ SupportFunctions/MavlinkSend.s: SupportFunctions/MavlinkSend.cpp.s
 SupportFunctions/MavlinkSend.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.s
 .PHONY : SupportFunctions/MavlinkSend.cpp.s
+
+SupportFunctions/RollingBuffer.o: SupportFunctions/RollingBuffer.cpp.o
+.PHONY : SupportFunctions/RollingBuffer.o
+
+# target to build an object file
+SupportFunctions/RollingBuffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/RollingBuffer.cpp.o
+.PHONY : SupportFunctions/RollingBuffer.cpp.o
+
+SupportFunctions/RollingBuffer.i: SupportFunctions/RollingBuffer.cpp.i
+.PHONY : SupportFunctions/RollingBuffer.i
+
+# target to preprocess a source file
+SupportFunctions/RollingBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/RollingBuffer.cpp.i
+.PHONY : SupportFunctions/RollingBuffer.cpp.i
+
+SupportFunctions/RollingBuffer.s: SupportFunctions/RollingBuffer.cpp.s
+.PHONY : SupportFunctions/RollingBuffer.s
+
+# target to generate assembly for a file
+SupportFunctions/RollingBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/RollingBuffer.cpp.s
+.PHONY : SupportFunctions/RollingBuffer.cpp.s
 
 SupportFunctions/SenderClass.o: SupportFunctions/SenderClass.cpp.o
 .PHONY : SupportFunctions/SenderClass.o
@@ -234,12 +282,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... autonomous_soaring"
+	@echo "... SupportFunctions/DataDistributor.o"
+	@echo "... SupportFunctions/DataDistributor.i"
+	@echo "... SupportFunctions/DataDistributor.s"
 	@echo "... SupportFunctions/MavlinkHeartbeat.o"
 	@echo "... SupportFunctions/MavlinkHeartbeat.i"
 	@echo "... SupportFunctions/MavlinkHeartbeat.s"
 	@echo "... SupportFunctions/MavlinkSend.o"
 	@echo "... SupportFunctions/MavlinkSend.i"
 	@echo "... SupportFunctions/MavlinkSend.s"
+	@echo "... SupportFunctions/RollingBuffer.o"
+	@echo "... SupportFunctions/RollingBuffer.i"
+	@echo "... SupportFunctions/RollingBuffer.s"
 	@echo "... SupportFunctions/SenderClass.o"
 	@echo "... SupportFunctions/SenderClass.i"
 	@echo "... SupportFunctions/SenderClass.s"
