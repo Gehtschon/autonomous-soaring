@@ -481,3 +481,44 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/fabian/Software/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/fabian/Software/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/fabian/Software/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "lib/Catch2/CMake/CatchMiscFunctions.cmake:12 (check_cxx_compiler_flag)"
+      - "lib/Catch2/CMake/CatchMiscFunctions.cmake:118 (add_cxx_flag_if_supported_to_targets)"
+      - "lib/Catch2/src/CMakeLists.txt:347 (add_build_reproducibility_settings)"
+    checks:
+      - "Performing Test HAVE_FLAG__ffile_prefix_map__home_fabian_Soaring_cpp_soaring_autonomous_soaring_MavlinkTest_lib_Catch2__"
+    directories:
+      source: "/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h4vGX6"
+      binary: "/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h4vGX6"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/extras;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/CMake"
+    buildResult:
+      variable: "HAVE_FLAG__ffile_prefix_map__home_fabian_Soaring_cpp_soaring_autonomous_soaring_MavlinkTest_lib_Catch2__"
+      cached: true
+      stdout: |
+        Change Dir: /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h4vGX6
+        
+        Run Build Command(s):/home/fabian/Software/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_95652/fast && make[1]: Entering directory '/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h4vGX6'
+        /usr/bin/make  -f CMakeFiles/cmTC_95652.dir/build.make CMakeFiles/cmTC_95652.dir/build
+        make[2]: Entering directory '/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h4vGX6'
+        Building CXX object CMakeFiles/cmTC_95652.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_FLAG__ffile_prefix_map__home_fabian_Soaring_cpp_soaring_autonomous_soaring_MavlinkTest_lib_Catch2__  -std=gnu++20   -ffile-prefix-map=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/= -o CMakeFiles/cmTC_95652.dir/src.cxx.o -c /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h4vGX6/src.cxx
+        Linking CXX executable cmTC_95652
+        /home/fabian/Software/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95652.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_95652.dir/src.cxx.o -o cmTC_95652 
+        make[2]: Leaving directory '/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h4vGX6'
+        make[1]: Leaving directory '/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h4vGX6'
+        
+      exitCode: 0
+...

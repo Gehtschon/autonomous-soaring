@@ -14,12 +14,27 @@ add_executable(autonomous_soaring
         SupportFunctions/SenderClass.h
         SupportFunctions/DataDistributor.cpp
         SupportFunctions/DataDistributor.h
-        SupportFunctions/RollingBuffer.cpp
-        SupportFunctions/RollingBuffer.h
+        SupportFunctions/CircularBuffer.cpp
+        SupportFunctions/CircularBuffer.h
+        test/buffertest.cpp
 )
 
 include_directories(
         SupportFunctions
         c_library_v2-master
         c_library_v2-master/ardupilotmega
+
 )
+add_subdirectory(lib/Catch2)
+
+# test sources
+file(GLOB_RECURSE test_SRCS
+        "${PROJECT_SOURCE_DIR}/test/*.cpp"
+        "${PROJECT_SOURCE_DIR}/main.cpp"
+        "${PROJECT_SOURCE_DIR}/SupportFunctions/*.cpp"
+)
+add_executable(test.elf ${test_SRCS}
+        test/buffertest.cpp)
+target_link_libraries(buffertest.elf Catch2::Catch2WithMain)
+target_include_directories(buffertest.elf PRIVAT SupportFunctions)
+
