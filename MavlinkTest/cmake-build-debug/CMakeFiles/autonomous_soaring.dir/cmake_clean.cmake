@@ -11,8 +11,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass.cpp.o.d"
   "CMakeFiles/autonomous_soaring.dir/main.cpp.o"
   "CMakeFiles/autonomous_soaring.dir/main.cpp.o.d"
-  "CMakeFiles/autonomous_soaring.dir/test/buffertest.cpp.o"
-  "CMakeFiles/autonomous_soaring.dir/test/buffertest.cpp.o.d"
   "autonomous_soaring"
   "autonomous_soaring.pdb"
 )

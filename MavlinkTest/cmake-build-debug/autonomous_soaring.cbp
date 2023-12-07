@@ -67,8 +67,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test.elf">
-				<Option output="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/test.elf" prefix_auto="0" extension_auto="0"/>
+			<Target title="buffertest.elf">
+				<Option output="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/buffertest.elf" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -77,7 +77,6 @@
 					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions"/>
 					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master"/>
 					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega"/>
-					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/App/Inc"/>
 					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.."/>
 					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1"/>
@@ -89,14 +88,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 test.elf"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 buffertest.elf"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test.elf/fast">
-				<Option output="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/test.elf" prefix_auto="0" extension_auto="0"/>
+			<Target title="buffertest.elf/fast">
+				<Option output="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/buffertest.elf" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -105,7 +104,6 @@
 					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions"/>
 					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master"/>
 					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega"/>
-					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/App/Inc"/>
 					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.."/>
 					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1"/>
@@ -117,7 +115,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 test.elf/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 buffertest.elf/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -254,14 +252,14 @@
 		</Build>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/CircularBuffer.cpp">
 			<Option target="autonomous_soaring"/>
-			<Option target="test.elf"/>
+			<Option target="buffertest.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/CircularBuffer.h">
 			<Option target="autonomous_soaring"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/DataDistributor.cpp">
 			<Option target="autonomous_soaring"/>
-			<Option target="test.elf"/>
+			<Option target="buffertest.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/DataDistributor.h">
 			<Option target="autonomous_soaring"/>
@@ -271,21 +269,21 @@
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkHeartbeat.cpp">
 			<Option target="autonomous_soaring"/>
-			<Option target="test.elf"/>
+			<Option target="buffertest.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkHeartbeat.h">
 			<Option target="autonomous_soaring"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkSend.cpp">
 			<Option target="autonomous_soaring"/>
-			<Option target="test.elf"/>
+			<Option target="buffertest.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkSend.h">
 			<Option target="autonomous_soaring"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SenderClass.cpp">
 			<Option target="autonomous_soaring"/>
-			<Option target="test.elf"/>
+			<Option target="buffertest.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SenderClass.h">
 			<Option target="autonomous_soaring"/>
@@ -1129,11 +1127,9 @@
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/main.cpp">
 			<Option target="autonomous_soaring"/>
-			<Option target="test.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/test/buffertest.cpp">
-			<Option target="autonomous_soaring"/>
-			<Option target="test.elf"/>
+			<Option target="buffertest.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

@@ -64,7 +64,7 @@ CMAKE_BINARY_DIR = /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTe
 
 # The main recursive "all" target.
 all: CMakeFiles/autonomous_soaring.dir/all
-all: CMakeFiles/test.elf.dir/all
+all: CMakeFiles/buffertest.elf.dir/all
 all: lib/Catch2/all
 .PHONY : all
 
@@ -74,7 +74,7 @@ preinstall: lib/Catch2/preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/autonomous_soaring.dir/clean
-clean: CMakeFiles/test.elf.dir/clean
+clean: CMakeFiles/buffertest.elf.dir/clean
 clean: lib/Catch2/clean
 .PHONY : clean
 
@@ -117,7 +117,7 @@ lib/Catch2/src/clean: lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/clean
 CMakeFiles/autonomous_soaring.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=88,89,90,91,92,93 "Built target autonomous_soaring"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=89,90,91,92,93,94 "Built target autonomous_soaring"
 .PHONY : CMakeFiles/autonomous_soaring.dir/all
 
 # Build rule for subdir invocation for target.
@@ -137,31 +137,31 @@ CMakeFiles/autonomous_soaring.dir/clean:
 .PHONY : CMakeFiles/autonomous_soaring.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test.elf.dir
+# Target rules for target CMakeFiles/buffertest.elf.dir
 
 # All Build rule for target.
-CMakeFiles/test.elf.dir/all: lib/Catch2/src/CMakeFiles/Catch2.dir/all
-CMakeFiles/test.elf.dir/all: lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=94,95,96,97,98,99,100 "Built target test.elf"
-.PHONY : CMakeFiles/test.elf.dir/all
+CMakeFiles/buffertest.elf.dir/all: lib/Catch2/src/CMakeFiles/Catch2.dir/all
+CMakeFiles/buffertest.elf.dir/all: lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=95,96,97,98,99,100 "Built target buffertest.elf"
+.PHONY : CMakeFiles/buffertest.elf.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test.elf.dir/rule: cmake_check_build_system
+CMakeFiles/buffertest.elf.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles 94
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test.elf.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/buffertest.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/test.elf.dir/rule
+.PHONY : CMakeFiles/buffertest.elf.dir/rule
 
 # Convenience name for target.
-test.elf: CMakeFiles/test.elf.dir/rule
-.PHONY : test.elf
+buffertest.elf: CMakeFiles/buffertest.elf.dir/rule
+.PHONY : buffertest.elf
 
 # clean rule for target.
-CMakeFiles/test.elf.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/clean
-.PHONY : CMakeFiles/test.elf.dir/clean
+CMakeFiles/buffertest.elf.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/clean
+.PHONY : CMakeFiles/buffertest.elf.dir/clean
 
 #=============================================================================
 # Target rules for target lib/Catch2/src/CMakeFiles/Catch2.dir
@@ -170,12 +170,12 @@ CMakeFiles/test.elf.dir/clean:
 lib/Catch2/src/CMakeFiles/Catch2.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/Catch2/src/CMakeFiles/Catch2.dir/build.make lib/Catch2/src/CMakeFiles/Catch2.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/Catch2/src/CMakeFiles/Catch2.dir/build.make lib/Catch2/src/CMakeFiles/Catch2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85 "Built target Catch2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86 "Built target Catch2"
 .PHONY : lib/Catch2/src/CMakeFiles/Catch2.dir/all
 
 # Build rule for subdir invocation for target.
 lib/Catch2/src/CMakeFiles/Catch2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles 85
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles 86
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/Catch2/src/CMakeFiles/Catch2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles 0
 .PHONY : lib/Catch2/src/CMakeFiles/Catch2.dir/rule
@@ -196,12 +196,12 @@ lib/Catch2/src/CMakeFiles/Catch2.dir/clean:
 lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/all: lib/Catch2/src/CMakeFiles/Catch2.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/build.make lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/build.make lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=86,87 "Built target Catch2WithMain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=87,88 "Built target Catch2WithMain"
 .PHONY : lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/all
 
 # Build rule for subdir invocation for target.
 lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles 87
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles 88
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles 0
 .PHONY : lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/rule

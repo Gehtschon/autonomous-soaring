@@ -130,17 +130,17 @@ autonomous_soaring/fast:
 .PHONY : autonomous_soaring/fast
 
 #=============================================================================
-# Target rules for targets named test.elf
+# Target rules for targets named buffertest.elf
 
 # Build rule for target.
-test.elf: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test.elf
-.PHONY : test.elf
+buffertest.elf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 buffertest.elf
+.PHONY : buffertest.elf
 
 # fast build rule for target.
-test.elf/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/build
-.PHONY : test.elf/fast
+buffertest.elf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/build
+.PHONY : buffertest.elf/fast
 
 #=============================================================================
 # Target rules for targets named Catch2
@@ -174,7 +174,7 @@ SupportFunctions/CircularBuffer.o: SupportFunctions/CircularBuffer.cpp.o
 # target to build an object file
 SupportFunctions/CircularBuffer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/CircularBuffer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/SupportFunctions/CircularBuffer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/CircularBuffer.cpp.o
 .PHONY : SupportFunctions/CircularBuffer.cpp.o
 
 SupportFunctions/CircularBuffer.i: SupportFunctions/CircularBuffer.cpp.i
@@ -183,7 +183,7 @@ SupportFunctions/CircularBuffer.i: SupportFunctions/CircularBuffer.cpp.i
 # target to preprocess a source file
 SupportFunctions/CircularBuffer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/CircularBuffer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/SupportFunctions/CircularBuffer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/CircularBuffer.cpp.i
 .PHONY : SupportFunctions/CircularBuffer.cpp.i
 
 SupportFunctions/CircularBuffer.s: SupportFunctions/CircularBuffer.cpp.s
@@ -192,7 +192,7 @@ SupportFunctions/CircularBuffer.s: SupportFunctions/CircularBuffer.cpp.s
 # target to generate assembly for a file
 SupportFunctions/CircularBuffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/CircularBuffer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/SupportFunctions/CircularBuffer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/CircularBuffer.cpp.s
 .PHONY : SupportFunctions/CircularBuffer.cpp.s
 
 SupportFunctions/DataDistributor.o: SupportFunctions/DataDistributor.cpp.o
@@ -201,7 +201,7 @@ SupportFunctions/DataDistributor.o: SupportFunctions/DataDistributor.cpp.o
 # target to build an object file
 SupportFunctions/DataDistributor.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/SupportFunctions/DataDistributor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.o
 .PHONY : SupportFunctions/DataDistributor.cpp.o
 
 SupportFunctions/DataDistributor.i: SupportFunctions/DataDistributor.cpp.i
@@ -210,7 +210,7 @@ SupportFunctions/DataDistributor.i: SupportFunctions/DataDistributor.cpp.i
 # target to preprocess a source file
 SupportFunctions/DataDistributor.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/SupportFunctions/DataDistributor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.i
 .PHONY : SupportFunctions/DataDistributor.cpp.i
 
 SupportFunctions/DataDistributor.s: SupportFunctions/DataDistributor.cpp.s
@@ -219,7 +219,7 @@ SupportFunctions/DataDistributor.s: SupportFunctions/DataDistributor.cpp.s
 # target to generate assembly for a file
 SupportFunctions/DataDistributor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/SupportFunctions/DataDistributor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.s
 .PHONY : SupportFunctions/DataDistributor.cpp.s
 
 SupportFunctions/MavlinkHeartbeat.o: SupportFunctions/MavlinkHeartbeat.cpp.o
@@ -228,7 +228,7 @@ SupportFunctions/MavlinkHeartbeat.o: SupportFunctions/MavlinkHeartbeat.cpp.o
 # target to build an object file
 SupportFunctions/MavlinkHeartbeat.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkHeartbeat.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o
 .PHONY : SupportFunctions/MavlinkHeartbeat.cpp.o
 
 SupportFunctions/MavlinkHeartbeat.i: SupportFunctions/MavlinkHeartbeat.cpp.i
@@ -237,7 +237,7 @@ SupportFunctions/MavlinkHeartbeat.i: SupportFunctions/MavlinkHeartbeat.cpp.i
 # target to preprocess a source file
 SupportFunctions/MavlinkHeartbeat.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkHeartbeat.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.i
 .PHONY : SupportFunctions/MavlinkHeartbeat.cpp.i
 
 SupportFunctions/MavlinkHeartbeat.s: SupportFunctions/MavlinkHeartbeat.cpp.s
@@ -246,7 +246,7 @@ SupportFunctions/MavlinkHeartbeat.s: SupportFunctions/MavlinkHeartbeat.cpp.s
 # target to generate assembly for a file
 SupportFunctions/MavlinkHeartbeat.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkHeartbeat.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.s
 .PHONY : SupportFunctions/MavlinkHeartbeat.cpp.s
 
 SupportFunctions/MavlinkSend.o: SupportFunctions/MavlinkSend.cpp.o
@@ -255,7 +255,7 @@ SupportFunctions/MavlinkSend.o: SupportFunctions/MavlinkSend.cpp.o
 # target to build an object file
 SupportFunctions/MavlinkSend.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/SupportFunctions/MavlinkSend.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkSend.cpp.o
 .PHONY : SupportFunctions/MavlinkSend.cpp.o
 
 SupportFunctions/MavlinkSend.i: SupportFunctions/MavlinkSend.cpp.i
@@ -264,7 +264,7 @@ SupportFunctions/MavlinkSend.i: SupportFunctions/MavlinkSend.cpp.i
 # target to preprocess a source file
 SupportFunctions/MavlinkSend.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/SupportFunctions/MavlinkSend.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkSend.cpp.i
 .PHONY : SupportFunctions/MavlinkSend.cpp.i
 
 SupportFunctions/MavlinkSend.s: SupportFunctions/MavlinkSend.cpp.s
@@ -273,7 +273,7 @@ SupportFunctions/MavlinkSend.s: SupportFunctions/MavlinkSend.cpp.s
 # target to generate assembly for a file
 SupportFunctions/MavlinkSend.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/SupportFunctions/MavlinkSend.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkSend.cpp.s
 .PHONY : SupportFunctions/MavlinkSend.cpp.s
 
 SupportFunctions/SenderClass.o: SupportFunctions/SenderClass.cpp.o
@@ -282,7 +282,7 @@ SupportFunctions/SenderClass.o: SupportFunctions/SenderClass.cpp.o
 # target to build an object file
 SupportFunctions/SenderClass.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/SupportFunctions/SenderClass.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/SenderClass.cpp.o
 .PHONY : SupportFunctions/SenderClass.cpp.o
 
 SupportFunctions/SenderClass.i: SupportFunctions/SenderClass.cpp.i
@@ -291,7 +291,7 @@ SupportFunctions/SenderClass.i: SupportFunctions/SenderClass.cpp.i
 # target to preprocess a source file
 SupportFunctions/SenderClass.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/SupportFunctions/SenderClass.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/SenderClass.cpp.i
 .PHONY : SupportFunctions/SenderClass.cpp.i
 
 SupportFunctions/SenderClass.s: SupportFunctions/SenderClass.cpp.s
@@ -300,7 +300,7 @@ SupportFunctions/SenderClass.s: SupportFunctions/SenderClass.cpp.s
 # target to generate assembly for a file
 SupportFunctions/SenderClass.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/SupportFunctions/SenderClass.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/SenderClass.cpp.s
 .PHONY : SupportFunctions/SenderClass.cpp.s
 
 main.o: main.cpp.o
@@ -309,7 +309,6 @@ main.o: main.cpp.o
 # target to build an object file
 main.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/main.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -318,7 +317,6 @@ main.i: main.cpp.i
 # target to preprocess a source file
 main.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/main.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -327,7 +325,6 @@ main.s: main.cpp.s
 # target to generate assembly for a file
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/main.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 test/buffertest.o: test/buffertest.cpp.o
@@ -335,8 +332,7 @@ test/buffertest.o: test/buffertest.cpp.o
 
 # target to build an object file
 test/buffertest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/test/buffertest.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/test/buffertest.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/test/buffertest.cpp.o
 .PHONY : test/buffertest.cpp.o
 
 test/buffertest.i: test/buffertest.cpp.i
@@ -344,8 +340,7 @@ test/buffertest.i: test/buffertest.cpp.i
 
 # target to preprocess a source file
 test/buffertest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/test/buffertest.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/test/buffertest.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/test/buffertest.cpp.i
 .PHONY : test/buffertest.cpp.i
 
 test/buffertest.s: test/buffertest.cpp.s
@@ -353,8 +348,7 @@ test/buffertest.s: test/buffertest.cpp.s
 
 # target to generate assembly for a file
 test/buffertest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/test/buffertest.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.elf.dir/build.make CMakeFiles/test.elf.dir/test/buffertest.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/test/buffertest.cpp.s
 .PHONY : test/buffertest.cpp.s
 
 # Help Target
@@ -368,7 +362,7 @@ help:
 	@echo "... Catch2"
 	@echo "... Catch2WithMain"
 	@echo "... autonomous_soaring"
-	@echo "... test.elf"
+	@echo "... buffertest.elf"
 	@echo "... SupportFunctions/CircularBuffer.o"
 	@echo "... SupportFunctions/CircularBuffer.i"
 	@echo "... SupportFunctions/CircularBuffer.s"

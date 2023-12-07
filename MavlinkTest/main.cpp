@@ -16,14 +16,12 @@
 //#include "c_library_v2-master/common/mavlink.h"
 #include <MavlinkHeartbeat.h>
 #include "SenderClass.h"
-
-
+#include "CircularBuffer.h"
+#include "CircularBuffer.cpp"
 
 
 int main(int argc, char* argv[])
 {
-
-
 
     std::cout << "Startup\n";
     // Open UDP socket

@@ -4,23 +4,23 @@
 
 #include "CircularBuffer.h"
 template <typename T>
-CircularBuffer<T>::CircularBuffer(size_t size) : maxSize(size), currentIndex(0) {
+CircularBuffer<T>::CircularBuffer(size_t size) : maxSize(size){
     buffer.reserve(maxSize);
 }
 
+
 template <typename T>
 void CircularBuffer<T>::insert(const T& data) {
-    if (buffer.size() < maxSize) {
+
+    if (buffer.size() < maxSize){
         buffer.push_back(data);
-    } else {
-        buffer[currentIndex] = data;
+    }else{
+        buffer.erase(buffer.begin());
+        buffer.push_back(data);
     }
 
-    currentIndex = (currentIndex + 1) % maxSize;
-
-    // Sort the buffer from oldest to newest
-    std::sort(buffer.begin(), buffer.end());
 }
+
 
 template <typename T>
 double CircularBuffer<T>::calculateAverage() const {
@@ -40,4 +40,9 @@ void CircularBuffer<T>::displayBuffer() const {
     }
 
     std::cout << std::endl;
+}
+
+template <typename T>
+T CircularBuffer<T>::getIndex(size_t index){
+    return buffer[index];
 }

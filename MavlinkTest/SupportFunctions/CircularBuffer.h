@@ -14,7 +14,6 @@ class CircularBuffer {
 private:
     std::vector<T> buffer;
     size_t maxSize;
-    size_t currentIndex;
 
 public:
     CircularBuffer(size_t size);
@@ -24,6 +23,8 @@ public:
     double calculateAverage() const;
 
     void displayBuffer() const;
+
+    T getIndex(size_t index);
 };
 
 

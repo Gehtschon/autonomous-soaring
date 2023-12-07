@@ -65,7 +65,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/autonomous_soaring.dir/DependInfo.cmake"
-  "CMakeFiles/test.elf.dir/DependInfo.cmake"
+  "CMakeFiles/buffertest.elf.dir/DependInfo.cmake"
   "lib/Catch2/src/CMakeFiles/Catch2.dir/DependInfo.cmake"
   "lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/DependInfo.cmake"
   )
