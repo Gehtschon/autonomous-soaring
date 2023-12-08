@@ -64,9 +64,11 @@ int main(int argc, char* argv[])
                     break;
 
                 case MAVLINK_MSG_ID_VFR_HUD: {
-                    mavlink_altitude_t alt_struct;
-                    mavlink_msg_altitude_decode(&msg, &alt_struct);
-                    //printf("Altitude over Home is: %f \n",alt_struct.altitude_amsl);
+                    mavlink_vfr_hud_t VFR;
+                    mavlink_msg_vfr_hud_decode(&msg, &VFR);
+                    printf("Airspeed is: %f \n", VFR.airspeed);
+                    printf("Groundspeed is: %f \n", VFR.groundspeed);
+                    printf("Alt is: %f \n", VFR.alt);
                     break;
                 }
 

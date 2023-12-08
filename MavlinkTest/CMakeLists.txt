@@ -22,6 +22,7 @@ include_directories(
         SupportFunctions
         c_library_v2-master
         c_library_v2-master/ardupilotmega
+        c_library_v2-master/common
 
 )
 add_subdirectory(./lib/Catch2)

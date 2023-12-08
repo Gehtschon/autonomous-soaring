@@ -105,6 +105,10 @@
 					"path" : "/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega"
 				},
 				{
+					"backtrace" : 6,
+					"path" : "/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common"
+				},
+				{
 					"backtrace" : 7,
 					"path" : "/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.."
 				},

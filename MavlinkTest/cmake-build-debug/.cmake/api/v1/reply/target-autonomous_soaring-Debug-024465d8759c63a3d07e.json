@@ -58,6 +58,10 @@
 				{
 					"backtrace" : 2,
 					"path" : "/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common"
 				}
 			],
 			"language" : "CXX",

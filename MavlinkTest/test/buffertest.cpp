@@ -46,3 +46,42 @@ TEST_CASE( "Check Int Buffer ", "" ) {
     //REQUIRE(true);
 
 }
+
+TEST_CASE( "Check float Buffer ", "" ) {
+
+    CircularBuffer<float> floatBuffer(5);
+    // Insert data into the buffer
+    floatBuffer.insert(1.1);
+    floatBuffer.insert(2.2);
+    floatBuffer.insert(3.3);
+    floatBuffer.insert(5.5);
+    std::cout<<floatBuffer.calculateAverage()<<std::endl;
+    REQUIRE_THAT(floatBuffer.calculateAverage(), Catch::Matchers::WithinRel(3.025, 0.0001));
+
+    floatBuffer.insert(4.4);
+    // Check the data in the buffer after insertion
+    REQUIRE(floatBuffer.getIndex(0) == 1.1f);
+    REQUIRE(floatBuffer.getIndex(1)  == 2.2f);
+    REQUIRE(floatBuffer.getIndex(2)  == 3.3f);
+    REQUIRE(floatBuffer.getIndex(3)  == 5.5f);
+    REQUIRE(floatBuffer.getIndex(4)  == 4.4f);
+
+    floatBuffer.insert(99.9);
+
+    floatBuffer.displayBuffer();
+    REQUIRE(floatBuffer.getIndex(0) == 2.2f);
+    REQUIRE(floatBuffer.getIndex(1)  == 3.3f);
+    REQUIRE(floatBuffer.getIndex(2)  == 5.5f);
+    REQUIRE(floatBuffer.getIndex(3)  == 4.4f);
+    REQUIRE(floatBuffer.getIndex(4)  == 99.9f);
+
+    floatBuffer.insert(72.8);
+    REQUIRE(floatBuffer.getIndex(0) == 3.3f);
+    REQUIRE(floatBuffer.getIndex(1)  == 5.5f);
+    REQUIRE(floatBuffer.getIndex(2)  == 4.4f);
+    REQUIRE(floatBuffer.getIndex(3)  == 99.9f);
+    REQUIRE(floatBuffer.getIndex(4)  == 72.8f);
+
+    REQUIRE_THAT(floatBuffer.calculateAverage(), Catch::Matchers::WithinRel(37.18, 0.0001));
+
+}
