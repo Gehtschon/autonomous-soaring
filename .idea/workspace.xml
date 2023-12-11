@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
 }</component>
@@ -8,7 +11,10 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
+      <config projectName="autonomous_soaring" targetName="Catch2WithMain" />
+      <config projectName="autonomous_soaring" targetName="buffertest.elf" />
       <config projectName="autonomous_soaring" targetName="autonomous_soaring" />
+      <config projectName="autonomous_soaring" targetName="Catch2" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -18,7 +24,298 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db9a8136-a91e-4b34-92d6-56a2a09ba53a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/SenderClass_Interface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/autonomous-soaring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/autonomous-soaring.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/SenderClass.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/SenderClass_UDP.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/SenderClass.h" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/SenderClass_UDP.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-449dac7a9be34aca2e70.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-3e6dde60b02bdf5e574b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-6866a151e37028b09a5f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.cmake/api/v1/reply/index-2023-12-08T17-18-47-0509.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.cmake/api/v1/reply/target-Catch2-Debug-a4d9a8c31ce3dad91afa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.cmake/api/v1/reply/target-Catch2WithMain-Debug-10fcdf01f89a2f557080.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.cmake/api/v1/reply/target-autonomous_soaring-Debug-024465d8759c63a3d07e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.cmake/api/v1/reply/target-buffertest.elf-Debug-71834cbf93261091dc21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/SupportFunctions/CircularBuffer.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkHeartbeat.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/compiler_depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/compiler_depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/compiler_depend.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/main.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/test/buffer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/test/buffer.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/test/buffertest.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/test/buffertest.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/buffertest.elf.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/buffertest.elf.dir/SupportFunctions/CircularBuffer.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkSend.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/buffertest.elf.dir/SupportFunctions/SenderClass.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/buffertest.elf.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/buffertest.elf.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/buffertest.elf.dir/compiler_depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/buffertest.elf.dir/compiler_depend.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/buffertest.elf.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/buffertest.elf.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/buffertest.elf.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/buffertest.elf.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/buffertest.elf.dir/test/buffertest.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/test.elf.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/test.elf.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/test.elf.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/test.elf.dir/compiler_depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/test.elf.dir/compiler_depend.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/test.elf.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/test.elf.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/test.elf.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/test.elf.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/autonomous_soaring" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/autonomous_soaring" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/buffertest.elf" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/buffertest.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/benchmark/catch_chronometer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/benchmark/catch_chronometer.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/benchmark/catch_chronometer.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_analyse.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_analyse.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_analyse.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_benchmark_function.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_benchmark_function.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_benchmark_function.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_run_for_at_least.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_run_for_at_least.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_run_for_at_least.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_stats.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_stats.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_stats.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_approx.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_approx.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_approx.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_assertion_result.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_assertion_result.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_assertion_result.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_config.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_config.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_config.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_get_random_seed.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_get_random_seed.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_get_random_seed.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_message.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_message.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_message.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_registry_hub.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_registry_hub.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_registry_hub.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_session.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_session.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_session.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_tag_alias_autoregistrar.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_tag_alias_autoregistrar.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_tag_alias_autoregistrar.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_test_case_info.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_test_case_info.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_test_case_info.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_test_spec.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_test_spec.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_test_spec.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_timer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_timer.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_timer.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_tostring.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_tostring.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_tostring.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_totals.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_totals.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_totals.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_translate_exception.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_translate_exception.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_translate_exception.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_version.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_version.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/catch_version.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generator_exception.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generator_exception.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generator_exception.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators_random.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators_random.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators_random.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_capture.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_capture.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_capture.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_config.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_config.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_config.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_exception.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_exception.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_exception.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_generatortracker.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_generatortracker.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_generatortracker.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_registry_hub.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_registry_hub.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_registry_hub.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter_factory.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter_factory.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter_factory.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_testcase.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_testcase.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_testcase.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_assertion_handler.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_assertion_handler.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_assertion_handler.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_case_insensitive_comparisons.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_case_insensitive_comparisons.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_case_insensitive_comparisons.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_clara.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_clara.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_clara.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_commandline.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_commandline.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_commandline.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_console_colour.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_console_colour.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_console_colour.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_context.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_context.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_context.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_debug_console.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_debug_console.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_debug_console.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_debugger.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_debugger.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_debugger.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_decomposer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_decomposer.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_decomposer.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_enforce.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_enforce.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_enforce.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_enum_values_registry.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_enum_values_registry.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_enum_values_registry.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_errno_guard.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_errno_guard.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_errno_guard.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_exception_translator_registry.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_exception_translator_registry.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_exception_translator_registry.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_fatal_condition_handler.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_fatal_condition_handler.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_fatal_condition_handler.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_floating_point_helpers.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_floating_point_helpers.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_floating_point_helpers.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_getenv.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_getenv.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_getenv.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_istream.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_istream.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_istream.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_jsonwriter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_jsonwriter.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_jsonwriter.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_lazy_expr.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_lazy_expr.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_lazy_expr.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_leak_detector.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_leak_detector.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_leak_detector.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_list.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_list.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_list.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_message_info.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_message_info.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_message_info.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_output_redirect.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_output_redirect.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_output_redirect.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_parse_numbers.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_parse_numbers.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_parse_numbers.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_polyfills.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_polyfills.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_polyfills.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_random_number_generator.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_random_number_generator.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_random_number_generator.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_random_seed_generation.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_random_seed_generation.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_random_seed_generation.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_registry.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_registry.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_registry.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_spec_parser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_spec_parser.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_spec_parser.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_result_type.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_result_type.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_result_type.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reusable_string_stream.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reusable_string_stream.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reusable_string_stream.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_run_context.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_run_context.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_run_context.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_section.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_section.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_section.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_singletons.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_singletons.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_singletons.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_source_line_info.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_source_line_info.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_source_line_info.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_startup_exception_registry.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_startup_exception_registry.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_startup_exception_registry.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_stdstreams.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_stdstreams.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_stdstreams.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_string_manip.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_string_manip.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_string_manip.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_stringref.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_stringref.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_stringref.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_tag_alias_registry.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_tag_alias_registry.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_tag_alias_registry.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_info_hasher.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_info_hasher.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_info_hasher.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_registry_impl.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_registry_impl.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_registry_impl.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_tracker.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_tracker.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_tracker.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_failure_exception.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_failure_exception.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_failure_exception.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_registry.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_registry.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_registry.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_spec_parser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_spec_parser.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_spec_parser.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_textflow.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_textflow.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_textflow.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_uncaught_exceptions.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_uncaught_exceptions.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_uncaught_exceptions.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_wildcard_pattern.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_wildcard_pattern.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_wildcard_pattern.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_xmlwriter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_xmlwriter.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/internal/catch_xmlwriter.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_container_properties.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_container_properties.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_container_properties.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_exception.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_exception.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_exception.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_floating_point.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_floating_point.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_floating_point.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_predicate.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_predicate.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_predicate.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_quantifiers.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_quantifiers.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_quantifiers.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_string.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_string.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_string.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_templated.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_templated.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_templated.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/internal/catch_matchers_impl.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/internal/catch_matchers_impl.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/matchers/internal/catch_matchers_impl.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_automake.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_automake.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_automake.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_common_base.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_common_base.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_common_base.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_compact.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_compact.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_compact.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_console.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_console.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_console.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_cumulative_base.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_cumulative_base.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_cumulative_base.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_event_listener.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_event_listener.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_event_listener.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_helpers.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_helpers.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_helpers.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_json.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_json.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_json.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_junit.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_junit.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_junit.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_multi.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_multi.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_multi.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_registrars.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_registrars.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_registrars.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_sonarqube.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_sonarqube.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_sonarqube.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_streaming_base.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_streaming_base.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_streaming_base.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_tap.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_tap.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_tap.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_teamcity.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_teamcity.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_teamcity.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_xml.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_xml.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_xml.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/catch2/internal/catch_main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/catch2/internal/catch_main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/catch2/internal/catch_main.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/libCatch2Maind.a" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/libCatch2Maind.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/libCatch2d.a" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/lib/Catch2/src/libCatch2d.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,32 +337,66 @@
     <option name="majorVersion" value="2022" />
     <option name="minorVersion" value="2.1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="2WeqLQnwlRhq5sClIvfaN2K5Y1G" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "subfuiles",
+    "last_opened_file_path": "/home/fabian/Soaring/cpp_soaring/autonomous-soaring",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+}]]></component>
+  <component name="RunManager" selected="CMake Application.autonomous_soaring">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="buffertest.elf" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="autonomous_soaring" TARGET_NAME="buffertest.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="autonomous_soaring" RUN_TARGET_NAME="buffertest.elf" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Catch2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="autonomous_soaring" TARGET_NAME="Catch2" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="autonomous_soaring" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="autonomous_soaring" TARGET_NAME="autonomous_soaring" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="autonomous_soaring" RUN_TARGET_NAME="autonomous_soaring">
+    <configuration name="Catch2WithMain" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="autonomous_soaring" TARGET_NAME="Catch2WithMain" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="autonomous_soaring" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="autonomous_soaring" TARGET_NAME="autonomous_soaring" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="autonomous_soaring" RUN_TARGET_NAME="autonomous_soaring">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Catch.buffertest.elf" />
+      <item itemvalue="CMake Application.autonomous_soaring" />
+      <item itemvalue="CMake Application.Catch2" />
+      <item itemvalue="CMake Application.Catch2WithMain" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -77,11 +408,18 @@
       <updated>1697103336392</updated>
       <workItem from="1697103340138" duration="3168000" />
       <workItem from="1697702070227" duration="58000" />
+      <workItem from="1702321881889" duration="2789000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

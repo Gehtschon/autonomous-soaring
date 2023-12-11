@@ -10,12 +10,14 @@ add_executable(autonomous_soaring
         SupportFunctions/MavlinkHeartbeat.h
         SupportFunctions/MavlinkSend.h
         SupportFunctions/MavlinkSend.cpp
-        SupportFunctions/SenderClass.cpp
-        SupportFunctions/SenderClass.h
+        SupportFunctions/SenderClass_UDP.cpp
+        SupportFunctions/SenderClass_UDP.h
         SupportFunctions/DataDistributor.cpp
         SupportFunctions/DataDistributor.h
         SupportFunctions/CircularBuffer.cpp
         SupportFunctions/CircularBuffer.h
+        SupportFunctions/SenderClass_Interface.h
+
 )
 
 include_directories(

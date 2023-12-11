@@ -15,7 +15,7 @@
 
 //#include "c_library_v2-master/common/mavlink.h"
 #include <MavlinkHeartbeat.h>
-#include "SenderClass.h"
+#include "SenderClass_UDP.h"
 #include "CircularBuffer.h"
 #include "CircularBuffer.cpp"
 
@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
         return -1;
     }
 
-    SenderClass senderObject(socket_fd);
+    SenderClass_UDP senderObject(socket_fd);
 
     const int  maxStreams = 2;
     uint8_t MAVStreams[maxStreams] = {MAV_DATA_STREAM_EXTENDED_STATUS, MAV_DATA_STREAM_EXTRA1};
