@@ -17,8 +17,10 @@
 #include <MavlinkHeartbeat.h>
 #include "SenderClass_UDP.h"
 #include "CircularBuffer.h"
-#include "CircularBuffer.cpp"
+#include "DataDistributor.h"
 
+
+#define BufferSize 10
 
 int main(int argc, char* argv[])
 {
@@ -41,6 +43,7 @@ int main(int argc, char* argv[])
     senderObject.Mav_Request_Data(MAVStreams,MAVRates,maxStreams,maxStreams);
 
 
+    DataDistributor dataDistributor(BufferSize);
 
 
     std::cout << "Startup done\n";
@@ -57,7 +60,9 @@ int main(int argc, char* argv[])
         senderObject.Mav_Recive(message,status);
         //std::cout << "message length: " << message.size() << std::endl;
 
-        for (const auto& msg : message) {
+        dataDistributor.decodeMessage(message,status);
+
+/*        for (const auto& msg : message) {
             switch (msg.msgid) {
                 case MAVLINK_MSG_ID_HEARTBEAT:
                     handle_heartbeat(&msg);
@@ -74,16 +79,16 @@ int main(int argc, char* argv[])
 
                 case MAVLINK_MSG_ID_ATTITUDE: {  // #30
 
-                    /* Message decoding: PRIMITIVE
+                    *//* Message decoding: PRIMITIVE
                      *    mavlink_msg_attitude_decode(const mavlink_message_t* msg, mavlink_attitude_t* attitude)
-                     */
+                     *//*
                     mavlink_attitude_t attitude;
                     mavlink_msg_attitude_decode(&msg, &attitude);
                     printf("Roll is: %f \n", (attitude.roll*(180.0/3.141592653589793238463)));
                     break;
                 }
             }
-        }
+        }*/
 
 
 

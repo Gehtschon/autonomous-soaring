@@ -16,15 +16,37 @@ private:
     size_t maxSize;
 
 public:
-    CircularBuffer(size_t size);
+    CircularBuffer(size_t size) : maxSize(size) {
+        buffer.reserve(maxSize);
+    }
 
-    void insert(const T& data);
+    void insert(const T& data) {
+        if (buffer.size() < maxSize) {
+            buffer.push_back(data);
+        } else {
+            buffer.erase(buffer.begin());
+            buffer.push_back(data);
+        }
+    }
 
-    double calculateAverage() const;
+    double calculateAverage() const {
+        double sum = 0.0;
+        for (const auto& value : buffer) {
+            sum += value;
+        }
+        return buffer.empty() ? 0.0 : sum / buffer.size();
+    }
 
-    void displayBuffer() const;
+    void displayBuffer() const {
+        for (const auto& value : buffer) {
+            std::cout << value << " ";
+        }
+        std::cout << std::endl;
+    }
 
-    T getIndex(size_t index);
+    T getIndex(size_t index) {
+        return buffer[index];
+    }
 };
 
 

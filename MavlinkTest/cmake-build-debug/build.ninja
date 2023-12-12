@@ -84,13 +84,6 @@ build CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o: 
   OBJECT_DIR = CMakeFiles/autonomous_soaring.dir
   OBJECT_FILE_DIR = CMakeFiles/autonomous_soaring.dir/SupportFunctions
 
-build CMakeFiles/autonomous_soaring.dir/SupportFunctions/CircularBuffer.cpp.o: CXX_COMPILER__autonomous_soaring_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/CircularBuffer.cpp || cmake_object_order_depends_target_autonomous_soaring
-  DEP_FILE = CMakeFiles/autonomous_soaring.dir/SupportFunctions/CircularBuffer.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common
-  OBJECT_DIR = CMakeFiles/autonomous_soaring.dir
-  OBJECT_FILE_DIR = CMakeFiles/autonomous_soaring.dir/SupportFunctions
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target autonomous_soaring
@@ -99,7 +92,7 @@ build CMakeFiles/autonomous_soaring.dir/SupportFunctions/CircularBuffer.cpp.o: C
 #############################################
 # Link the executable autonomous_soaring
 
-build autonomous_soaring: CXX_EXECUTABLE_LINKER__autonomous_soaring_Debug CMakeFiles/autonomous_soaring.dir/main.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkHeartbeat.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass_UDP.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/CircularBuffer.cpp.o
+build autonomous_soaring: CXX_EXECUTABLE_LINKER__autonomous_soaring_Debug CMakeFiles/autonomous_soaring.dir/main.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkHeartbeat.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass_UDP.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/autonomous_soaring.dir
   POST_BUILD = :
@@ -115,13 +108,6 @@ build autonomous_soaring: CXX_EXECUTABLE_LINKER__autonomous_soaring_Debug CMakeF
 # Order-only phony target for buffertest.elf
 
 build cmake_object_order_depends_target_buffertest.elf: phony || cmake_object_order_depends_target_Catch2 cmake_object_order_depends_target_Catch2WithMain
-
-build CMakeFiles/buffertest.elf.dir/SupportFunctions/CircularBuffer.cpp.o: CXX_COMPILER__buffertest.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/CircularBuffer.cpp || cmake_object_order_depends_target_buffertest.elf
-  DEP_FILE = CMakeFiles/buffertest.elf.dir/SupportFunctions/CircularBuffer.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
-  OBJECT_DIR = CMakeFiles/buffertest.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles/buffertest.elf.dir/SupportFunctions
 
 build CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.o: CXX_COMPILER__buffertest.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/DataDistributor.cpp || cmake_object_order_depends_target_buffertest.elf
   DEP_FILE = CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.o.d
@@ -166,7 +152,7 @@ build CMakeFiles/buffertest.elf.dir/test/buffertest.cpp.o: CXX_COMPILER__buffert
 #############################################
 # Link the executable buffertest.elf
 
-build buffertest.elf: CXX_EXECUTABLE_LINKER__buffertest.2eelf_Debug CMakeFiles/buffertest.elf.dir/SupportFunctions/CircularBuffer.cpp.o CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.o CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkSend.cpp.o CMakeFiles/buffertest.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o CMakeFiles/buffertest.elf.dir/test/buffertest.cpp.o | lib/Catch2/src/libCatch2Maind.a lib/Catch2/src/libCatch2d.a || lib/Catch2/src/libCatch2Maind.a lib/Catch2/src/libCatch2d.a
+build buffertest.elf: CXX_EXECUTABLE_LINKER__buffertest.2eelf_Debug CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.o CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkSend.cpp.o CMakeFiles/buffertest.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o CMakeFiles/buffertest.elf.dir/test/buffertest.cpp.o | lib/Catch2/src/libCatch2Maind.a lib/Catch2/src/libCatch2d.a || lib/Catch2/src/libCatch2Maind.a lib/Catch2/src/libCatch2d.a
   FLAGS = -g
   LINK_LIBRARIES = lib/Catch2/src/libCatch2Maind.a  lib/Catch2/src/libCatch2d.a
   OBJECT_DIR = CMakeFiles/buffertest.elf.dir

@@ -9,18 +9,36 @@
 #include "mavlink_msg_vfr_hud.h"
 #include <vector>
 #include <CircularBuffer.h>
-#include "CircularBuffer.cpp"
 
 class DataDistributor {
 private:
-    CircularBuffer<float> AltBuffer;
     CircularBuffer<float> RollBuffer;
     CircularBuffer<float> PitchBuffer;
     CircularBuffer<float> YawBuffer;
-    void CreateBufferObjects(size_t Buffersize);
+    CircularBuffer<float> GroundSpeedBuffer;
+    CircularBuffer<float> AirSpeedBuffer;
+    CircularBuffer<float> AltBuffer;
+    CircularBuffer<float> ClimbRateBuffer;
+
 
 public:
-    void decodeMessage(const std::vector<mavlink_message_t>& message, const std::vector<mavlink_status_t>& status);
+    DataDistributor();
+    DataDistributor(size_t arraySize);
+    void decodeMessage(const std::vector<mavlink_message_t> &message, const std::vector<mavlink_status_t> &status);
+
+    const CircularBuffer<float> &getRollBuffer() const;
+
+    const CircularBuffer<float> &getPitchBuffer() const;
+
+    const CircularBuffer<float> &getYawBuffer() const;
+
+    const CircularBuffer<float> &getGroundSpeedBuffer() const;
+
+    const CircularBuffer<float> &getAirSpeedBuffer() const;
+
+    const CircularBuffer<float> &getAltBuffer() const;
+
+    const CircularBuffer<float> &getClimbRateBuffer() const;
 
 };
 

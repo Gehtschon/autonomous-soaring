@@ -14,7 +14,6 @@ add_executable(autonomous_soaring
         SupportFunctions/SenderClass_UDP.h
         SupportFunctions/DataDistributor.cpp
         SupportFunctions/DataDistributor.h
-        SupportFunctions/CircularBuffer.cpp
         SupportFunctions/CircularBuffer.h
         SupportFunctions/SenderClass_Interface.h
 
@@ -35,7 +34,7 @@ file(GLOB_RECURSE test_SRCS
         "${PROJECT_SOURCE_DIR}/SupportFunctions/*.cpp"
 )
 add_executable(buffertest.elf ${test_SRCS}
-    SupportFunctions/CircularBuffer.cpp)
+    SupportFunctions/CircularBuffer.h)
 target_link_libraries(buffertest.elf Catch2::Catch2WithMain)
 target_include_directories(buffertest.elf PRIVATE SupportFunctions)
 
