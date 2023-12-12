@@ -33,8 +33,8 @@ void DataDistributor::decodeMessage(const std::vector<mavlink_message_t> &messag
             case MAVLINK_MSG_ID_VFR_HUD: {
                 mavlink_vfr_hud_t VFR;
                 mavlink_msg_vfr_hud_decode(&msg, &VFR);
-                //printf("Airspeed is: %f \n", VFR.airspeed);
-                //printf("Groundspeed is: %f \n", VFR.groundspeed);
+                printf("Airspeed is: %f \n", VFR.airspeed);
+                printf("Groundspeed is: %f \n", VFR.groundspeed);
                 //printf("Alt is: %f \n", VFR.alt);
                 AirSpeedBuffer.insert(VFR.airspeed);
                 GroundSpeedBuffer.insert(VFR.groundspeed);

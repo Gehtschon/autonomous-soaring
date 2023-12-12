@@ -52,14 +52,12 @@ int main(int argc, char* argv[])
         // and just interleave receiving and sending.
         // This only works  if receive_some returns every now and then.
 
-        //Todo print the messages recive shlould be impklemented butr check it again!!
 
+// TODO From here to next todo it can run i a new thread. We can Acess the data from outside over the dataDistributor
         std::vector<mavlink_message_t> message;
         std::vector<mavlink_status_t> status;
-
         senderObject.Mav_Recive(message,status);
         //std::cout << "message length: " << message.size() << std::endl;
-
         dataDistributor.decodeMessage(message,status);
 
 /*        for (const auto& msg : message) {

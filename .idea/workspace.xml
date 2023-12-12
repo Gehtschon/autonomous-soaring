@@ -25,24 +25,12 @@
   <component name="ChangeListManager">
     <list default="true" id="db9a8136-a91e-4b34-92d6-56a2a09ba53a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/CircularBuffer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/CircularBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/CircularBuffer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/DataDistributor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/DataDistributor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/DataDistributor.h" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/DataDistributor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-0451e6d0b54d5c8f2695.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.cmake/api/v1/reply/index-2023-12-11T19-47-05-0965.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.cmake/api/v1/reply/target-autonomous_soaring-Debug-4cb44d9efb6fb8e11498.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/autonomous_soaring.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/autonomous_soaring" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/autonomous_soaring" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/buffertest.elf" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/buffertest.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MavlinkTest/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/test/buffertest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/test/buffertest.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,11 +96,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="autonomous_soaring" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="autonomous_soaring" TARGET_NAME="autonomous_soaring" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="autonomous_soaring" RUN_TARGET_NAME="autonomous_soaring">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -137,6 +120,7 @@
       <workItem from="1697702070227" duration="58000" />
       <workItem from="1702321881889" duration="2789000" />
       <workItem from="1702398780342" duration="4475000" />
+      <workItem from="1702410407350" duration="2834000" />
     </task>
     <servers />
   </component>
