@@ -16,6 +16,8 @@ add_executable(autonomous_soaring
         SupportFunctions/DataDistributor.h
         SupportFunctions/CircularBuffer.h
         SupportFunctions/SenderClass_Interface.h
+        SupportFunctions/SerialPort.cpp
+        SupportFunctions/SerialPort.h
 
 )
 
@@ -30,11 +32,23 @@ add_subdirectory(./lib/Catch2)
 
 # test sources
 file(GLOB_RECURSE test_SRCS
-        "${PROJECT_SOURCE_DIR}/test/*.cpp"
+        "${PROJECT_SOURCE_DIR}/test/buffertest.cpp"
         "${PROJECT_SOURCE_DIR}/SupportFunctions/*.cpp"
 )
 add_executable(buffertest.elf ${test_SRCS}
-    SupportFunctions/CircularBuffer.h)
+    SupportFunctions/CircularBuffer.h
+        test/buffertest.cpp)
 target_link_libraries(buffertest.elf Catch2::Catch2WithMain)
 target_include_directories(buffertest.elf PRIVATE SupportFunctions)
+
+# test sources
+file(GLOB_RECURSE test_SRCS_UART
+        "${PROJECT_SOURCE_DIR}/test/Serialporttester.cpp"
+        "${PROJECT_SOURCE_DIR}/SupportFunctions/*.cpp"
+)
+add_executable(SerialportTester.elf ${test_SRCS_UART}
+        SupportFunctions/SerialPort.h
+        test/Serialporttester.cpp)
+target_link_libraries(SerialportTester.elf Catch2::Catch2WithMain)
+target_include_directories(SerialportTester.elf PRIVATE SupportFunctions)
 
