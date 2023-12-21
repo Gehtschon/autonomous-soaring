@@ -232,6 +232,49 @@ CMakeFiles/SerialportTester.elf.dir/test/Serialporttester.cpp.o: \
  /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/../catch2/matchers/catch_matchers_floating_point.hpp \
  /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/../catch2/matchers/catch_matchers.hpp \
  /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/../catch2/matchers/internal/catch_matchers_impl.hpp \
+ /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/CircularBuffer.h \
+ /usr/include/c++/13.2.1/iostream /usr/include/c++/13.2.1/algorithm \
+ /usr/include/c++/13.2.1/bits/ranges_algo.h \
+ /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/13.2.1/pstl/execution_defs.h \
+ /usr/include/c++/13.2.1/thread /usr/include/c++/13.2.1/stop_token \
+ /usr/include/c++/13.2.1/atomic \
+ /usr/include/c++/13.2.1/bits/atomic_base.h \
+ /usr/include/c++/13.2.1/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/13.2.1/bits/atomic_wait.h \
+ /usr/include/c++/13.2.1/climits \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/limits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
+ /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/syscall.h \
+ /usr/include/sys/syscall.h /usr/include/asm/unistd.h \
+ /usr/include/asm/unistd_64.h /usr/include/bits/syscall.h \
+ /usr/include/c++/13.2.1/bits/std_mutex.h \
+ /usr/include/c++/13.2.1/bits/std_thread.h \
+ /usr/include/c++/13.2.1/semaphore \
+ /usr/include/c++/13.2.1/bits/semaphore_base.h \
+ /usr/include/c++/13.2.1/bits/atomic_timed_wait.h \
+ /usr/include/c++/13.2.1/bits/this_thread_sleep.h /usr/include/sys/time.h \
+ /usr/include/semaphore.h /usr/include/bits/semaphore.h \
+ /usr/include/c++/13.2.1/csignal /usr/include/signal.h \
+ /usr/include/bits/signum-generic.h /usr/include/bits/signum-arch.h \
+ /usr/include/bits/types/sig_atomic_t.h \
+ /usr/include/bits/types/siginfo_t.h /usr/include/bits/types/__sigval_t.h \
+ /usr/include/bits/siginfo-arch.h /usr/include/bits/siginfo-consts.h \
+ /usr/include/bits/siginfo-consts-arch.h \
+ /usr/include/bits/types/sigval_t.h /usr/include/bits/types/sigevent_t.h \
+ /usr/include/bits/sigevent-consts.h /usr/include/bits/sigaction.h \
+ /usr/include/bits/sigcontext.h /usr/include/bits/types/stack_t.h \
+ /usr/include/sys/ucontext.h /usr/include/bits/sigstack.h \
+ /usr/include/bits/sigstksz.h /usr/include/bits/ss_flags.h \
+ /usr/include/bits/types/struct_sigstack.h /usr/include/bits/sigthread.h \
+ /usr/include/bits/signal_ext.h \
  /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SerialPort.h \
  /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SenderClass_Interface.h \
  /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkHeader.h \
@@ -579,13 +622,8 @@ CMakeFiles/SerialportTester.elf.dir/test/Serialporttester.cpp.o: \
  /usr/include/asm/posix_types_64.h /usr/include/asm-generic/posix_types.h \
  /usr/include/asm/bitsperlong.h /usr/include/asm-generic/bitsperlong.h \
  /usr/include/asm/sockios.h /usr/include/asm-generic/sockios.h \
- /usr/include/bits/types/struct_osockaddr.h \
- /usr/include/c++/13.2.1/iostream /usr/include/arpa/inet.h \
- /usr/include/netinet/in.h /usr/include/bits/in.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
- /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/fcntl.h \
+ /usr/include/bits/types/struct_osockaddr.h /usr/include/arpa/inet.h \
+ /usr/include/netinet/in.h /usr/include/bits/in.h /usr/include/fcntl.h \
  /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
  /usr/include/linux/falloc.h /usr/include/bits/stat.h \
  /usr/include/bits/struct_stat.h /usr/include/termios.h \
@@ -594,18 +632,6 @@ CMakeFiles/SerialportTester.elf.dir/test/Serialporttester.cpp.o: \
  /usr/include/bits/termios-c_oflag.h /usr/include/bits/termios-baud.h \
  /usr/include/bits/termios-c_cflag.h /usr/include/bits/termios-c_lflag.h \
  /usr/include/bits/termios-tcflow.h /usr/include/bits/termios-misc.h \
- /usr/include/sys/ttydefaults.h /usr/include/signal.h \
- /usr/include/bits/signum-generic.h /usr/include/bits/signum-arch.h \
- /usr/include/bits/types/sig_atomic_t.h \
- /usr/include/bits/types/siginfo_t.h /usr/include/bits/types/__sigval_t.h \
- /usr/include/bits/siginfo-arch.h /usr/include/bits/siginfo-consts.h \
- /usr/include/bits/siginfo-consts-arch.h \
- /usr/include/bits/types/sigval_t.h /usr/include/bits/types/sigevent_t.h \
- /usr/include/bits/sigevent-consts.h /usr/include/bits/sigaction.h \
- /usr/include/bits/sigcontext.h /usr/include/bits/types/stack_t.h \
- /usr/include/sys/ucontext.h /usr/include/bits/sigstack.h \
- /usr/include/bits/sigstksz.h /usr/include/bits/ss_flags.h \
- /usr/include/bits/types/struct_sigstack.h /usr/include/bits/sigthread.h \
- /usr/include/bits/signal_ext.h \
+ /usr/include/sys/ttydefaults.h \
  /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common/mavlink.h \
- /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SenderClass_Interface.h
+ /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/DataDistributor.h

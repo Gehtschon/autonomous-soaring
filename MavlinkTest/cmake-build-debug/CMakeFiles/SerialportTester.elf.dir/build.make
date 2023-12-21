@@ -83,10 +83,24 @@ CMakeFiles/SerialportTester.elf.dir/SupportFunctions/DataDistributor.cpp.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SerialportTester.elf.dir/SupportFunctions/DataDistributor.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/DataDistributor.cpp -o CMakeFiles/SerialportTester.elf.dir/SupportFunctions/DataDistributor.cpp.s
 
+CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.o: CMakeFiles/SerialportTester.elf.dir/flags.make
+CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.o: /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergieCalculator.cpp
+CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.o: CMakeFiles/SerialportTester.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.o -MF CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.o.d -o CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.o -c /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergieCalculator.cpp
+
+CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergieCalculator.cpp > CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.i
+
+CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergieCalculator.cpp -o CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.s
+
 CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o: CMakeFiles/SerialportTester.elf.dir/flags.make
 CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o: /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkHeartbeat.cpp
 CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o: CMakeFiles/SerialportTester.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o -MF CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o.d -o CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o -c /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkHeartbeat.cpp
 
 CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.s: cma
 CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.o: CMakeFiles/SerialportTester.elf.dir/flags.make
 CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.o: /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkSend.cpp
 CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.o: CMakeFiles/SerialportTester.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.o -MF CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.o.d -o CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.o -c /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkSend.cpp
 
 CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.s: cmake_fo
 CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o: CMakeFiles/SerialportTester.elf.dir/flags.make
 CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o: /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SenderClass_UDP.cpp
 CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o: CMakeFiles/SerialportTester.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o -MF CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o.d -o CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o -c /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SenderClass_UDP.cpp
 
 CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.s: cmak
 CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SerialPort.cpp.o: CMakeFiles/SerialportTester.elf.dir/flags.make
 CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SerialPort.cpp.o: /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SerialPort.cpp
 CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SerialPort.cpp.o: CMakeFiles/SerialportTester.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SerialPort.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SerialPort.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SerialPort.cpp.o -MF CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SerialPort.cpp.o.d -o CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SerialPort.cpp.o -c /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SerialPort.cpp
 
 CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SerialPort.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SerialPort.cpp.s: cmake_for
 CMakeFiles/SerialportTester.elf.dir/test/Serialporttester.cpp.o: CMakeFiles/SerialportTester.elf.dir/flags.make
 CMakeFiles/SerialportTester.elf.dir/test/Serialporttester.cpp.o: /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/test/Serialporttester.cpp
 CMakeFiles/SerialportTester.elf.dir/test/Serialporttester.cpp.o: CMakeFiles/SerialportTester.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SerialportTester.elf.dir/test/Serialporttester.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SerialportTester.elf.dir/test/Serialporttester.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SerialportTester.elf.dir/test/Serialporttester.cpp.o -MF CMakeFiles/SerialportTester.elf.dir/test/Serialporttester.cpp.o.d -o CMakeFiles/SerialportTester.elf.dir/test/Serialporttester.cpp.o -c /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/test/Serialporttester.cpp
 
 CMakeFiles/SerialportTester.elf.dir/test/Serialporttester.cpp.i: cmake_force
@@ -156,6 +170,7 @@ CMakeFiles/SerialportTester.elf.dir/test/Serialporttester.cpp.s: cmake_force
 # Object files for target SerialportTester.elf
 SerialportTester_elf_OBJECTS = \
 "CMakeFiles/SerialportTester.elf.dir/SupportFunctions/DataDistributor.cpp.o" \
+"CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.o" \
 "CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o" \
 "CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.o" \
 "CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o" \
@@ -166,6 +181,7 @@ SerialportTester_elf_OBJECTS = \
 SerialportTester_elf_EXTERNAL_OBJECTS =
 
 SerialportTester.elf: CMakeFiles/SerialportTester.elf.dir/SupportFunctions/DataDistributor.cpp.o
+SerialportTester.elf: CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.o
 SerialportTester.elf: CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o
 SerialportTester.elf: CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.o
 SerialportTester.elf: CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o
@@ -175,7 +191,7 @@ SerialportTester.elf: CMakeFiles/SerialportTester.elf.dir/build.make
 SerialportTester.elf: lib/Catch2/src/libCatch2Maind.a
 SerialportTester.elf: lib/Catch2/src/libCatch2d.a
 SerialportTester.elf: CMakeFiles/SerialportTester.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable SerialportTester.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable SerialportTester.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SerialportTester.elf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

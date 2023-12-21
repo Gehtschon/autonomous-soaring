@@ -10,9 +10,12 @@
 
 TEST_CASE( "Check Int Buffer ", "" ) {
     CircularBuffer<int> intBuffer(5);
+    REQUIRE(intBuffer.isEmpty()==true);
     // Insert data into the buffer
     intBuffer.insert(1);
     intBuffer.insert(2);
+    REQUIRE(intBuffer.getLatest()==2);
+    REQUIRE(intBuffer.isEmpty()==false);
     intBuffer.insert(3);
     intBuffer.insert(5);
     std::cout<<intBuffer.calculateAverage()<<std::endl;

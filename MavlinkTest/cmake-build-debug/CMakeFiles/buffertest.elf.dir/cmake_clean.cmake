@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.o"
   "CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.o.d"
+  "CMakeFiles/buffertest.elf.dir/SupportFunctions/EnergieCalculator.cpp.o"
+  "CMakeFiles/buffertest.elf.dir/SupportFunctions/EnergieCalculator.cpp.o.d"
   "CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o"
   "CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o.d"
   "CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkSend.cpp.o"

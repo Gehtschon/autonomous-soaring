@@ -47,6 +47,19 @@ public:
     T getIndex(size_t index) {
         return buffer[index];
     }
+
+    T getLatest() {
+        if (buffer.empty()==false){
+            return buffer.back();
+        }else{
+            // maybe trowh an exeption here
+            return T();
+        }
+    }
+
+    bool isEmpty(){
+        return buffer.empty();
+    }
 };
 
 

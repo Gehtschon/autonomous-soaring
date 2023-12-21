@@ -16,6 +16,7 @@
 //#include "c_library_v2-master/common/mavlink.h"
 #include <MavlinkHeartbeat.h>
 #include "SenderClass_UDP.h"
+#include "SerialPort.h"
 #include "CircularBuffer.h"
 #include "DataDistributor.h"
 
@@ -25,17 +26,20 @@
 int main(int argc, char* argv[])
 {
 
-    std::cout << "Startup\n";
-    // Open UDP socket
-    const int socket_fd = socket(PF_INET, SOCK_DGRAM, 0);
-
-
-    if (socket_fd < 0) {
-        printf("socket error: %s\n", strerror(errno));
-        return -1;
-    }
-
-    SenderClass_UDP senderObject(socket_fd);
+//    std::cout << "Startup\n";
+//    // Open UDP socket
+//    const int socket_fd = socket(PF_INET, SOCK_DGRAM, 0);
+//
+//
+//    if (socket_fd < 0) {
+//        printf("socket error: %s\n", strerror(errno));
+//        return -1;
+//    }
+//
+//    SenderClass_UDP senderObject(socket_fd);
+char *uart_name = (char*)"/dev/pts/4";
+int baudrate = 57600;
+SerialPort senderObject(uart_name, baudrate);
 
     const int  maxStreams = 2;
     uint8_t MAVStreams[maxStreams] = {MAV_DATA_STREAM_EXTENDED_STATUS, MAV_DATA_STREAM_EXTRA1};
@@ -59,6 +63,7 @@ int main(int argc, char* argv[])
         senderObject.Mav_Recive(message,status);
         //std::cout << "message length: " << message.size() << std::endl;
         dataDistributor.decodeMessage(message,status);
+
 
 /*        for (const auto& msg : message) {
             switch (msg.msgid) {
