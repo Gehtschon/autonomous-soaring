@@ -153,19 +153,19 @@ CMakeFiles/autonomous_soaring.dir/SupportFunctions/SerialPort.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/autonomous_soaring.dir/SupportFunctions/SerialPort.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SerialPort.cpp -o CMakeFiles/autonomous_soaring.dir/SupportFunctions/SerialPort.cpp.s
 
-CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.o: CMakeFiles/autonomous_soaring.dir/flags.make
-CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.o: /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergieCalculator.cpp
-CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.o: CMakeFiles/autonomous_soaring.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.o -MF CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.o.d -o CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.o -c /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergieCalculator.cpp
+CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.o: CMakeFiles/autonomous_soaring.dir/flags.make
+CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.o: /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergyCalculator.cpp
+CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.o: CMakeFiles/autonomous_soaring.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.o -MF CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.o.d -o CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.o -c /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergyCalculator.cpp
 
-CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergieCalculator.cpp > CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.i
+CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergyCalculator.cpp > CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.i
 
-CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergieCalculator.cpp -o CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.s
+CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergyCalculator.cpp -o CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.s
 
 # Object files for target autonomous_soaring
 autonomous_soaring_OBJECTS = \
@@ -175,7 +175,7 @@ autonomous_soaring_OBJECTS = \
 "CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass_UDP.cpp.o" \
 "CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o" \
 "CMakeFiles/autonomous_soaring.dir/SupportFunctions/SerialPort.cpp.o" \
-"CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.o"
+"CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.o"
 
 # External object files for target autonomous_soaring
 autonomous_soaring_EXTERNAL_OBJECTS =
@@ -186,7 +186,7 @@ autonomous_soaring: CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSe
 autonomous_soaring: CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass_UDP.cpp.o
 autonomous_soaring: CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o
 autonomous_soaring: CMakeFiles/autonomous_soaring.dir/SupportFunctions/SerialPort.cpp.o
-autonomous_soaring: CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.o
+autonomous_soaring: CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.o
 autonomous_soaring: CMakeFiles/autonomous_soaring.dir/build.make
 autonomous_soaring: CMakeFiles/autonomous_soaring.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable autonomous_soaring"

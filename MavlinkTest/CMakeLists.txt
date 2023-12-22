@@ -18,8 +18,8 @@ add_executable(autonomous_soaring
         SupportFunctions/SenderClass_Interface.h
         SupportFunctions/SerialPort.cpp
         SupportFunctions/SerialPort.h
-        SupportFunctions/EnergieCalculator.cpp
-        SupportFunctions/EnergieCalculator.h
+        SupportFunctions/EnergyCalculator.cpp
+        SupportFunctions/EnergyCalculator.h
 
 )
 

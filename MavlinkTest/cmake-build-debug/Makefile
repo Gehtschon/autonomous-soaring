@@ -211,35 +211,35 @@ SupportFunctions/DataDistributor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/DataDistributor.cpp.s
 .PHONY : SupportFunctions/DataDistributor.cpp.s
 
-SupportFunctions/EnergieCalculator.o: SupportFunctions/EnergieCalculator.cpp.o
-.PHONY : SupportFunctions/EnergieCalculator.o
+SupportFunctions/EnergyCalculator.o: SupportFunctions/EnergyCalculator.cpp.o
+.PHONY : SupportFunctions/EnergyCalculator.o
 
 # target to build an object file
-SupportFunctions/EnergieCalculator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/EnergieCalculator.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.o
-.PHONY : SupportFunctions/EnergieCalculator.cpp.o
+SupportFunctions/EnergyCalculator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/EnergyCalculator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergyCalculator.cpp.o
+.PHONY : SupportFunctions/EnergyCalculator.cpp.o
 
-SupportFunctions/EnergieCalculator.i: SupportFunctions/EnergieCalculator.cpp.i
-.PHONY : SupportFunctions/EnergieCalculator.i
+SupportFunctions/EnergyCalculator.i: SupportFunctions/EnergyCalculator.cpp.i
+.PHONY : SupportFunctions/EnergyCalculator.i
 
 # target to preprocess a source file
-SupportFunctions/EnergieCalculator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/EnergieCalculator.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.i
-.PHONY : SupportFunctions/EnergieCalculator.cpp.i
+SupportFunctions/EnergyCalculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/EnergyCalculator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergyCalculator.cpp.i
+.PHONY : SupportFunctions/EnergyCalculator.cpp.i
 
-SupportFunctions/EnergieCalculator.s: SupportFunctions/EnergieCalculator.cpp.s
-.PHONY : SupportFunctions/EnergieCalculator.s
+SupportFunctions/EnergyCalculator.s: SupportFunctions/EnergyCalculator.cpp.s
+.PHONY : SupportFunctions/EnergyCalculator.s
 
 # target to generate assembly for a file
-SupportFunctions/EnergieCalculator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergieCalculator.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/EnergieCalculator.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergieCalculator.cpp.s
-.PHONY : SupportFunctions/EnergieCalculator.cpp.s
+SupportFunctions/EnergyCalculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/EnergyCalculator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergyCalculator.cpp.s
+.PHONY : SupportFunctions/EnergyCalculator.cpp.s
 
 SupportFunctions/MavlinkHeartbeat.o: SupportFunctions/MavlinkHeartbeat.cpp.o
 .PHONY : SupportFunctions/MavlinkHeartbeat.o
@@ -449,9 +449,9 @@ help:
 	@echo "... SupportFunctions/DataDistributor.o"
 	@echo "... SupportFunctions/DataDistributor.i"
 	@echo "... SupportFunctions/DataDistributor.s"
-	@echo "... SupportFunctions/EnergieCalculator.o"
-	@echo "... SupportFunctions/EnergieCalculator.i"
-	@echo "... SupportFunctions/EnergieCalculator.s"
+	@echo "... SupportFunctions/EnergyCalculator.o"
+	@echo "... SupportFunctions/EnergyCalculator.i"
+	@echo "... SupportFunctions/EnergyCalculator.s"
 	@echo "... SupportFunctions/MavlinkHeartbeat.o"
 	@echo "... SupportFunctions/MavlinkHeartbeat.i"
 	@echo "... SupportFunctions/MavlinkHeartbeat.s"

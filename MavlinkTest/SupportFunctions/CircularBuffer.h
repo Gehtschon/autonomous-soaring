@@ -57,6 +57,10 @@ public:
         }
     }
 
+    size_t getBufferSize(){
+        return buffer.size();
+    }
+
     bool isEmpty(){
         return buffer.empty();
     }

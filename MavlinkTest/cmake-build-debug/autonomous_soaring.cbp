@@ -326,12 +326,12 @@
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/DataDistributor.h">
 			<Option target="autonomous_soaring"/>
 		</Unit>
-		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergieCalculator.cpp">
+		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergyCalculator.cpp">
 			<Option target="autonomous_soaring"/>
 			<Option target="buffertest.elf"/>
 			<Option target="SerialportTester.elf"/>
 		</Unit>
-		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergieCalculator.h">
+		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergyCalculator.h">
 			<Option target="autonomous_soaring"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkHeader.h">
