@@ -56,11 +56,6 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="autonomous_soaring" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="autonomous_soaring" TARGET_NAME="autonomous_soaring" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="autonomous_soaring" RUN_TARGET_NAME="autonomous_soaring">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -77,6 +72,7 @@
       <updated>1697103336392</updated>
       <workItem from="1697103340138" duration="3168000" />
       <workItem from="1697702070227" duration="58000" />
+      <workItem from="1701352048836" duration="116000" />
     </task>
     <servers />
   </component>
