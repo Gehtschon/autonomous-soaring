@@ -9,6 +9,7 @@
 #include "mavlink_msg_vfr_hud.h"
 #include <vector>
 #include <CircularBuffer.h>
+#include "EnergyCalculator.h"
 
 class DataDistributor {
 private:
@@ -19,11 +20,18 @@ private:
     CircularBuffer<float> AirSpeedBuffer;
     CircularBuffer<float> AltBuffer;
     CircularBuffer<float> ClimbRateBuffer;
+    CircularBuffer<float> EnergyBuffer;
+    CircularBuffer<float> Energybufferderivation;
+    EnergyCalculator* energyCalculator;
+
+
 
 
 public:
     DataDistributor();
     DataDistributor(size_t arraySize);
+
+
     void decodeMessage(const std::vector<mavlink_message_t> &message, const std::vector<mavlink_status_t> &status);
 
     const CircularBuffer<float> &getRollBuffer() const;
@@ -39,6 +47,13 @@ public:
     const CircularBuffer<float> &getAltBuffer() const;
 
     const CircularBuffer<float> &getClimbRateBuffer() const;
+
+    const CircularBuffer<float> &getEnergyBuffer() const;
+
+    const CircularBuffer<float> &getEnergybufferderivation() const;
+
+    void addEnergy(const float Energy);
+    void addEnergyDerivation(const float Energyder);
 
 };
 

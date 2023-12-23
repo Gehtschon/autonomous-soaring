@@ -10,6 +10,7 @@
 
 TEST_CASE( "Check Int Buffer ", "" ) {
     CircularBuffer<int> intBuffer(5);
+    REQUIRE(intBuffer.getMaxSize() == 5);
     REQUIRE(intBuffer.isEmpty()==true);
     // Insert data into the buffer
     intBuffer.insert(1);
@@ -59,6 +60,7 @@ TEST_CASE( "Check Int Buffer ", "" ) {
 TEST_CASE( "Check float Buffer ", "" ) {
 
     CircularBuffer<float> floatBuffer(5);
+    REQUIRE(floatBuffer.getMaxSize() == 5);
     // Insert data into the buffer
     floatBuffer.insert(1.1);
     floatBuffer.insert(2.2);

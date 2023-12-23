@@ -14,11 +14,10 @@ private:
     CircularBuffer<float> Energybuffer;
     CircularBuffer<float> Energybufferderivation;
     bool Rising = false;
-    DataDistributor& dataDistributor;
+    DataDistributor* dataDistributor;
     float calcEnergyederivation();
 
 public:
-    EnergyCalculator();
     EnergyCalculator(size_t buffersize, DataDistributor &distributor);
     float getEnergy();
     float getEnergyderivation();

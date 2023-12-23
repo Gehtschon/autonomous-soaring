@@ -64,7 +64,14 @@ public:
     bool isEmpty(){
         return buffer.empty();
     }
+
+    size_t getMaxSize(){
+        return maxSize;
+    }
+
 };
+
+
 
 
 #endif //AUTONOMOUS_SOARING_CIRCULARBUFFER_H
