@@ -77,8 +77,29 @@ build CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass_UDP.cpp.o: 
   OBJECT_DIR = CMakeFiles/autonomous_soaring.dir
   OBJECT_FILE_DIR = CMakeFiles/autonomous_soaring.dir/SupportFunctions
 
+build CMakeFiles/autonomous_soaring.dir/SupportFunctions/SerialPort.cpp.o: CXX_COMPILER__autonomous_soaring_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SerialPort.cpp || cmake_object_order_depends_target_autonomous_soaring
+  DEP_FILE = CMakeFiles/autonomous_soaring.dir/SupportFunctions/SerialPort.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common
+  OBJECT_DIR = CMakeFiles/autonomous_soaring.dir
+  OBJECT_FILE_DIR = CMakeFiles/autonomous_soaring.dir/SupportFunctions
+
 build CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o: CXX_COMPILER__autonomous_soaring_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/DataDistributor.cpp || cmake_object_order_depends_target_autonomous_soaring
   DEP_FILE = CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common
+  OBJECT_DIR = CMakeFiles/autonomous_soaring.dir
+  OBJECT_FILE_DIR = CMakeFiles/autonomous_soaring.dir/SupportFunctions
+
+build CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.o: CXX_COMPILER__autonomous_soaring_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergyCalculator.cpp || cmake_object_order_depends_target_autonomous_soaring
+  DEP_FILE = CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common
+  OBJECT_DIR = CMakeFiles/autonomous_soaring.dir
+  OBJECT_FILE_DIR = CMakeFiles/autonomous_soaring.dir/SupportFunctions
+
+build CMakeFiles/autonomous_soaring.dir/SupportFunctions/Energy.cpp.o: CXX_COMPILER__autonomous_soaring_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/Energy.cpp || cmake_object_order_depends_target_autonomous_soaring
+  DEP_FILE = CMakeFiles/autonomous_soaring.dir/SupportFunctions/Energy.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common
   OBJECT_DIR = CMakeFiles/autonomous_soaring.dir
@@ -92,7 +113,7 @@ build CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o: 
 #############################################
 # Link the executable autonomous_soaring
 
-build autonomous_soaring: CXX_EXECUTABLE_LINKER__autonomous_soaring_Debug CMakeFiles/autonomous_soaring.dir/main.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkHeartbeat.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass_UDP.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o
+build autonomous_soaring: CXX_EXECUTABLE_LINKER__autonomous_soaring_Debug CMakeFiles/autonomous_soaring.dir/main.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkHeartbeat.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass_UDP.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/SerialPort.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.o CMakeFiles/autonomous_soaring.dir/SupportFunctions/Energy.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/autonomous_soaring.dir
   POST_BUILD = :
@@ -111,6 +132,20 @@ build cmake_object_order_depends_target_buffertest.elf: phony || cmake_object_or
 
 build CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.o: CXX_COMPILER__buffertest.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/DataDistributor.cpp || cmake_object_order_depends_target_buffertest.elf
   DEP_FILE = CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/buffertest.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/buffertest.elf.dir/SupportFunctions
+
+build CMakeFiles/buffertest.elf.dir/SupportFunctions/Energy.cpp.o: CXX_COMPILER__buffertest.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/Energy.cpp || cmake_object_order_depends_target_buffertest.elf
+  DEP_FILE = CMakeFiles/buffertest.elf.dir/SupportFunctions/Energy.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/buffertest.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/buffertest.elf.dir/SupportFunctions
+
+build CMakeFiles/buffertest.elf.dir/SupportFunctions/EnergyCalculator.cpp.o: CXX_COMPILER__buffertest.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergyCalculator.cpp || cmake_object_order_depends_target_buffertest.elf
+  DEP_FILE = CMakeFiles/buffertest.elf.dir/SupportFunctions/EnergyCalculator.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
   OBJECT_DIR = CMakeFiles/buffertest.elf.dir
@@ -137,8 +172,22 @@ build CMakeFiles/buffertest.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o: CXX_
   OBJECT_DIR = CMakeFiles/buffertest.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/buffertest.elf.dir/SupportFunctions
 
+build CMakeFiles/buffertest.elf.dir/SupportFunctions/SerialPort.cpp.o: CXX_COMPILER__buffertest.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SerialPort.cpp || cmake_object_order_depends_target_buffertest.elf
+  DEP_FILE = CMakeFiles/buffertest.elf.dir/SupportFunctions/SerialPort.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/buffertest.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/buffertest.elf.dir/SupportFunctions
+
 build CMakeFiles/buffertest.elf.dir/test/buffertest.cpp.o: CXX_COMPILER__buffertest.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/test/buffertest.cpp || cmake_object_order_depends_target_buffertest.elf
   DEP_FILE = CMakeFiles/buffertest.elf.dir/test/buffertest.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/buffertest.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/buffertest.elf.dir/test
+
+build CMakeFiles/buffertest.elf.dir/test/Energytester.cpp.o: CXX_COMPILER__buffertest.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/test/Energytester.cpp || cmake_object_order_depends_target_buffertest.elf
+  DEP_FILE = CMakeFiles/buffertest.elf.dir/test/Energytester.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
   OBJECT_DIR = CMakeFiles/buffertest.elf.dir
@@ -152,7 +201,7 @@ build CMakeFiles/buffertest.elf.dir/test/buffertest.cpp.o: CXX_COMPILER__buffert
 #############################################
 # Link the executable buffertest.elf
 
-build buffertest.elf: CXX_EXECUTABLE_LINKER__buffertest.2eelf_Debug CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.o CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkSend.cpp.o CMakeFiles/buffertest.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o CMakeFiles/buffertest.elf.dir/test/buffertest.cpp.o | lib/Catch2/src/libCatch2Maind.a lib/Catch2/src/libCatch2d.a || lib/Catch2/src/libCatch2Maind.a lib/Catch2/src/libCatch2d.a
+build buffertest.elf: CXX_EXECUTABLE_LINKER__buffertest.2eelf_Debug CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.o CMakeFiles/buffertest.elf.dir/SupportFunctions/Energy.cpp.o CMakeFiles/buffertest.elf.dir/SupportFunctions/EnergyCalculator.cpp.o CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkSend.cpp.o CMakeFiles/buffertest.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o CMakeFiles/buffertest.elf.dir/SupportFunctions/SerialPort.cpp.o CMakeFiles/buffertest.elf.dir/test/buffertest.cpp.o CMakeFiles/buffertest.elf.dir/test/Energytester.cpp.o | lib/Catch2/src/libCatch2Maind.a lib/Catch2/src/libCatch2d.a || lib/Catch2/src/libCatch2Maind.a lib/Catch2/src/libCatch2d.a
   FLAGS = -g
   LINK_LIBRARIES = lib/Catch2/src/libCatch2Maind.a  lib/Catch2/src/libCatch2d.a
   OBJECT_DIR = CMakeFiles/buffertest.elf.dir
@@ -160,6 +209,170 @@ build buffertest.elf: CXX_EXECUTABLE_LINKER__buffertest.2eelf_Debug CMakeFiles/b
   PRE_LINK = :
   TARGET_FILE = buffertest.elf
   TARGET_PDB = buffertest.elf.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target SerialportTester.elf
+
+
+#############################################
+# Order-only phony target for SerialportTester.elf
+
+build cmake_object_order_depends_target_SerialportTester.elf: phony || cmake_object_order_depends_target_Catch2 cmake_object_order_depends_target_Catch2WithMain
+
+build CMakeFiles/SerialportTester.elf.dir/SupportFunctions/DataDistributor.cpp.o: CXX_COMPILER__SerialportTester.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/DataDistributor.cpp || cmake_object_order_depends_target_SerialportTester.elf
+  DEP_FILE = CMakeFiles/SerialportTester.elf.dir/SupportFunctions/DataDistributor.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/SerialportTester.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/SerialportTester.elf.dir/SupportFunctions
+
+build CMakeFiles/SerialportTester.elf.dir/SupportFunctions/Energy.cpp.o: CXX_COMPILER__SerialportTester.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/Energy.cpp || cmake_object_order_depends_target_SerialportTester.elf
+  DEP_FILE = CMakeFiles/SerialportTester.elf.dir/SupportFunctions/Energy.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/SerialportTester.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/SerialportTester.elf.dir/SupportFunctions
+
+build CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergyCalculator.cpp.o: CXX_COMPILER__SerialportTester.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergyCalculator.cpp || cmake_object_order_depends_target_SerialportTester.elf
+  DEP_FILE = CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergyCalculator.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/SerialportTester.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/SerialportTester.elf.dir/SupportFunctions
+
+build CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o: CXX_COMPILER__SerialportTester.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkHeartbeat.cpp || cmake_object_order_depends_target_SerialportTester.elf
+  DEP_FILE = CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/SerialportTester.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/SerialportTester.elf.dir/SupportFunctions
+
+build CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.o: CXX_COMPILER__SerialportTester.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkSend.cpp || cmake_object_order_depends_target_SerialportTester.elf
+  DEP_FILE = CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/SerialportTester.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/SerialportTester.elf.dir/SupportFunctions
+
+build CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o: CXX_COMPILER__SerialportTester.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SenderClass_UDP.cpp || cmake_object_order_depends_target_SerialportTester.elf
+  DEP_FILE = CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/SerialportTester.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/SerialportTester.elf.dir/SupportFunctions
+
+build CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SerialPort.cpp.o: CXX_COMPILER__SerialportTester.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SerialPort.cpp || cmake_object_order_depends_target_SerialportTester.elf
+  DEP_FILE = CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SerialPort.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/SerialportTester.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/SerialportTester.elf.dir/SupportFunctions
+
+build CMakeFiles/SerialportTester.elf.dir/test/Serialporttester.cpp.o: CXX_COMPILER__SerialportTester.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/test/Serialporttester.cpp || cmake_object_order_depends_target_SerialportTester.elf
+  DEP_FILE = CMakeFiles/SerialportTester.elf.dir/test/Serialporttester.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/SerialportTester.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/SerialportTester.elf.dir/test
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target SerialportTester.elf
+
+
+#############################################
+# Link the executable SerialportTester.elf
+
+build SerialportTester.elf: CXX_EXECUTABLE_LINKER__SerialportTester.2eelf_Debug CMakeFiles/SerialportTester.elf.dir/SupportFunctions/DataDistributor.cpp.o CMakeFiles/SerialportTester.elf.dir/SupportFunctions/Energy.cpp.o CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergyCalculator.cpp.o CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.o CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SerialPort.cpp.o CMakeFiles/SerialportTester.elf.dir/test/Serialporttester.cpp.o | lib/Catch2/src/libCatch2Maind.a lib/Catch2/src/libCatch2d.a || lib/Catch2/src/libCatch2Maind.a lib/Catch2/src/libCatch2d.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/Catch2/src/libCatch2Maind.a  lib/Catch2/src/libCatch2d.a
+  OBJECT_DIR = CMakeFiles/SerialportTester.elf.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = SerialportTester.elf
+  TARGET_PDB = SerialportTester.elf.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Energytester.elf
+
+
+#############################################
+# Order-only phony target for Energytester.elf
+
+build cmake_object_order_depends_target_Energytester.elf: phony || cmake_object_order_depends_target_Catch2 cmake_object_order_depends_target_Catch2WithMain
+
+build CMakeFiles/Energytester.elf.dir/SupportFunctions/DataDistributor.cpp.o: CXX_COMPILER__Energytester.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/DataDistributor.cpp || cmake_object_order_depends_target_Energytester.elf
+  DEP_FILE = CMakeFiles/Energytester.elf.dir/SupportFunctions/DataDistributor.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/Energytester.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/Energytester.elf.dir/SupportFunctions
+
+build CMakeFiles/Energytester.elf.dir/SupportFunctions/Energy.cpp.o: CXX_COMPILER__Energytester.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/Energy.cpp || cmake_object_order_depends_target_Energytester.elf
+  DEP_FILE = CMakeFiles/Energytester.elf.dir/SupportFunctions/Energy.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/Energytester.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/Energytester.elf.dir/SupportFunctions
+
+build CMakeFiles/Energytester.elf.dir/SupportFunctions/EnergyCalculator.cpp.o: CXX_COMPILER__Energytester.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergyCalculator.cpp || cmake_object_order_depends_target_Energytester.elf
+  DEP_FILE = CMakeFiles/Energytester.elf.dir/SupportFunctions/EnergyCalculator.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/Energytester.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/Energytester.elf.dir/SupportFunctions
+
+build CMakeFiles/Energytester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o: CXX_COMPILER__Energytester.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkHeartbeat.cpp || cmake_object_order_depends_target_Energytester.elf
+  DEP_FILE = CMakeFiles/Energytester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/Energytester.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/Energytester.elf.dir/SupportFunctions
+
+build CMakeFiles/Energytester.elf.dir/SupportFunctions/MavlinkSend.cpp.o: CXX_COMPILER__Energytester.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkSend.cpp || cmake_object_order_depends_target_Energytester.elf
+  DEP_FILE = CMakeFiles/Energytester.elf.dir/SupportFunctions/MavlinkSend.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/Energytester.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/Energytester.elf.dir/SupportFunctions
+
+build CMakeFiles/Energytester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o: CXX_COMPILER__Energytester.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SenderClass_UDP.cpp || cmake_object_order_depends_target_Energytester.elf
+  DEP_FILE = CMakeFiles/Energytester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/Energytester.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/Energytester.elf.dir/SupportFunctions
+
+build CMakeFiles/Energytester.elf.dir/SupportFunctions/SerialPort.cpp.o: CXX_COMPILER__Energytester.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SerialPort.cpp || cmake_object_order_depends_target_Energytester.elf
+  DEP_FILE = CMakeFiles/Energytester.elf.dir/SupportFunctions/SerialPort.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/Energytester.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/Energytester.elf.dir/SupportFunctions
+
+build CMakeFiles/Energytester.elf.dir/test/Energytester.cpp.o: CXX_COMPILER__Energytester.2eelf_unscanned_Debug /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/test/Energytester.cpp || cmake_object_order_depends_target_Energytester.elf
+  DEP_FILE = CMakeFiles/Energytester.elf.dir/test/Energytester.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.. -I/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes
+  OBJECT_DIR = CMakeFiles/Energytester.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/Energytester.elf.dir/test
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Energytester.elf
+
+
+#############################################
+# Link the executable Energytester.elf
+
+build Energytester.elf: CXX_EXECUTABLE_LINKER__Energytester.2eelf_Debug CMakeFiles/Energytester.elf.dir/SupportFunctions/DataDistributor.cpp.o CMakeFiles/Energytester.elf.dir/SupportFunctions/Energy.cpp.o CMakeFiles/Energytester.elf.dir/SupportFunctions/EnergyCalculator.cpp.o CMakeFiles/Energytester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o CMakeFiles/Energytester.elf.dir/SupportFunctions/MavlinkSend.cpp.o CMakeFiles/Energytester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o CMakeFiles/Energytester.elf.dir/SupportFunctions/SerialPort.cpp.o CMakeFiles/Energytester.elf.dir/test/Energytester.cpp.o | lib/Catch2/src/libCatch2Maind.a lib/Catch2/src/libCatch2d.a || lib/Catch2/src/libCatch2Maind.a lib/Catch2/src/libCatch2d.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/Catch2/src/libCatch2Maind.a  lib/Catch2/src/libCatch2d.a
+  OBJECT_DIR = CMakeFiles/Energytester.elf.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Energytester.elf
+  TARGET_PDB = Energytester.elf.dbg
 
 
 #############################################
@@ -1058,7 +1271,7 @@ build libCatch2d.a: phony lib/Catch2/src/libCatch2d.a
 #############################################
 # Folder: /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug
 
-build all: phony autonomous_soaring buffertest.elf lib/Catch2/all
+build all: phony autonomous_soaring buffertest.elf SerialportTester.elf Energytester.elf lib/Catch2/all
 
 # =============================================================================
 

@@ -7,23 +7,26 @@
 
 #include "CircularBuffer.h"
 #include "DataDistributor.h"
+#include "Energy.h"
+
+#define GRAVITATION 9.81
 
 class DataDistributor;  // Forward declaration
 
 class EnergyCalculator {
 
 private:
-    CircularBuffer<float> Energybuffer;
-    CircularBuffer<float> Energybufferderivation;
-    bool Rising = false;
     DataDistributor* dataDistributor;
-    float calcEnergyederivation();
+    Energy calcEnergyederivation();
 
 public:
-    EnergyCalculator(size_t buffersize, DataDistributor &distributor);
-    float getEnergy();
-    float getEnergyderivation();
-    bool  currentlyRising();
+    EnergyCalculator(DataDistributor &distributor);
+
+    Energy getEnergy();
+    Energy getEnergyDerivation();
+
+
+
 
 };
 

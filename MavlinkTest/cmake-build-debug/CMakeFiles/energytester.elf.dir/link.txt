@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/energytester.elf.dir/test/Energytester.cpp.o -o energytester.elf  lib/Catch2/src/libCatch2Maind.a lib/Catch2/src/libCatch2d.a 

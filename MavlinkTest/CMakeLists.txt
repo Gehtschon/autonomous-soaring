@@ -20,6 +20,8 @@ add_executable(autonomous_soaring
         SupportFunctions/DataDistributor.h
         SupportFunctions/EnergyCalculator.cpp
         SupportFunctions/EnergyCalculator.h
+        SupportFunctions/Energy.cpp
+        SupportFunctions/Energy.h
 
 )
 
@@ -62,7 +64,6 @@ file(GLOB_RECURSE test_SRCS_Energy
         "${PROJECT_SOURCE_DIR}/SupportFunctions/*.cpp"
 )
 add_executable(Energytester.elf ${test_SRCS_Energy}
-        SupportFunctions/SerialPort.h
         test/Energytester.cpp)
 target_link_libraries(Energytester.elf Catch2::Catch2WithMain)
 target_include_directories(Energytester.elf PRIVATE SupportFunctions)

@@ -3,43 +3,42 @@
 //
 
 #include "EnergyCalculator.h"
-EnergyCalculator::EnergyCalculator(size_t buffersize, DataDistributor &distributor) :
-        Energybuffer(buffersize),
-        Energybufferderivation(buffersize),
+
+EnergyCalculator::EnergyCalculator(DataDistributor &distributor) :
+
         dataDistributor(&distributor) {
 
 }
 
-float EnergyCalculator::getEnergy() {
+Energy EnergyCalculator::getEnergy() {
     // 1/2g * v² +h
     auto v_airspeed = dataDistributor->getAirSpeedBuffer();
     auto height = dataDistributor->getAltBuffer();
-    float e = ((v_airspeed.getLatest()*v_airspeed.getLatest())/2*9,81)+height.getLatest();
-    return e;
+    float e = static_cast<float>((v_airspeed.getLatest() * v_airspeed.getLatest()) / 2.0 * GRAVITATION) + height.getLatest();
+    return Energy(e);
 
 }
 
-float EnergyCalculator::calcEnergyederivation() {
-    if (Energybuffer.getBufferSize() == 1){
-        // The first derivitif is always x-0 so we just have x
-        auto energyDerivation = dataDistributor->getEnergyBuffer();
-
-        dataDistributor->addEnergyDerivation(energyDerivation.getIndex(0));
-
+Energy EnergyCalculator::getEnergyDerivation() {
+// 0 1 2 3 4 5 6 Energyvalue
+// 1 1 1 1 1 1   Derivation
+    auto energybuffer = dataDistributor->getEnergyBuffer();
+    if (energybuffer.getBufferSize() < 2) {
+        Energy energyob = energybuffer.getLatest();
+        return energyob;
     }
-    // 0 1 2 3 4 5 6 Energy
-    // 1 1 1 1 1 1   Derivation
+    auto e_0 = energybuffer.getLatest();
+    auto e_1 = energybuffer.getIndex(energybuffer.getBufferSize() - 1);
 
-    auto Energy = dataDistributor->getEnergyBuffer();
+    auto energydiff = e_0.getEnergyvalue()-e_1.getEnergyvalue();
+    auto timediff = e_0.getTimeSeconds()-e_1.getTimeSeconds();
 
-    auto Energy_0 = Energy.getLatest();
-    auto Energy_1 = Energy.getIndex(Energy.getBufferSize()-1);
+    float energyderivation = energydiff/(float)timediff;
 
-    auto derivation = Energy_0 - Energy_1;
+    auto energyob = Energy(energydiff);
 
-    dataDistributor->addEnergyDerivation(derivation);
-
-    return derivation;
-
-
+    return energyob;
 }
+
+
+

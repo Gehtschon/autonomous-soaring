@@ -9,7 +9,7 @@ DataDistributor::DataDistributor() : RollBuffer(5), PitchBuffer(5), YawBuffer(5)
                                      AirSpeedBuffer(5), GroundSpeedBuffer(5), AltBuffer(5), ClimbRateBuffer(5),
                                      EnergyBuffer(5), Energybufferderivation(5) {
     // Additional initialization if needed
-    createEnergyCalculator(5);
+    createEnergyCalculator();
 
 
 }
@@ -25,13 +25,13 @@ DataDistributor::DataDistributor(size_t arraySize) :
         ClimbRateBuffer(arraySize),
         EnergyBuffer(arraySize),
         Energybufferderivation(arraySize) {
-    createEnergyCalculator(arraySize);
+    createEnergyCalculator();
 
 }
 
 
-void DataDistributor::createEnergyCalculator(size_t bufferSize) {
-    energyCalculator = new EnergyCalculator(bufferSize, *this);
+void DataDistributor::createEnergyCalculator() {
+    energyCalculator = new EnergyCalculator( *this);
 }
 
 void DataDistributor::decodeMessage(const std::vector<mavlink_message_t> &message,
@@ -73,13 +73,6 @@ void DataDistributor::decodeMessage(const std::vector<mavlink_message_t> &messag
 
 }
 
-void DataDistributor::addEnergy(const float Energy) {
-    EnergyBuffer.insert(Energy);
-}
-
-void DataDistributor::addEnergyDerivation(const float Energyder) {
-    Energybufferderivation.insert(Energyder);
-}
 
 const CircularBuffer<float> &DataDistributor::getRollBuffer() const {
     return RollBuffer;
@@ -109,17 +102,14 @@ const CircularBuffer<float> &DataDistributor::getClimbRateBuffer() const {
     return ClimbRateBuffer;
 }
 
-// Energy Stuff
-const CircularBuffer<float> &DataDistributor::getEnergyBuffer() const {
-    //energyCalculator->getEnergy();
+
+const CircularBuffer<Energy> &DataDistributor::getEnergyBuffer() const {
     return EnergyBuffer;
 }
 
-const CircularBuffer<float> &DataDistributor::getEnergybufferderivation() const {
-    //energyCalculator->getEnergyderivation();
+const CircularBuffer<Energy> &DataDistributor::getEnergybufferderivation() const {
     return Energybufferderivation;
 }
-
 
 void DataDistributor::generateFilledBuffers() {
 
