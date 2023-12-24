@@ -25,7 +25,7 @@ private:
     CircularBuffer<float> EnergyBuffer;
     CircularBuffer<float> Energybufferderivation;
     EnergyCalculator* energyCalculator;
-
+    void createEnergyCalculator(size_t bufferSize);
 
 
 
@@ -33,7 +33,7 @@ public:
     DataDistributor();
     DataDistributor(size_t arraySize);
 
-    void createEnergyCalculator(size_t bufferSize);
+
 
 
     void decodeMessage(const std::vector<mavlink_message_t> &message, const std::vector<mavlink_status_t> &status);

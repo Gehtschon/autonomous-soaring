@@ -156,17 +156,17 @@ SerialportTester.elf/fast:
 .PHONY : SerialportTester.elf/fast
 
 #=============================================================================
-# Target rules for targets named energytester.elf
+# Target rules for targets named Energytester.elf
 
 # Build rule for target.
-energytester.elf: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 energytester.elf
-.PHONY : energytester.elf
+Energytester.elf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Energytester.elf
+.PHONY : Energytester.elf
 
 # fast build rule for target.
-energytester.elf/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/energytester.elf.dir/build.make CMakeFiles/energytester.elf.dir/build
-.PHONY : energytester.elf/fast
+Energytester.elf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/build
+.PHONY : Energytester.elf/fast
 
 #=============================================================================
 # Target rules for targets named Catch2
@@ -202,6 +202,7 @@ SupportFunctions/DataDistributor.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/DataDistributor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/DataDistributor.cpp.o
 .PHONY : SupportFunctions/DataDistributor.cpp.o
 
 SupportFunctions/DataDistributor.i: SupportFunctions/DataDistributor.cpp.i
@@ -212,6 +213,7 @@ SupportFunctions/DataDistributor.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/DataDistributor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/DataDistributor.cpp.i
 .PHONY : SupportFunctions/DataDistributor.cpp.i
 
 SupportFunctions/DataDistributor.s: SupportFunctions/DataDistributor.cpp.s
@@ -222,6 +224,7 @@ SupportFunctions/DataDistributor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/DataDistributor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/DataDistributor.cpp.s
 .PHONY : SupportFunctions/DataDistributor.cpp.s
 
 SupportFunctions/EnergyCalculator.o: SupportFunctions/EnergyCalculator.cpp.o
@@ -232,6 +235,7 @@ SupportFunctions/EnergyCalculator.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/EnergyCalculator.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergyCalculator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/EnergyCalculator.cpp.o
 .PHONY : SupportFunctions/EnergyCalculator.cpp.o
 
 SupportFunctions/EnergyCalculator.i: SupportFunctions/EnergyCalculator.cpp.i
@@ -242,6 +246,7 @@ SupportFunctions/EnergyCalculator.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/EnergyCalculator.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergyCalculator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/EnergyCalculator.cpp.i
 .PHONY : SupportFunctions/EnergyCalculator.cpp.i
 
 SupportFunctions/EnergyCalculator.s: SupportFunctions/EnergyCalculator.cpp.s
@@ -252,6 +257,7 @@ SupportFunctions/EnergyCalculator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/EnergyCalculator.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/EnergyCalculator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/EnergyCalculator.cpp.s
 .PHONY : SupportFunctions/EnergyCalculator.cpp.s
 
 SupportFunctions/MavlinkHeartbeat.o: SupportFunctions/MavlinkHeartbeat.cpp.o
@@ -262,6 +268,7 @@ SupportFunctions/MavlinkHeartbeat.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkHeartbeat.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.o
 .PHONY : SupportFunctions/MavlinkHeartbeat.cpp.o
 
 SupportFunctions/MavlinkHeartbeat.i: SupportFunctions/MavlinkHeartbeat.cpp.i
@@ -272,6 +279,7 @@ SupportFunctions/MavlinkHeartbeat.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkHeartbeat.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.i
 .PHONY : SupportFunctions/MavlinkHeartbeat.cpp.i
 
 SupportFunctions/MavlinkHeartbeat.s: SupportFunctions/MavlinkHeartbeat.cpp.s
@@ -282,6 +290,7 @@ SupportFunctions/MavlinkHeartbeat.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkHeartbeat.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/MavlinkHeartbeat.cpp.s
 .PHONY : SupportFunctions/MavlinkHeartbeat.cpp.s
 
 SupportFunctions/MavlinkSend.o: SupportFunctions/MavlinkSend.cpp.o
@@ -292,6 +301,7 @@ SupportFunctions/MavlinkSend.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkSend.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/MavlinkSend.cpp.o
 .PHONY : SupportFunctions/MavlinkSend.cpp.o
 
 SupportFunctions/MavlinkSend.i: SupportFunctions/MavlinkSend.cpp.i
@@ -302,6 +312,7 @@ SupportFunctions/MavlinkSend.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkSend.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/MavlinkSend.cpp.i
 .PHONY : SupportFunctions/MavlinkSend.cpp.i
 
 SupportFunctions/MavlinkSend.s: SupportFunctions/MavlinkSend.cpp.s
@@ -312,6 +323,7 @@ SupportFunctions/MavlinkSend.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/MavlinkSend.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/MavlinkSend.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/MavlinkSend.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/MavlinkSend.cpp.s
 .PHONY : SupportFunctions/MavlinkSend.cpp.s
 
 SupportFunctions/SenderClass_UDP.o: SupportFunctions/SenderClass_UDP.cpp.o
@@ -322,6 +334,7 @@ SupportFunctions/SenderClass_UDP.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass_UDP.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o
 .PHONY : SupportFunctions/SenderClass_UDP.cpp.o
 
 SupportFunctions/SenderClass_UDP.i: SupportFunctions/SenderClass_UDP.cpp.i
@@ -332,6 +345,7 @@ SupportFunctions/SenderClass_UDP.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass_UDP.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/SenderClass_UDP.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.i
 .PHONY : SupportFunctions/SenderClass_UDP.cpp.i
 
 SupportFunctions/SenderClass_UDP.s: SupportFunctions/SenderClass_UDP.cpp.s
@@ -342,6 +356,7 @@ SupportFunctions/SenderClass_UDP.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/SenderClass_UDP.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/SenderClass_UDP.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/SenderClass_UDP.cpp.s
 .PHONY : SupportFunctions/SenderClass_UDP.cpp.s
 
 SupportFunctions/SerialPort.o: SupportFunctions/SerialPort.cpp.o
@@ -352,6 +367,7 @@ SupportFunctions/SerialPort.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/SerialPort.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/SerialPort.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SerialPort.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/SerialPort.cpp.o
 .PHONY : SupportFunctions/SerialPort.cpp.o
 
 SupportFunctions/SerialPort.i: SupportFunctions/SerialPort.cpp.i
@@ -362,6 +378,7 @@ SupportFunctions/SerialPort.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/SerialPort.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/SerialPort.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SerialPort.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/SerialPort.cpp.i
 .PHONY : SupportFunctions/SerialPort.cpp.i
 
 SupportFunctions/SerialPort.s: SupportFunctions/SerialPort.cpp.s
@@ -372,6 +389,7 @@ SupportFunctions/SerialPort.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/SupportFunctions/SerialPort.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/SupportFunctions/SerialPort.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialportTester.elf.dir/build.make CMakeFiles/SerialportTester.elf.dir/SupportFunctions/SerialPort.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/SupportFunctions/SerialPort.cpp.s
 .PHONY : SupportFunctions/SerialPort.cpp.s
 
 main.o: main.cpp.o
@@ -404,7 +422,7 @@ test/Energytester.o: test/Energytester.cpp.o
 # target to build an object file
 test/Energytester.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/test/Energytester.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/energytester.elf.dir/build.make CMakeFiles/energytester.elf.dir/test/Energytester.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/test/Energytester.cpp.o
 .PHONY : test/Energytester.cpp.o
 
 test/Energytester.i: test/Energytester.cpp.i
@@ -413,7 +431,7 @@ test/Energytester.i: test/Energytester.cpp.i
 # target to preprocess a source file
 test/Energytester.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/test/Energytester.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/energytester.elf.dir/build.make CMakeFiles/energytester.elf.dir/test/Energytester.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/test/Energytester.cpp.i
 .PHONY : test/Energytester.cpp.i
 
 test/Energytester.s: test/Energytester.cpp.s
@@ -422,7 +440,7 @@ test/Energytester.s: test/Energytester.cpp.s
 # target to generate assembly for a file
 test/Energytester.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/test/Energytester.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/energytester.elf.dir/build.make CMakeFiles/energytester.elf.dir/test/Energytester.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energytester.elf.dir/build.make CMakeFiles/Energytester.elf.dir/test/Energytester.cpp.s
 .PHONY : test/Energytester.cpp.s
 
 test/Serialporttester.o: test/Serialporttester.cpp.o
@@ -483,10 +501,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Catch2"
 	@echo "... Catch2WithMain"
+	@echo "... Energytester.elf"
 	@echo "... SerialportTester.elf"
 	@echo "... autonomous_soaring"
 	@echo "... buffertest.elf"
-	@echo "... energytester.elf"
 	@echo "... SupportFunctions/DataDistributor.o"
 	@echo "... SupportFunctions/DataDistributor.i"
 	@echo "... SupportFunctions/DataDistributor.s"

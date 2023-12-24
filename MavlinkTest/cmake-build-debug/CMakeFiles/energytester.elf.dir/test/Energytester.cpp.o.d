@@ -574,7 +574,4 @@ CMakeFiles/energytester.elf.dir/test/Energytester.cpp.o: \
  /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega/../csAirLink/csAirLink.h \
  /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega/../csAirLink/./mavlink_msg_airlink_auth.h \
  /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega/../csAirLink/./mavlink_msg_airlink_auth_response.h \
- /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega/../mavlink_get_info.h \
- /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergyCalculator.h \
- /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/CircularBuffer.h \
- /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/DataDistributor.h
+ /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega/../mavlink_get_info.h

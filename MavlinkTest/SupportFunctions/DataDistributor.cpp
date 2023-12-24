@@ -111,12 +111,12 @@ const CircularBuffer<float> &DataDistributor::getClimbRateBuffer() const {
 
 // Energy Stuff
 const CircularBuffer<float> &DataDistributor::getEnergyBuffer() const {
-    energyCalculator->getEnergy();
+    //energyCalculator->getEnergy();
     return EnergyBuffer;
 }
 
 const CircularBuffer<float> &DataDistributor::getEnergybufferderivation() const {
-    energyCalculator->getEnergyderivation();
+    //energyCalculator->getEnergyderivation();
     return Energybufferderivation;
 }
 

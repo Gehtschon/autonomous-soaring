@@ -639,10 +639,7 @@ CMakeFiles/energytester.elf.dir/test/Energytester.cpp.o: /home/fabian/Soaring/cp
   /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/csAirLink/csAirLink.h \
   /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/csAirLink/mavlink_msg_airlink_auth.h \
   /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/csAirLink/mavlink_msg_airlink_auth_response.h \
-  /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/mavlink_get_info.h \
-  /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergyCalculator.h \
-  /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/CircularBuffer.h \
-  /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/DataDistributor.h
+  /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/mavlink_get_info.h
 
 
 /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/csAirLink/csAirLink.h:
@@ -1200,8 +1197,6 @@ CMakeFiles/energytester.elf.dir/test/Energytester.cpp.o: /home/fabian/Soaring/cp
 /usr/include/c++/13.2.1/bits/stl_algobase.h:
 
 /usr/include/c++/13.2.1/ext/aligned_buffer.h:
-
-/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergyCalculator.h:
 
 /usr/include/c++/13.2.1/bits/stl_function.h:
 

@@ -6,9 +6,11 @@
 #include "CircularBuffer.h"
 
 #include "DataDistributor.h"
-#include "EnergyCalculator.h"
+
+
+#define BufferSize 10
 
 TEST_CASE( "Energychecker ", "" ) {
-    DataDistributor distributor(5);
-    distributor.
+    DataDistributor dataDistributor(BufferSize);
+    REQUIRE(1==1);
 }

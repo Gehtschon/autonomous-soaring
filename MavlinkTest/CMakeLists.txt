@@ -57,12 +57,12 @@ target_include_directories(SerialportTester.elf PRIVATE SupportFunctions)
 
 
 # test sources Energytester
-file(GLOB_RECURSE test_SRCS_Energytester
+file(GLOB_RECURSE test_SRCS_Energy
         "${PROJECT_SOURCE_DIR}/test/Energytester.cpp"
         "${PROJECT_SOURCE_DIR}/SupportFunctions/*.cpp"
 )
-add_executable(energytester.elf ${test_SRCS_test_SRCS_Energytester}
-        SupportFunctions/CircularBuffer.h
+add_executable(Energytester.elf ${test_SRCS_Energy}
+        SupportFunctions/SerialPort.h
         test/Energytester.cpp)
-target_link_libraries(energytester.elf Catch2::Catch2WithMain)
-target_include_directories(energytester.elf PRIVATE SupportFunctions)
+target_link_libraries(Energytester.elf Catch2::Catch2WithMain)
+target_include_directories(Energytester.elf PRIVATE SupportFunctions)

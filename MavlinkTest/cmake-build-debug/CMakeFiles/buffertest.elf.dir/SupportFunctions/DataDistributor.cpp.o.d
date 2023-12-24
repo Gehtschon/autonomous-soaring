@@ -498,4 +498,5 @@ CMakeFiles/buffertest.elf.dir/SupportFunctions/DataDistributor.cpp.o: \
  /usr/include/c++/13.2.1/bits/ranges_algobase.h \
  /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13.2.1/pstl/execution_defs.h \
- /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergyCalculator.h
+ /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergyCalculator.h \
+ /home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/CircularBuffer.h

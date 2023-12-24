@@ -181,8 +181,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="energytester.elf">
-				<Option output="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/energytester.elf" prefix_auto="0" extension_auto="0"/>
+			<Target title="Energytester.elf">
+				<Option output="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Energytester.elf" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -203,14 +203,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 energytester.elf"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 Energytester.elf"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="energytester.elf/fast">
-				<Option output="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/energytester.elf" prefix_auto="0" extension_auto="0"/>
+			<Target title="Energytester.elf/fast">
+				<Option output="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Energytester.elf" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -231,7 +231,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 energytester.elf/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 Energytester.elf/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -373,12 +373,12 @@
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/CircularBuffer.h">
 			<Option target="autonomous_soaring"/>
 			<Option target="buffertest.elf"/>
-			<Option target="energytester.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/DataDistributor.cpp">
 			<Option target="autonomous_soaring"/>
 			<Option target="buffertest.elf"/>
 			<Option target="SerialportTester.elf"/>
+			<Option target="Energytester.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/DataDistributor.h">
 			<Option target="autonomous_soaring"/>
@@ -387,6 +387,7 @@
 			<Option target="autonomous_soaring"/>
 			<Option target="buffertest.elf"/>
 			<Option target="SerialportTester.elf"/>
+			<Option target="Energytester.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/EnergyCalculator.h">
 			<Option target="autonomous_soaring"/>
@@ -398,6 +399,7 @@
 			<Option target="autonomous_soaring"/>
 			<Option target="buffertest.elf"/>
 			<Option target="SerialportTester.elf"/>
+			<Option target="Energytester.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkHeartbeat.h">
 			<Option target="autonomous_soaring"/>
@@ -406,6 +408,7 @@
 			<Option target="autonomous_soaring"/>
 			<Option target="buffertest.elf"/>
 			<Option target="SerialportTester.elf"/>
+			<Option target="Energytester.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/MavlinkSend.h">
 			<Option target="autonomous_soaring"/>
@@ -417,6 +420,7 @@
 			<Option target="autonomous_soaring"/>
 			<Option target="buffertest.elf"/>
 			<Option target="SerialportTester.elf"/>
+			<Option target="Energytester.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SenderClass_UDP.h">
 			<Option target="autonomous_soaring"/>
@@ -425,10 +429,12 @@
 			<Option target="autonomous_soaring"/>
 			<Option target="buffertest.elf"/>
 			<Option target="SerialportTester.elf"/>
+			<Option target="Energytester.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/SerialPort.h">
 			<Option target="autonomous_soaring"/>
 			<Option target="SerialportTester.elf"/>
+			<Option target="Energytester.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes/catch2/catch_user_config.hpp">
 			<Option target="Catch2"/>
@@ -1272,7 +1278,7 @@
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/test/Energytester.cpp">
 			<Option target="buffertest.elf"/>
-			<Option target="energytester.elf"/>
+			<Option target="Energytester.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/test/Serialporttester.cpp">
 			<Option target="SerialportTester.elf"/>
