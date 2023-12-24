@@ -21,7 +21,8 @@
 					[
 						2,
 						3,
-						4
+						4,
+						5
 					]
 				},
 				{
@@ -73,7 +74,8 @@
 					[
 						2,
 						3,
-						4
+						4,
+						5
 					]
 				},
 				{
@@ -110,22 +112,29 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "SerialportTester.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SerialportTester.elf-Debug-1c43fbabdc3b6aa0120a.json",
+					"jsonFile" : "target-SerialportTester.elf-Debug-8ff66bf7fd323d3d3f1c.json",
 					"name" : "SerialportTester.elf",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "autonomous_soaring::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-autonomous_soaring-Debug-d2f4d971da2db990a0dd.json",
+					"jsonFile" : "target-autonomous_soaring-Debug-aa891e3adb3969af6d39.json",
 					"name" : "autonomous_soaring",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "buffertest.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-buffertest.elf-Debug-15a7b3ee357c77b12ecc.json",
+					"jsonFile" : "target-buffertest.elf-Debug-fbb50f475c6d45ce9e85.json",
 					"name" : "buffertest.elf",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "energytester.elf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-energytester.elf-Debug-9bedd9e396165116b2d1.json",
+					"name" : "energytester.elf",
 					"projectIndex" : 0
 				}
 			]

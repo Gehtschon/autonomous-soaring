@@ -1,12 +1,14 @@
 //
-// Created by fabian on 21.12.23.
+// Created by fabian on 24.12.23.
 //
 
 #ifndef AUTONOMOUS_SOARING_ENERGYCALCULATOR_H
 #define AUTONOMOUS_SOARING_ENERGYCALCULATOR_H
 
-#include <CircularBuffer.h>
+#include "CircularBuffer.h"
 #include "DataDistributor.h"
+
+class DataDistributor;  // Forward declaration
 
 class EnergyCalculator {
 
@@ -24,6 +26,7 @@ public:
     bool  currentlyRising();
 
 };
+
 
 
 #endif //AUTONOMOUS_SOARING_ENERGYCALCULATOR_H

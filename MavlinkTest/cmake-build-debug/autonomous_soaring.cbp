@@ -181,6 +181,62 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="energytester.elf">
+				<Option output="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/energytester.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions"/>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master"/>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega"/>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common"/>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.."/>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 energytester.elf"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="energytester.elf/fast">
+				<Option output="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/energytester.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions"/>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master"/>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/ardupilotmega"/>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/c_library_v2-master/common"/>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/lib/Catch2/src/catch2/.."/>
+					<Add directory="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/lib/Catch2/generated-includes"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 energytester.elf/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/cmake-build-debug"/>
 				<Option type="4"/>
@@ -317,6 +373,7 @@
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/CircularBuffer.h">
 			<Option target="autonomous_soaring"/>
 			<Option target="buffertest.elf"/>
+			<Option target="energytester.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/SupportFunctions/DataDistributor.cpp">
 			<Option target="autonomous_soaring"/>
@@ -1212,6 +1269,10 @@
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/main.cpp">
 			<Option target="autonomous_soaring"/>
+		</Unit>
+		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/test/Energytester.cpp">
+			<Option target="buffertest.elf"/>
+			<Option target="energytester.elf"/>
 		</Unit>
 		<Unit filename="/home/fabian/Soaring/cpp_soaring/autonomous-soaring/MavlinkTest/test/Serialporttester.cpp">
 			<Option target="SerialportTester.elf"/>

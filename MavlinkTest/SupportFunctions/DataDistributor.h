@@ -1,15 +1,17 @@
 //
-// Created by fabian on 30.11.23.
+// Created by fabian on 24.12.23.
 //
 
 #ifndef AUTONOMOUS_SOARING_DATADISTRIBUTOR_H
 #define AUTONOMOUS_SOARING_DATADISTRIBUTOR_H
 
+
 #include "MavlinkHeader.h"
 #include "mavlink_msg_vfr_hud.h"
 #include <vector>
 #include <CircularBuffer.h>
-#include "EnergyCalculator.h"
+
+class EnergyCalculator;  // Forward declaration
 
 class DataDistributor {
 private:
@@ -30,6 +32,8 @@ private:
 public:
     DataDistributor();
     DataDistributor(size_t arraySize);
+
+    void createEnergyCalculator(size_t bufferSize);
 
 
     void decodeMessage(const std::vector<mavlink_message_t> &message, const std::vector<mavlink_status_t> &status);
@@ -54,6 +58,10 @@ public:
 
     void addEnergy(const float Energy);
     void addEnergyDerivation(const float Energyder);
+
+
+    // for testing only
+    void generateFilledBuffers();
 
 };
 

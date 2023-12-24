@@ -18,7 +18,7 @@
 #include "SenderClass_UDP.h"
 #include "SerialPort.h"
 #include "CircularBuffer.h"
-#include "DataDistributor.h"
+#include "EnergyCalculator.h"
 
 
 #define BufferSize 10

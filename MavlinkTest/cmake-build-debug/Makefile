@@ -156,6 +156,19 @@ SerialportTester.elf/fast:
 .PHONY : SerialportTester.elf/fast
 
 #=============================================================================
+# Target rules for targets named energytester.elf
+
+# Build rule for target.
+energytester.elf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 energytester.elf
+.PHONY : energytester.elf
+
+# fast build rule for target.
+energytester.elf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/energytester.elf.dir/build.make CMakeFiles/energytester.elf.dir/build
+.PHONY : energytester.elf/fast
+
+#=============================================================================
 # Target rules for targets named Catch2
 
 # Build rule for target.
@@ -385,6 +398,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/autonomous_soaring.dir/build.make CMakeFiles/autonomous_soaring.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+test/Energytester.o: test/Energytester.cpp.o
+.PHONY : test/Energytester.o
+
+# target to build an object file
+test/Energytester.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/test/Energytester.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/energytester.elf.dir/build.make CMakeFiles/energytester.elf.dir/test/Energytester.cpp.o
+.PHONY : test/Energytester.cpp.o
+
+test/Energytester.i: test/Energytester.cpp.i
+.PHONY : test/Energytester.i
+
+# target to preprocess a source file
+test/Energytester.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/test/Energytester.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/energytester.elf.dir/build.make CMakeFiles/energytester.elf.dir/test/Energytester.cpp.i
+.PHONY : test/Energytester.cpp.i
+
+test/Energytester.s: test/Energytester.cpp.s
+.PHONY : test/Energytester.s
+
+# target to generate assembly for a file
+test/Energytester.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffertest.elf.dir/build.make CMakeFiles/buffertest.elf.dir/test/Energytester.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/energytester.elf.dir/build.make CMakeFiles/energytester.elf.dir/test/Energytester.cpp.s
+.PHONY : test/Energytester.cpp.s
+
 test/Serialporttester.o: test/Serialporttester.cpp.o
 .PHONY : test/Serialporttester.o
 
@@ -446,6 +486,7 @@ help:
 	@echo "... SerialportTester.elf"
 	@echo "... autonomous_soaring"
 	@echo "... buffertest.elf"
+	@echo "... energytester.elf"
 	@echo "... SupportFunctions/DataDistributor.o"
 	@echo "... SupportFunctions/DataDistributor.i"
 	@echo "... SupportFunctions/DataDistributor.s"
@@ -467,6 +508,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... test/Energytester.o"
+	@echo "... test/Energytester.i"
+	@echo "... test/Energytester.s"
 	@echo "... test/Serialporttester.o"
 	@echo "... test/Serialporttester.i"
 	@echo "... test/Serialporttester.s"

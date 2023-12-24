@@ -1,13 +1,17 @@
 //
-// Created by fabian on 30.11.23.
+// Created by fabian on 24.12.23.
 //
 
 #include "DataDistributor.h"
+#include "EnergyCalculator.h"
 
 DataDistributor::DataDistributor() : RollBuffer(5), PitchBuffer(5), YawBuffer(5),
                                      AirSpeedBuffer(5), GroundSpeedBuffer(5), AltBuffer(5), ClimbRateBuffer(5),
-                                     EnergyBuffer(5), Energybufferderivation(5), energyCalculator(nullptr){
+                                     EnergyBuffer(5), Energybufferderivation(5) {
     // Additional initialization if needed
+    createEnergyCalculator(5);
+
+
 }
 
 
@@ -20,14 +24,15 @@ DataDistributor::DataDistributor(size_t arraySize) :
         AltBuffer(arraySize),
         ClimbRateBuffer(arraySize),
         EnergyBuffer(arraySize),
-        Energybufferderivation(arraySize),
-        energyCalculator(nullptr)
-        {
+        Energybufferderivation(arraySize) {
+    createEnergyCalculator(arraySize);
 
 }
 
 
-
+void DataDistributor::createEnergyCalculator(size_t bufferSize) {
+    energyCalculator = new EnergyCalculator(bufferSize, *this);
+}
 
 void DataDistributor::decodeMessage(const std::vector<mavlink_message_t> &message,
                                     const std::vector<mavlink_status_t> &status) {
@@ -106,10 +111,16 @@ const CircularBuffer<float> &DataDistributor::getClimbRateBuffer() const {
 
 // Energy Stuff
 const CircularBuffer<float> &DataDistributor::getEnergyBuffer() const {
+    energyCalculator->getEnergy();
     return EnergyBuffer;
 }
 
 const CircularBuffer<float> &DataDistributor::getEnergybufferderivation() const {
+    energyCalculator->getEnergyderivation();
     return Energybufferderivation;
 }
 
+
+void DataDistributor::generateFilledBuffers() {
+
+}

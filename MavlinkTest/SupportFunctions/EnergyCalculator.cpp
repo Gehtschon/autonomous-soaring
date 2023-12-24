@@ -1,14 +1,21 @@
 //
-// Created by fabian on 21.12.23.
+// Created by fabian on 24.12.23.
 //
 
 #include "EnergyCalculator.h"
-
-
 EnergyCalculator::EnergyCalculator(size_t buffersize, DataDistributor &distributor) :
         Energybuffer(buffersize),
         Energybufferderivation(buffersize),
         dataDistributor(&distributor) {
+
+}
+
+float EnergyCalculator::getEnergy() {
+    // 1/2g * v² +h
+    auto v_airspeed = dataDistributor->getAirSpeedBuffer();
+    auto height = dataDistributor->getAltBuffer();
+    float e = ((v_airspeed.getLatest()*v_airspeed.getLatest())/2*9,81)+height.getLatest();
+    return e;
 
 }
 

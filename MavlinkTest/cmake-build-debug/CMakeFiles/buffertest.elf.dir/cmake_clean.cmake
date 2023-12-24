@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/buffertest.elf.dir/SupportFunctions/SenderClass_UDP.cpp.o.d"
   "CMakeFiles/buffertest.elf.dir/SupportFunctions/SerialPort.cpp.o"
   "CMakeFiles/buffertest.elf.dir/SupportFunctions/SerialPort.cpp.o.d"
+  "CMakeFiles/buffertest.elf.dir/test/Energytester.cpp.o"
+  "CMakeFiles/buffertest.elf.dir/test/Energytester.cpp.o.d"
   "CMakeFiles/buffertest.elf.dir/test/buffertest.cpp.o"
   "CMakeFiles/buffertest.elf.dir/test/buffertest.cpp.o.d"
   "buffertest.elf"

@@ -67,6 +67,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/autonomous_soaring.dir/DependInfo.cmake"
   "CMakeFiles/buffertest.elf.dir/DependInfo.cmake"
   "CMakeFiles/SerialportTester.elf.dir/DependInfo.cmake"
+  "CMakeFiles/energytester.elf.dir/DependInfo.cmake"
   "lib/Catch2/src/CMakeFiles/Catch2.dir/DependInfo.cmake"
   "lib/Catch2/src/CMakeFiles/Catch2WithMain.dir/DependInfo.cmake"
   )
