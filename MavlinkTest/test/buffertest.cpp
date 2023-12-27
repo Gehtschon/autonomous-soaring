@@ -21,6 +21,7 @@ TEST_CASE( "Check Int Buffer ", "" ) {
 
     REQUIRE(intBuffer.getLatest()==2);
     REQUIRE(intBuffer.getBufferSize() == 2);
+    REQUIRE(intBuffer.getIndex(intBuffer.getBufferSize()-2)==1);
     REQUIRE(intBuffer.isEmpty()==false);
 
     intBuffer.insert(3);

@@ -34,6 +34,8 @@ include_directories(
 )
 add_subdirectory(./lib/Catch2)
 
+##################################################################################################################
+
 # test sources buffertest
 file(GLOB_RECURSE test_SRCS
         "${PROJECT_SOURCE_DIR}/test/buffertest.cpp"
@@ -42,9 +44,13 @@ file(GLOB_RECURSE test_SRCS
 add_executable(buffertest.elf ${test_SRCS}
     SupportFunctions/CircularBuffer.h
         test/buffertest.cpp
-        test/Energytester.cpp)
+        test/Energytester.cpp
+        test/DataDistributorTest.cpp)
 target_link_libraries(buffertest.elf Catch2::Catch2WithMain)
 target_include_directories(buffertest.elf PRIVATE SupportFunctions)
+
+
+##################################################################################################################
 
 # test sources Serialport
 file(GLOB_RECURSE test_SRCS_UART
@@ -58,6 +64,9 @@ target_link_libraries(SerialportTester.elf Catch2::Catch2WithMain)
 target_include_directories(SerialportTester.elf PRIVATE SupportFunctions)
 
 
+##################################################################################################################
+
+
 # test sources Energytester
 file(GLOB_RECURSE test_SRCS_Energy
         "${PROJECT_SOURCE_DIR}/test/Energytester.cpp"
@@ -67,3 +76,25 @@ add_executable(Energytester.elf ${test_SRCS_Energy}
         test/Energytester.cpp)
 target_link_libraries(Energytester.elf Catch2::Catch2WithMain)
 target_include_directories(Energytester.elf PRIVATE SupportFunctions)
+
+
+
+##################################################################################################################
+
+# test sources DataDistributor
+file(GLOB_RECURSE test_SRCS_Distributor
+        "${PROJECT_SOURCE_DIR}/test/DataDistributorTest.cpp"
+        "${PROJECT_SOURCE_DIR}/SupportFunctions/*.cpp"
+)
+add_executable(DataDistributorTest.elf ${test_SRCS_Distributor}
+        SupportFunctions/DataDistributor.h
+        test/DataDistributorTest.cpp)
+target_link_libraries(DataDistributorTest.elf Catch2::Catch2WithMain)
+target_include_directories(DataDistributorTest.elf PRIVATE SupportFunctions)
+
+
+
+
+
+
+

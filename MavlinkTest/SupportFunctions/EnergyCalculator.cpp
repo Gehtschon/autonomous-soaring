@@ -28,17 +28,15 @@ Energy EnergyCalculator::getEnergyDerivation() {
         return energyob;
     }
     auto e_0 = energybuffer.getLatest();
-    auto e_1 = energybuffer.getIndex(energybuffer.getBufferSize() - 1);
+    auto e_1 = energybuffer.getIndex(energybuffer.getBufferSize() - 2);
 
     auto energydiff = e_0.getEnergyvalue()-e_1.getEnergyvalue();
     auto timediff = e_0.getTimeSeconds()-e_1.getTimeSeconds();
 
     float energyderivation = energydiff/(float)timediff;
 
-    auto energyob = Energy(energydiff);
+    auto energyob = Energy(energyderivation);
 
     return energyob;
 }
-
-
 

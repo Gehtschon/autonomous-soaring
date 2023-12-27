@@ -31,7 +31,7 @@ DataDistributor::DataDistributor(size_t arraySize) :
 
 
 void DataDistributor::createEnergyCalculator() {
-    energyCalculator = new EnergyCalculator( *this);
+    energyCalculator = new EnergyCalculator(*this);
 }
 
 void DataDistributor::decodeMessage(const std::vector<mavlink_message_t> &message,
@@ -112,5 +112,27 @@ const CircularBuffer<Energy> &DataDistributor::getEnergybufferderivation() const
 }
 
 void DataDistributor::generateFilledBuffers() {
+    size_t vectorLen = RollBuffer.getMaxSize();
+    std::vector<float> Values; // dummy values
 
+    for (int i = 0; i < vectorLen; ++i) {
+        Values.push_back(static_cast<float>(i)); // Casting to float for consistency
+    }
+
+    for (int i = 0; i < vectorLen; ++i) {
+        RollBuffer.insert(Values[i]);
+        PitchBuffer.insert(Values[i]);
+        YawBuffer.insert(Values[i]);
+        GroundSpeedBuffer.insert(Values[i]);
+        AirSpeedBuffer.insert(Values[i]);
+        AltBuffer.insert(Values[i]);
+        ClimbRateBuffer.insert(Values[i]);
+        auto Energyvalue = energyCalculator->getEnergy();
+        Energy energy(Energyvalue);
+        energy.setTimeSeconds(i);
+        EnergyBuffer.insert(energy);
+        auto energyDerValue = energyCalculator->getEnergyDerivation();
+        Energy energyDer(energyDerValue);
+        Energybufferderivation.insert(energyDer);
+    }
 }
