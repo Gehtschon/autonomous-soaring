@@ -23,8 +23,8 @@
 
 #define BufferSize 10
 
-//#define UDP
-#define UART
+#define UDP
+//#define UART
 
 int main(int argc, char* argv[])
 {

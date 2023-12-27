@@ -23,6 +23,8 @@ void Energy::createtimestamp() {
 }
 
 
+
+
 Energy Energy::operator+(const Energy& other) const {
     return Energy(Energyvalue + other.Energyvalue);
 }

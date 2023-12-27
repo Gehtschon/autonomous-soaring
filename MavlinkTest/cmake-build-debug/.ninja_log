@@ -277,3 +277,13 @@
 8326	9163	1703699260340983601	DataDistributorTest.elf	e63d81297f855680
 8	4249	1703699358274313755	CMakeFiles/DataDistributorTest.elf.dir/test/DataDistributorTest.cpp.o	16c3a18531d1f987
 4251	5034	1703699359054313730	DataDistributorTest.elf	e63d81297f855680
+23	5407	1703714051869308563	CMakeFiles/DataDistributorTest.elf.dir/SupportFunctions/EnergyCalculator.cpp.o	c5be4304fe26e44a
+38	6269	1703714052726403534	CMakeFiles/DataDistributorTest.elf.dir/test/DataDistributorTest.cpp.o	16c3a18531d1f987
+9	5548	1703714250325146990	CMakeFiles/DataDistributorTest.elf.dir/SupportFunctions/DataDistributor.cpp.o	cf78604c62144bb4
+5552	6514	1703714251288961957	DataDistributorTest.elf	e63d81297f855680
+6	8358	1703714269978301346	CMakeFiles/autonomous_soaring.dir/main.cpp.o	7b15cc5b9c0e5d0
+17	8576	1703714270201746338	CMakeFiles/autonomous_soaring.dir/SupportFunctions/EnergyCalculator.cpp.o	ac32deeae9fb9727
+9	8832	1703714270451871329	CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o	4b9aa1039f6a22bc
+8836	9188	1703714270808716315	autonomous_soaring	3fabade8cf9f34c5
+11	4914	1703714356811693497	CMakeFiles/autonomous_soaring.dir/SupportFunctions/DataDistributor.cpp.o	4b9aa1039f6a22bc
+4916	5107	1703714357005123494	autonomous_soaring	3fabade8cf9f34c5
