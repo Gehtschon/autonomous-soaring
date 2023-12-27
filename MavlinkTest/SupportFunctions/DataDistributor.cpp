@@ -44,16 +44,35 @@ void DataDistributor::decodeMessage(const std::vector<mavlink_message_t> &messag
                 break;
 
             case MAVLINK_MSG_ID_VFR_HUD: {
-                mavlink_vfr_hud_t VFR;
-                mavlink_msg_vfr_hud_decode(&msg, &VFR);
-                printf("Airspeed is: %f \n", VFR.airspeed);
-                printf("Groundspeed is: %f \n", VFR.groundspeed);
-                //printf("Alt is: %f \n", VFR.alt);
-                AirSpeedBuffer.insert(VFR.airspeed);
-                GroundSpeedBuffer.insert(VFR.groundspeed);
-                AltBuffer.insert(VFR.alt);
-                ClimbRateBuffer.insert(VFR.climb);
+                static auto currentMillis = this->getTimeMillis();
+                currentMillis = this->getTimeMillis();
+                static long lastMillis = 0;
+                if (currentMillis-lastMillis >= 5*1000) { // 10s*1000 for millis
+                    mavlink_vfr_hud_t VFR;
+                    mavlink_msg_vfr_hud_decode(&msg, &VFR);
+                    printf("Airspeed is: %f \n", VFR.airspeed);
+                    printf("Groundspeed is: %f \n", VFR.groundspeed);
+                    printf("Alt is: %f \n", VFR.alt);
+                    AirSpeedBuffer.insert(VFR.airspeed);
+                    GroundSpeedBuffer.insert(VFR.groundspeed);
+                    AltBuffer.insert(VFR.alt);
+                    ClimbRateBuffer.insert(VFR.climb);
+                    calcEnergy();
+                    std::cout << "LAST Energy is: "
+                              << EnergyBuffer.getIndex(EnergyBuffer.getBufferSize() - 2).getEnergyvalue() << std::endl;
+                    std::cout << "LAST Energy TIME is: "
+                              << EnergyBuffer.getIndex(EnergyBuffer.getBufferSize() - 2).getTimeSeconds() << std::endl;
+                    std::cout << "LAST Energy derivation is: " << Energybufferderivation.getIndex(
+                            Energybufferderivation.getBufferSize() - 2).getEnergyvalue() << std::endl;
 
+                    std::cout << "Energy is: " << EnergyBuffer.getLatest().getEnergyvalue() << std::endl;
+                    std::cout << "Energy TIME is: " << EnergyBuffer.getLatest().getTimeSeconds() << std::endl;
+                    std::cout << "Energy derivation is: " << Energybufferderivation.getLatest().getEnergyvalue()
+                              << std::endl;
+                    std::cout << "---------------------------------------------------------------------------"
+                              << std::endl;
+                    lastMillis = this->getTimeMillis();
+                }
                 break;
             }
 
@@ -73,6 +92,15 @@ void DataDistributor::decodeMessage(const std::vector<mavlink_message_t> &messag
 
 }
 
+
+void DataDistributor::calcEnergy() {
+    auto Energyvalue = energyCalculator->getEnergy();
+    Energy energy(Energyvalue);
+    EnergyBuffer.insert(energy);
+    auto energyDerValue = energyCalculator->getEnergyDerivation();
+    Energy energyDer(energyDerValue);
+    Energybufferderivation.insert(energyDer);
+}
 
 const CircularBuffer<float> &DataDistributor::getRollBuffer() const {
     return RollBuffer;
@@ -135,4 +163,16 @@ void DataDistributor::generateFilledBuffers() {
         Energy energyDer(energyDerValue);
         Energybufferderivation.insert(energyDer);
     }
+}
+
+long DataDistributor::getTimeMillis() {
+    auto currentTime = std::chrono::system_clock::now();
+
+    // Convert the time point to milliseconds since the epoch
+    auto millisecondsSinceEpoch = std::chrono::duration_cast<std::chrono::milliseconds>(currentTime.time_since_epoch());
+
+    // Extract the current millisecond within the day
+    auto millisecondsWithinDay = millisecondsSinceEpoch.count() % 86400000; // 86400000 milliseconds in a day
+
+    return millisecondsWithinDay;
 }

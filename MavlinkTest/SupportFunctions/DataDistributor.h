@@ -38,6 +38,9 @@ public:
 
     void decodeMessage(const std::vector<mavlink_message_t> &message, const std::vector<mavlink_status_t> &status);
 
+    void calcEnergy();
+
+
     const CircularBuffer<float> &getRollBuffer() const;
 
     const CircularBuffer<float> &getPitchBuffer() const;
@@ -62,7 +65,7 @@ public:
 
     // for testing only
     void generateFilledBuffers();
-
+    long getTimeMillis();
 
 };
 

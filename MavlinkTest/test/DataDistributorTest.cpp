@@ -36,9 +36,9 @@ TEST_CASE("Distribution test, also energy calculation tests.", "") {
 
     SECTION("Energy calculation Test") {
         // Energycalculations from Matlab
-        // 0    5.9050   21.6200   47.1450   82.4800  127.6250  182.5800  247.3450  321.9200  406.3050
-        std::vector<float> EnergyMatlab = {0.0f, 5.9050f, 21.6200f, 47.1450f, 82.4800f, 127.6250f, 182.5800f, 247.3450f,
-                                           321.9200f, 406.3050f};
+        //  0    1.0510    2.2039    3.4587    4.8155    6.2742    7.8349    9.4975   11.2620   13.1284
+        std::vector<float> EnergyMatlab = {
+                0.0f, 1.0510f, 2.2039f, 3.4587f, 4.8155f, 6.2742f, 7.8349f, 9.4975f, 11.2620f, 13.1284f};
 
         auto EnergyBuffer = dataDistributor.getEnergyBuffer();
         for (int i = 0; i < BufferSize; ++i) {
@@ -50,18 +50,17 @@ TEST_CASE("Distribution test, also energy calculation tests.", "") {
 
     SECTION("Energy derivation calculation Test") {
         // Energycalculations from Matlab
-        //0    5.9050   15.7150   25.5250   35.3350   45.1450   54.9550   64.7650   74.5750   84.3850
-        std::vector<float> EnergyderMatlab = {0.0f, 5.9050f, 15.7150f, 25.5250f, 35.3350f, 45.1450f, 54.9550f, 64.7650f,
-                                          74.5750f, 84.3850f};
+        //0    1.0510    1.1529    1.2548    1.3568    1.4587    1.5607    1.6626    1.7645    1.8665
+        std::vector<float> EnergyderMatlab = {0.0f, 1.0510f, 1.1529f, 1.2548f, 1.3568f, 1.4587f, 1.5607f, 1.6626f,
+                                              1.7645f, 1.8665f,};
 
 
         auto EnergyderBuffer = dataDistributor.getEnergybufferderivation();
         for (int i = 0; i < BufferSize; ++i) {
             auto Energyobj = EnergyderBuffer.getIndex(i);
-             std::cout<< Energyobj.getEnergyvalue() << std::endl;
+            std::cout << Energyobj.getEnergyvalue() << std::endl;
             REQUIRE_THAT(Energyobj.getEnergyvalue(), Catch::Matchers::WithinRel(EnergyderMatlab[i], 0.0001f));
         }
-
 
 
     }

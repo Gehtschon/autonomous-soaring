@@ -27,20 +27,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db9a8136-a91e-4b34-92d6-56a2a09ba53a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MavlinkTest/test/DataDistributorTest.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/DataDistributor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/DataDistributor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/DataDistributor.h" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/DataDistributor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/EnergyCalculator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/EnergyCalculator.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/Energytester.elf.dir/SupportFunctions/DataDistributor.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/Energytester.elf.dir/SupportFunctions/DataDistributor.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/Energytester.elf.dir/SupportFunctions/EnergyCalculator.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/CMakeFiles/Energytester.elf.dir/SupportFunctions/EnergyCalculator.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/Energytester.elf" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/Energytester.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/DataDistributorTest.elf" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/DataDistributorTest.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/buffertest.elf" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/buffertest.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/test/buffertest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/test/buffertest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/autonomous_soaring" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/autonomous_soaring" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/test/DataDistributorTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/test/DataDistributorTest.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,26 +68,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.advertisement.text.has.clang-format": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "subfuiles",
-    "last_opened_file_path": "/home/fabian/Soaring/cpp_soaring/autonomous-soaring",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.advertisement.text.has.clang-format&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;subfuiles&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/fabian/Soaring/cpp_soaring/autonomous-soaring&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Catch.DataDistributorTest.elf">
     <configuration name="DataDistributorTest.elf" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="autonomous_soaring" TARGET_NAME="DataDistributorTest.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="autonomous_soaring" RUN_TARGET_NAME="DataDistributorTest.elf" TEST_MODE="SUITE_TEST">
       <method v="2">
@@ -120,11 +117,6 @@
       </method>
     </configuration>
     <configuration name="SerialportTester.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="autonomous_soaring" TARGET_NAME="SerialportTester.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="autonomous_soaring" RUN_TARGET_NAME="SerialportTester.elf">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -161,6 +153,7 @@
       <workItem from="1703440874451" duration="1116000" />
       <workItem from="1703450110751" duration="5756000" />
       <workItem from="1703673544676" duration="7136000" />
+      <workItem from="1703692072564" duration="8377000" />
     </task>
     <servers />
   </component>
