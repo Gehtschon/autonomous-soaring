@@ -8,7 +8,7 @@
 DataDistributor::DataDistributor() : RollBuffer(5), PitchBuffer(5), YawBuffer(5),
                                      AirSpeedBuffer(5), GroundSpeedBuffer(5), AltBuffer(5), ClimbRateBuffer(5),
                                      EnergyBuffer(5), Energybufferderivation(5), LatitudeBuffer(5),
-                                     LongitudeBuffer(5),RelativeAltitudeBuffer(5),HeadingBuffer(5),AltitudeBuffer(5) {
+                                     LongitudeBuffer(5), HeadingBuffer(5){
     // Additional initialization if needed
     createEnergyCalculator();
 
@@ -28,9 +28,7 @@ DataDistributor::DataDistributor(size_t arraySize) :
         Energybufferderivation(arraySize),
         LatitudeBuffer(arraySize),
         LongitudeBuffer(arraySize),
-        RelativeAltitudeBuffer(arraySize),
-        HeadingBuffer(arraySize),
-        AltitudeBuffer(arraySize){
+        HeadingBuffer(arraySize) {
     createEnergyCalculator();
 
 }
@@ -54,49 +52,45 @@ void DataDistributor::decodeMessage(const std::vector<mavlink_message_t> &messag
             case MAVLINK_MSG_ID_GLOBAL_POSITION_INT: {
                 mavlink_global_position_int_t global_position_int;
                 mavlink_msg_global_position_int_decode(&msg, &global_position_int);
-                printf("Latitude is: %d \n", global_position_int.lat);
-                printf("Longitude is: %d \n", global_position_int.lon);
+                std::cout << "1" << std::endl;
+                //printf("Latitude is: %d \n", global_position_int.lat);
+                //printf("Longitude is: %d \n", global_position_int.lon);
                 //printf("Altitude is: %d \n", global_position_int.alt);
-                printf("Relative Altitude is: %d \n", global_position_int.relative_alt);
+                //printf("Relative Altitude is: %d \n", global_position_int.relative_alt);
                 //printf("Heading is: %d \n", global_position_int.hdg);
                 LatitudeBuffer.insert(global_position_int.lat);
                 LongitudeBuffer.insert(global_position_int.lon);
-                AltitudeBuffer.insert(global_position_int.alt);
-                RelativeAltitudeBuffer.insert(global_position_int.relative_alt);
+                //AltitudeBuffer.insert(global_position_int.alt);
+                //RelativeAltitudeBuffer.insert(global_position_int.relative_alt);
                 HeadingBuffer.insert(global_position_int.hdg);
                 break;
             }
 
             case MAVLINK_MSG_ID_VFR_HUD: {
-                static auto currentMillis = this->getTimeMillis();
-                currentMillis = this->getTimeMillis();
-                static long lastMillis = 0;
-                if (currentMillis - lastMillis >= 5 * 1000) { // 10s*1000 for millis
-                    mavlink_vfr_hud_t VFR;
-                    mavlink_msg_vfr_hud_decode(&msg, &VFR);
-                    //printf("Airspeed is: %f \n", VFR.airspeed);
-                    //printf("Groundspeed is: %f \n", VFR.groundspeed);
-                    //printf("Alt is: %f \n", VFR.alt);
-                    AirSpeedBuffer.insert(VFR.airspeed);
-                    GroundSpeedBuffer.insert(VFR.groundspeed);
-                    AltBuffer.insert(VFR.alt);
-                    ClimbRateBuffer.insert(VFR.climb);
-                    calcEnergy();
-                    /*std::cout << "LAST Energy is: "
-                              << EnergyBuffer.getIndex(EnergyBuffer.getBufferSize() - 2).getEnergyvalue() << std::endl;
-                    std::cout << "LAST Energy TIME is: "
-                              << EnergyBuffer.getIndex(EnergyBuffer.getBufferSize() - 2).getTimeSeconds() << std::endl;
-                    std::cout << "LAST Energy derivation is: " << Energybufferderivation.getIndex(
-                            Energybufferderivation.getBufferSize() - 2).getEnergyvalue() << std::endl;
+                std::cout<< "2" << std::endl;
+                mavlink_vfr_hud_t VFR;
+                mavlink_msg_vfr_hud_decode(&msg, &VFR);
+                //printf("Airspeed is: %f \n", VFR.airspeed);
+                //printf("Groundspeed is: %f \n", VFR.groundspeed);
+                //printf("Alt is: %f \n", VFR.alt);
+                AirSpeedBuffer.insert(VFR.airspeed);
+                GroundSpeedBuffer.insert(VFR.groundspeed);
+                AltBuffer.insert(VFR.alt);
+                ClimbRateBuffer.insert(VFR.climb);
+                calcEnergy();
+                /*std::cout << "LAST Energy is: "
+                          << EnergyBuffer.getIndex(EnergyBuffer.getBufferSize() - 2).getEnergyvalue() << std::endl;
+                std::cout << "LAST Energy TIME is: "
+                          << EnergyBuffer.getIndex(EnergyBuffer.getBufferSize() - 2).getTimeSeconds() << std::endl;
+                std::cout << "LAST Energy derivation is: " << Energybufferderivation.getIndex(
+                        Energybufferderivation.getBufferSize() - 2).getEnergyvalue() << std::endl;
 
-                    std::cout << "Energy is: " << EnergyBuffer.getLatest().getEnergyvalue() << std::endl;
-                    std::cout << "Energy TIME is: " << EnergyBuffer.getLatest().getTimeSeconds() << std::endl;
-                    std::cout << "Energy derivation is: " << Energybufferderivation.getLatest().getEnergyvalue()
-                              << std::endl;
-                    std::cout << "---------------------------------------------------------------------------"
-                              << std::endl;*/
-                    lastMillis = this->getTimeMillis();
-                }
+                std::cout << "Energy is: " << EnergyBuffer.getLatest().getEnergyvalue() << std::endl;
+                std::cout << "Energy TIME is: " << EnergyBuffer.getLatest().getTimeSeconds() << std::endl;
+                std::cout << "Energy derivation is: " << Energybufferderivation.getLatest().getEnergyvalue()
+                          << std::endl;
+                std::cout << "---------------------------------------------------------------------------"
+                          << std::endl;*/
                 break;
             }
 
@@ -120,6 +114,12 @@ void DataDistributor::decodeMessage(const std::vector<mavlink_message_t> &messag
 void DataDistributor::calcEnergy() {
     auto Energyvalue = energyCalculator->getEnergy();
     Energy energy(Energyvalue);
+    if (LatitudeBuffer.isEmpty()==false && LongitudeBuffer.isEmpty()==false) {
+        auto lat = LatitudeBuffer.getLatest();
+        auto lon = LongitudeBuffer.getLatest();
+        energy.setLat(lat);
+        energy.setLon(lon);
+    }
     EnergyBuffer.insert(energy);
     auto energyDerValue = energyCalculator->getEnergyDerivation();
     Energy energyDer(energyDerValue);

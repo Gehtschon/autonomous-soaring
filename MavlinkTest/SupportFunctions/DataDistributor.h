@@ -26,11 +26,11 @@ private:
     CircularBuffer<Energy> EnergyBuffer;
     CircularBuffer<Energy> Energybufferderivation;
     EnergyCalculator *energyCalculator;
-    // add teh buffers you created for the new data
+    // add the buffers you created for the new data
     CircularBuffer<int32_t> LatitudeBuffer;
     CircularBuffer<int32_t> LongitudeBuffer;
-    CircularBuffer<int32_t> AltitudeBuffer;
-    CircularBuffer<int32_t> RelativeAltitudeBuffer;
+    //CircularBuffer<int32_t> AltitudeBuffer;
+    //CircularBuffer<int32_t> RelativeAltitudeBuffer;
     CircularBuffer<int16_t> HeadingBuffer;
 
 

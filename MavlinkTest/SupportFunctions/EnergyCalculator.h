@@ -18,12 +18,16 @@ class EnergyCalculator {
 private:
     DataDistributor* dataDistributor;
     Energy calcEnergyederivation();
+    uint64_t avergeRadius = 30; // in meters
 
 public:
     EnergyCalculator(DataDistributor &distributor);
 
     Energy getEnergy();
     Energy getEnergyDerivation();
+
+    // function to determine the radius of a thermal
+    uint64_t calcRadius();
 
 
 

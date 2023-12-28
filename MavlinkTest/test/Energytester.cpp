@@ -122,4 +122,23 @@ TEST_CASE("Test Energy Operators", "[Energy]") {
         energy1 /= 2.0;
         REQUIRE(energy1.getEnergyvalue() == 5.0);
     }
+
+    // Testing of the position data in the energy objects
+    SECTION("Test Position Data") {
+        Energy energy1(5.0,45,-45);
+        Energy energy2(3.0,60,61);
+
+        REQUIRE(energy1.getLat() == 45);
+        REQUIRE(energy1.getLon() == -45);
+        REQUIRE(energy2.getLat() == 60);
+        REQUIRE(energy2.getLon() == 61);
+
+        energy1.setLat(50);
+        energy1.setLon(-50);
+        REQUIRE(energy1.getLat() == 50);
+        REQUIRE(energy1.getLon() == -50);
+
+    }
+
+
 }

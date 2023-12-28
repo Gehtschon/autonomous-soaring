@@ -4,6 +4,13 @@
 
 #include "Energy.h"
 
+Energy::Energy(float energy, int32_t lat, int32_t lon) {
+    Energyvalue = energy;
+    this->lat = lat;
+    this->lon = lon;
+    createtimestamp();
+}
+
 Energy::Energy(float energy) : Energyvalue(energy) {
     createtimestamp();
 }
@@ -23,7 +30,21 @@ void Energy::createtimestamp() {
 }
 
 
+int32_t Energy::getLat() const {
+    return lat;
+}
 
+void Energy::setLat(int32_t lat) {
+    Energy::lat = lat;
+}
+
+int32_t Energy::getLon() const {
+    return lon;
+}
+
+void Energy::setLon(int32_t lon) {
+    Energy::lon = lon;
+}
 
 Energy Energy::operator+(const Energy& other) const {
     return Energy(Energyvalue + other.Energyvalue);

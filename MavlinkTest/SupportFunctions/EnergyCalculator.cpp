@@ -40,3 +40,6 @@ Energy EnergyCalculator::getEnergyDerivation() {
     return energyob;
 }
 
+uint64_t EnergyCalculator::calcRadius() {
+
+}

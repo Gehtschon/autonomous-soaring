@@ -13,9 +13,13 @@ private:
     float Energyvalue;
     //current time of the day in seconds
     std::chrono::milliseconds::rep time_Seconds;
+    // position
+    int32_t lat;
+    int32_t lon;
     void createtimestamp();
 public:
     explicit Energy(float energy);
+    explicit Energy(float energy, int32_t lat, int32_t lon);
 
     Energy();
 
@@ -51,6 +55,14 @@ public:
     long getTimeSeconds() const;
 
     void setTimeSeconds(long timeSeconds);
+
+    int32_t getLat() const;
+
+    void setLat(int32_t lat);
+
+    int32_t getLon() const;
+
+    void setLon(int32_t lon);
 
 };
 
