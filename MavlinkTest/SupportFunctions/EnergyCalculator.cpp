@@ -31,9 +31,10 @@ Energy EnergyCalculator::getEnergyDerivation() {
     auto e_1 = energybuffer.getIndex(energybuffer.getBufferSize() - 2);
 
     auto energydiff = e_0.getEnergyvalue()-e_1.getEnergyvalue();
-    auto timediff = e_0.getTimeSeconds()-e_1.getTimeSeconds();
+    auto timediff_milli = (e_0.getTimeMilliSeconds() - e_1.getTimeMilliSeconds());
+    float timediff = static_cast<float>(timediff_milli)/1000.0;
 
-    float energyderivation = energydiff/(float)timediff;
+    float energyderivation = energydiff/timediff;
 
     auto energyob = Energy(energyderivation);
 

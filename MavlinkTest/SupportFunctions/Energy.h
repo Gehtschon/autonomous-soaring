@@ -12,7 +12,7 @@ class Energy {
 private:
     float Energyvalue;
     //current time of the day in seconds
-    std::chrono::milliseconds::rep time_Seconds;
+    std::chrono::milliseconds::rep time_MilliSeconds;
     // position
     int32_t lat;
     int32_t lon;
@@ -52,9 +52,9 @@ public:
 
     void setEnergyvalue(float energyvalue);
 
-    long getTimeSeconds() const;
+    long getTimeMilliSeconds() const;
 
-    void setTimeSeconds(long timeSeconds);
+    void setTimeMilliSeconds(long timeSeconds);
 
     int32_t getLat() const;
 

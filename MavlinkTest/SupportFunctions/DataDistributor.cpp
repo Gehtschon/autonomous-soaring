@@ -86,7 +86,7 @@ void DataDistributor::decodeMessage(const std::vector<mavlink_message_t> &messag
                         Energybufferderivation.getBufferSize() - 2).getEnergyvalue() << std::endl;
 
                 std::cout << "Energy is: " << EnergyBuffer.getLatest().getEnergyvalue() << std::endl;
-                std::cout << "Energy TIME is: " << EnergyBuffer.getLatest().getTimeSeconds() << std::endl;
+                std::cout << "Energy TIME is: " << EnergyBuffer.getLatest().getTimeMilliSeconds() << std::endl;
                 std::cout << "Energy derivation is: " << Energybufferderivation.getLatest().getEnergyvalue()
                           << std::endl;
                 std::cout << "---------------------------------------------------------------------------"
@@ -181,7 +181,7 @@ void DataDistributor::generateFilledBuffers() {
         ClimbRateBuffer.insert(Values[i]);
         auto Energyvalue = energyCalculator->getEnergy();
         Energy energy(Energyvalue);
-        energy.setTimeSeconds(i);
+        energy.setTimeMilliSeconds(i*1000);
         EnergyBuffer.insert(energy);
         auto energyDerValue = energyCalculator->getEnergyDerivation();
         Energy energyDer(energyDerValue);

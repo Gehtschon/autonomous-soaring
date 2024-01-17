@@ -93,7 +93,7 @@ TEST_CASE("Test Energy Operators", "[Energy]") {
         Energy energy(5.0);
 
         ++energy;
-        std::cout << energy.getTimeSeconds() << std::endl;
+        std::cout << energy.getTimeMilliSeconds() << std::endl;
         REQUIRE(energy.getEnergyvalue() == 6.0);
     }
 
@@ -118,7 +118,7 @@ TEST_CASE("Test Energy Operators", "[Energy]") {
         energy1 *= 2.0;
         REQUIRE(energy1.getEnergyvalue() == 10.0);
 
-        std::cout << energy1.getTimeSeconds() << std::endl;
+        std::cout << energy1.getTimeMilliSeconds() << std::endl;
         energy1 /= 2.0;
         REQUIRE(energy1.getEnergyvalue() == 5.0);
     }

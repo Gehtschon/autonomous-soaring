@@ -26,7 +26,7 @@ void Energy::createtimestamp() {
     // Extract the current millisecond within the day
     auto millisecondsWithinDay = millisecondsSinceEpoch.count() % 86400000; // 86400000 milliseconds in a day
 
-    time_Seconds = millisecondsWithinDay;
+    time_MilliSeconds = millisecondsWithinDay;
 }
 
 
@@ -59,12 +59,12 @@ void Energy::setEnergyvalue(float energyvalue) {
     Energyvalue = energyvalue;
 }
 
-long Energy::getTimeSeconds() const {
-    return time_Seconds;
+long Energy::getTimeMilliSeconds() const {
+    return time_MilliSeconds;
 }
 
-void Energy::setTimeSeconds(long timeSeconds) {
-    time_Seconds = timeSeconds;
+void Energy::setTimeMilliSeconds(long timeSeconds) {
+    time_MilliSeconds = timeSeconds;
 }
 
 Energy Energy::operator-(const Energy& other) const {
