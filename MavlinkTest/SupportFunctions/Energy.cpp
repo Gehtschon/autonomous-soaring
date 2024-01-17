@@ -79,8 +79,7 @@ Energy Energy::operator/(float divisor) const {
     if (divisor != 0.0f) {
         return Energy(Energyvalue / divisor);
     } else {
-        // Handle division by zero gracefully, you might want to throw an exception or handle it in some other way.
-        // For simplicity, we return an Energy with a value of 0 in this example.
+        //Hanlde division by zero dont use exception. Just returning 0
         return Energy(0.0f);
     }
 }
@@ -143,8 +142,7 @@ Energy& Energy::operator/=(float divisor) {
     if (divisor != 0.0f) {
         Energyvalue /= divisor;
     } else {
-        // Handle division by zero gracefully, you might want to throw an exception or handle it in some other way.
-        // For simplicity, we set the Energyvalue to 0 in this example.
+        //Hanlde division by zero dont use exception. Just returning 0
         Energyvalue = 0.0f;
     }
     return *this;

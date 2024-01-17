@@ -28,16 +28,11 @@
   <component name="ChangeListManager">
     <list default="true" id="db9a8136-a91e-4b34-92d6-56a2a09ba53a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/CircularBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/CircularBuffer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/DataDistributor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/DataDistributor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/DataDistributor.h" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/DataDistributor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/Energy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/Energy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/Energy.h" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/Energy.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/EnergyCalculator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/SupportFunctions/EnergyCalculator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/DataDistributorTest.elf" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/DataDistributorTest.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/Energytester.elf" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/Energytester.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MavlinkTest/test/Energytester.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MavlinkTest/test/Energytester.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +157,7 @@
       <workItem from="1703763453468" duration="225000" />
       <workItem from="1703763691335" duration="4885000" />
       <workItem from="1704644176290" duration="3000" />
-      <workItem from="1705510265119" duration="1283000" />
+      <workItem from="1705510265119" duration="3795000" />
     </task>
     <servers />
   </component>

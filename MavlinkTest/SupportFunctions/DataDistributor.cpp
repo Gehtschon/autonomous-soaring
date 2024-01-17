@@ -40,7 +40,10 @@ void DataDistributor::createEnergyCalculator() {
 
 void DataDistributor::decodeMessage(const std::vector<mavlink_message_t> &message,
                                     const std::vector<mavlink_status_t> &status) {
+    // Multiple messages can be received at once, so we need to iterate over them
     for (const auto &msg: message) {
+        // Handle message based on its type
+        // If more messages need to be handled, just add more cases to this switch
         switch (msg.msgid) {
 
             case MAVLINK_MSG_ID_HEARTBEAT:
@@ -53,15 +56,8 @@ void DataDistributor::decodeMessage(const std::vector<mavlink_message_t> &messag
                 mavlink_global_position_int_t global_position_int;
                 mavlink_msg_global_position_int_decode(&msg, &global_position_int);
                 std::cout << "1" << std::endl;
-                //printf("Latitude is: %d \n", global_position_int.lat);
-                //printf("Longitude is: %d \n", global_position_int.lon);
-                //printf("Altitude is: %d \n", global_position_int.alt);
-                //printf("Relative Altitude is: %d \n", global_position_int.relative_alt);
-                //printf("Heading is: %d \n", global_position_int.hdg);
                 LatitudeBuffer.insert(global_position_int.lat);
                 LongitudeBuffer.insert(global_position_int.lon);
-                //AltitudeBuffer.insert(global_position_int.alt);
-                //RelativeAltitudeBuffer.insert(global_position_int.relative_alt);
                 HeadingBuffer.insert(global_position_int.hdg);
                 break;
             }
@@ -70,34 +66,17 @@ void DataDistributor::decodeMessage(const std::vector<mavlink_message_t> &messag
                 std::cout<< "2" << std::endl;
                 mavlink_vfr_hud_t VFR;
                 mavlink_msg_vfr_hud_decode(&msg, &VFR);
-                //printf("Airspeed is: %f \n", VFR.airspeed);
-                //printf("Groundspeed is: %f \n", VFR.groundspeed);
-                //printf("Alt is: %f \n", VFR.alt);
                 AirSpeedBuffer.insert(VFR.airspeed);
                 GroundSpeedBuffer.insert(VFR.groundspeed);
                 AltBuffer.insert(VFR.alt);
                 ClimbRateBuffer.insert(VFR.climb);
                 calcEnergy();
-                /*std::cout << "LAST Energy is: "
-                          << EnergyBuffer.getIndex(EnergyBuffer.getBufferSize() - 2).getEnergyvalue() << std::endl;
-                std::cout << "LAST Energy TIME is: "
-                          << EnergyBuffer.getIndex(EnergyBuffer.getBufferSize() - 2).getTimeSeconds() << std::endl;
-                std::cout << "LAST Energy derivation is: " << Energybufferderivation.getIndex(
-                        Energybufferderivation.getBufferSize() - 2).getEnergyvalue() << std::endl;
-
-                std::cout << "Energy is: " << EnergyBuffer.getLatest().getEnergyvalue() << std::endl;
-                std::cout << "Energy TIME is: " << EnergyBuffer.getLatest().getTimeMilliSeconds() << std::endl;
-                std::cout << "Energy derivation is: " << Energybufferderivation.getLatest().getEnergyvalue()
-                          << std::endl;
-                std::cout << "---------------------------------------------------------------------------"
-                          << std::endl;*/
                 break;
             }
 
             case MAVLINK_MSG_ID_ATTITUDE: {
                 mavlink_attitude_t attitude;
                 mavlink_msg_attitude_decode(&msg, &attitude);
-                //printf("Roll is: %f \n", (attitude.roll * (180.0 / 3.141592653589793238463)));
                 RollBuffer.insert(attitude.roll);
                 PitchBuffer.insert(attitude.pitch);
                 YawBuffer.insert(attitude.yaw);
@@ -114,6 +93,7 @@ void DataDistributor::decodeMessage(const std::vector<mavlink_message_t> &messag
 void DataDistributor::calcEnergy() {
     auto Energyvalue = energyCalculator->getEnergy();
     Energy energy(Energyvalue);
+    // set the position data in the energy buffer if it is not empty
     if (LatitudeBuffer.isEmpty()==false && LongitudeBuffer.isEmpty()==false) {
         auto lat = LatitudeBuffer.getLatest();
         auto lon = LongitudeBuffer.getLatest();

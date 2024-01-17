@@ -42,9 +42,18 @@ public:
 
     DataDistributor(size_t arraySize);
 
-
+/**
+ * @brief Decodes the mavlink message and stores the data in the corresponding buffer
+ * @param message the mavlink message to decode
+ * @param status used for chekcing if the message is complete and not corrupted
+ */
     void decodeMessage(const std::vector<mavlink_message_t> &message, const std::vector<mavlink_status_t> &status);
 
+
+/**
+ * @brief Calculates the energy from the data in the buffers and stores it in the energy buffer
+ * it also set the longitude and latitude in the energy buffer
+ */
     void calcEnergy();
 
 
@@ -70,9 +79,15 @@ public:
 
     const CircularBuffer<Energy> &getEnergybufferderivation() const;
 
+/**
+ * @brief Returns the current time in milliseconds
+ * @return
+ */
+    long getTimeMillis();
+
     // for testing only
     void generateFilledBuffers();
-    long getTimeMillis();
+
 
 };
 
