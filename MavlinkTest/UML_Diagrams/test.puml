@@ -1,0 +1,42 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class CircularBuffer <template<typename T>> {
+	+CircularBuffer(size_t size)
+	+getIndex(size_t index) : T
+	+getLatest() : T
+	+isEmpty() : bool
+	+calculateAverage() : double {query}
+	+getBufferSize() : size_t
+	+getMaxSize() : size_t
+	-maxSize : size_t
+	-buffer : std::vector<T>
+	+displayBuffer() : void {query}
+	+insert(const T& data) : void
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

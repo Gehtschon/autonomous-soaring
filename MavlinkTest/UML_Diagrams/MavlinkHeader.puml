@@ -1,0 +1,39 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+enum Messagetype {
+	INT
+	LONG
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Dependency relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

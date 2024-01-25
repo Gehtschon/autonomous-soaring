@@ -1,0 +1,44 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class EnergyCalculator {
+	+EnergyCalculator(DataDistributor& distributor)
+	-dataDistributor : DataDistributor*
+	-calcEnergyederivation() : Energy
+	+getEnergy() : Energy
+	+getEnergyDerivation() : Energy
+	-avergeRadius : uint64_t
+	+calcRadius() : uint64_t
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Dependency relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

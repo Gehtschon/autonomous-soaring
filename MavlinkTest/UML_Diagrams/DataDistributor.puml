@@ -1,0 +1,68 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class DataDistributor {
+	+DataDistributor()
+	+DataDistributor(size_t arraySize)
+	-EnergyBuffer : CircularBuffer<Energy>
+	-Energybufferderivation : CircularBuffer<Energy>
+	+getEnergyBuffer() : CircularBuffer<Energy>& {query}
+	+getEnergybufferderivation() : CircularBuffer<Energy>& {query}
+	-AirSpeedBuffer : CircularBuffer<float>
+	-AltBuffer : CircularBuffer<float>
+	-ClimbRateBuffer : CircularBuffer<float>
+	-GroundSpeedBuffer : CircularBuffer<float>
+	-PitchBuffer : CircularBuffer<float>
+	-RollBuffer : CircularBuffer<float>
+	-YawBuffer : CircularBuffer<float>
+	+getAirSpeedBuffer() : CircularBuffer<float>& {query}
+	+getAltBuffer() : CircularBuffer<float>& {query}
+	+getClimbRateBuffer() : CircularBuffer<float>& {query}
+	+getGroundSpeedBuffer() : CircularBuffer<float>& {query}
+	+getPitchBuffer() : CircularBuffer<float>& {query}
+	+getRollBuffer() : CircularBuffer<float>& {query}
+	+getYawBuffer() : CircularBuffer<float>& {query}
+	-HeadingBuffer : CircularBuffer<int16_t>
+	-LatitudeBuffer : CircularBuffer<int32_t>
+	-LongitudeBuffer : CircularBuffer<int32_t>
+	-energyCalculator : EnergyCalculator*
+	+getTimeMillis() : long
+	+addEnergy(const float Energy) : void
+	+addEnergyDerivation(const float Energyder) : void
+	+calcEnergy() : void
+	-createEnergyCalculator() : void
+	+decodeMessage(const std::vector<mavlink_message_t>& message, const std::vector<mavlink_status_t>& status) : void
+	+generateFilledBuffers() : void
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Dependency relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml
