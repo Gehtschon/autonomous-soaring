@@ -3,7 +3,6 @@
 
 
 
-
 /' Objects '/
 
 class CircularBuffer <template<typename T>> {
