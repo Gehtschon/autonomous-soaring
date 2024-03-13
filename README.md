@@ -18,3 +18,6 @@ sensible flight maneuvers.
 - Autonomous flying with a glider
 - Expansion of the high-performance glider IKURA
 - Design, setup, and testing of a virtual test environment for autonomous gliding
+
+Current software state
+![ALT](/Klassendiagram.png)
